@@ -1,7 +1,7 @@
 ---
-title: "MySQL 9.6.0 (trunk) Recent Development Activity Analysis"
+title: "MySQL 9.6.0 (trunk) 近期开发活动分析"
 date: 2026-05-16
-tags: [mysql, server, source-code, intermediate]
+tags: [#mysql, #server, #source-code, #intermediate]
 source:
   - type: git-log
     ref: "mysql-server trunk, commit range 2025-11-16 to 2025-12-23"
@@ -9,133 +9,134 @@ version: "MySQL 9.6.0"
 author: "@mns-reader"
 ---
 
-# MySQL 9.6.0 (trunk) Recent Development Activity Analysis
+# MySQL 9.6.0 (trunk) 近期开发活动分析
 
-> **Baseline:** MySQL 9.6.0 (trunk), HEAD commit `447eb26e094` (2025-12-23).
-> **Coverage:** 148 non-merge commits, Nov–Dec 2025. Zero new commits in 2026 (Jan-May).
+> **基线：** MySQL 9.6.0 (trunk)，HEAD commit `447eb26e094`（2025-12-23）。
+> **覆盖范围：** 148 个非合并 commit，2025年11月–12月。2026年1月–5月零新提交。
 
 ---
 
-## Executive Summary
+## 概览
 
 ```mermaid
-pie title Commits by Module (Nov-Dec 2025)
+pie title 各模块 Commit 占比 (2025年11-12月)
     "libs/mysql (WL#16076)" : 43
-    "sql/ (Server Layer)" : 23
+    "sql/ (服务器层)" : 23
     "storage/innobase" : 6
     "router" : 5
     "sql-common" : 1
     "plugin/group_replication" : 1
-    "Other" : 69
+    "其他" : 69
 ```
 
-**The single biggest effort is WL#16076 — a 39-step GTID/replication library refactoring** by Sven Sandberg (44 commits). This represents ~29% of all non-merge work. Parallel tracks include Lakehouse/HeatWave features, Audit Log componentization, and critical crash/DoS bug fixes.
+**最大单项投入是 WL#16076——由 Sven Sandberg 主导的 39 步 GTID/复制库重构**（44 commits），占全部非合并工作的约 29%。并行的还有 Lakehouse/HeatWave 特性、Audit Log 组件化，以及关键崩溃/DoS bug 修复。
 
 ---
 
-## 1. WL#16076 — GTID & Replication Library Refactoring (39 commits)
+## 1. WL#16076 — GTID 与复制库重构（39 commits）
 
-### What it is
+### 是什么
 
-A ground-up re-architecture of MySQL's internal C++ libraries, building clean abstractions for:
-- **GTIDs** (`gtids` library): new data structures replacing `mysql::gtid::Gtid_set`
-- **UUIDs** (`uuids` library): parsing and comparison
-- **Sets** (`sets` library): generic set operations
-- **String conversion** (`strconv` library): safe string↔number conversion
-- **Math** (`math` library): `int_log`, `int_pow`, summation functions
-- **Containers** (`containers` library): `Basic_container_wrapper`, `map_or_set_assign`
-- **Ranges & Iterators** (`ranges`, `iterators` libraries)
-- **Meta-programming** (`meta` library): C++20-style concepts (backported to C++14)
-- **Debugging** (`debugging` library): `MY_SCOPED_TRACE`, `Object_lifetime_tracker`, `oom_test`
+对 MySQL 内部 C++ 库的彻底重新架构，建立清晰的抽象层：
 
-### Key commits
+- **GTIDs**（`gtids` 库）：新的数据结构，替代 `mysql::gtid::Gtid_set`
+- **UUIDs**（`uuids` 库）：解析与比较
+- **Sets**（`sets` 库）：泛型集合操作
+- **字符串转换**（`strconv` 库）：安全的字符串↔数字转换
+- **数学**（`math` 库）：`int_log`、`int_pow`、求和函数
+- **容器**（`containers` 库）：`Basic_container_wrapper`、`map_or_set_assign`
+- **范围与迭代器**（`ranges`、`iterators` 库）
+- **元编程**（`meta` 库）：C++20 风格的 concept（回移植到 C++14）
+- **调试**（`debugging` 库）：`MY_SCOPED_TRACE`、`Object_lifetime_tracker`、`oom_test`
 
-| Step | Commit | Description |
-|------|--------|-------------|
-| 39 | `5cd325a9b9f` | Use new Gtid data structures in mysqlbinlog |
-| 38 | `129723c8437` | Replace old `mysql::gtid::Gtid_set` |
-| 37 | `b781b664a4a` | Integrate with GTID_SUBSET and GTID_SUBTRACT |
-| 36 | `a6ff21a5129` | New gtids library |
-| 35 | `a9421c575a2` | New uuids library |
-| 34 | `9f9a3ac8be1` | New sets library |
-| 32 | `50989798cc5` | New strconv library |
-| 27 | `e30861d3882` | New ranges library |
-| 26 | `2d34be2b9bd` | New iterators library |
-| 13 | `784c130f6cd` | New debugging library |
-| 4  | `11a78222be0` | New meta library |
+### 关键 commit
 
-### Impact
+| 步骤 | Commit | 说明 |
+|------|--------|------|
+| 39 | `5cd325a9b9f` | 在 mysqlbinlog 中使用新的 Gtid 数据结构 |
+| 38 | `129723c8437` | 替换旧的 `mysql::gtid::Gtid_set` |
+| 37 | `b781b664a4a` | 与 GTID_SUBSET 和 GTID_SUBTRACT 集成 |
+| 36 | `a6ff21a5129` | 新增 gtids 库 |
+| 35 | `a9421c575a2` | 新增 uuids 库 |
+| 34 | `9f9a3ac8be1` | 新增 sets 库 |
+| 32 | `50989798cc5` | 新增 strconv 库 |
+| 27 | `e30861d3882` | 新增 ranges 库 |
+| 26 | `2d34be2b9bd` | 新增 iterators 库 |
+| 13 | `784c130f6cd` | 新增 debugging 库 |
+| 4  | `11a78222be0` | 新增 meta 库 |
 
-- **All in `libs/mysql/`** — a shared library consumed by server, mysqlbinlog, router, and plugins
-- Steps 36-39 wire the new libraries into production code (GTIDs, mysqlbinlog)
-- The meta-library introduces C++20 concept patterns usable in C++14 — this is template metaprogramming for compile-time type checking
-- **Key variable lifecycle:** These are header-only or header+inline libraries. No dynamic allocation — everything is constexpr/compile-time where possible.
+### 影响
 
-### Concurrency safety
+- **全部位于 `libs/mysql/`**——被服务器、mysqlbinlog、router 和插件共同使用的共享库
+- 步骤 36-39 将新库接入生产代码（GTID、mysqlbinlog）
+- meta 库引入了可在 C++14 中使用的 C++20 concept 模式——编译期类型检查的模板元编程
+- **关键变量生命周期：** 这些是 header-only 或 header+inline 库。无动态分配——尽可能使用 constexpr/编译期求值
 
-The libraries themselves are value-type (no shared mutable state). Safety depends on how the server layer uses them — GTID sets must be copied (not shared) across threads.
+### 并发安全
 
----
-
-## 2. Lakehouse / HeatWave (4 WL items)
-
-| WL | Description | Module |
-|----|-------------|--------|
-| WL#17186 | Lakehouse file-based data placement | HeatWave |
-| WL#17152 | Support for nested types in Parquet | HeatWave |
-| WL#17124 | Add ALTER TABLE action for load validation | DDL/HeatWave |
-| WL#17165 | Union of all Schemas in Lakehouse | HeatWave |
-
-### Analysis
-
-HeatWave/Lakehouse continues to be a major investment area in 9.x:
-- **Parquet nested types** (WL#17152): Extending Parquet support beyond flat schemas to handle STRUCT, ARRAY, MAP types — critical for real-world data lake workloads
-- **File-based data placement** (WL#17186): Control over how Lakehouse files map to physical storage
-- **Load validation** (WL#17124): New ALTER TABLE action for validating Lakehouse data loading
-
-### 🔴 Concurrent with the broader HeatWave strategy
-
-MySQL 9.x's "Innovation" track is the vehicle for HeatWave features that can't land in 8.0/8.4 LTS. The Parquet and Lakehouse work here is distinct from the cloud-only HeatWave service — these are in-server features.
+这些库本身是值类型（无共享可变状态）。安全性取决于服务器层如何使用——GTID 集合必须在线程间复制（而非共享）。
 
 ---
 
-## 3. Audit Log & Observability (3 WL items)
+## 2. Lakehouse / HeatWave（4 个 WL）
 
-| WL | Description | Impact |
-|----|-------------|--------|
-| WL#12716 | Audit Log plugin componentization | Architectural: moves from legacy plugin to MySQL 8.0 component framework |
-| WL#17167 | PERFORMANCE_SCHEMA: instrument more OTEL logs | Observability: bridges P_S → OpenTelemetry |
-| WL#17178 | Adapt audit log offload to LogAnalytics | Cloud integration |
+| WL | 描述 | 模块 |
+|----|------|------|
+| WL#17186 | Lakehouse 文件级数据放置 | HeatWave |
+| WL#17152 | 支持 Parquet 嵌套类型 | HeatWave |
+| WL#17124 | 新增 ALTER TABLE 用于加载验证 | DDL/HeatWave |
+| WL#17165 | Lakehouse 中所有 Schema 的联合 | HeatWave |
 
-### Analysis
+### 分析
 
-- **WL#12716** is the most architecturally significant: componentizing the Audit Log means it follows the same pattern as other MySQL 8.0 components (keyring, clone, etc.). This enables dynamic loading/unloading and versioned APIs.
-- **WL#17167** is the observability play: wiring Performance Schema instrumentation into OpenTelemetry logs. This is for cloud-native monitoring stacks (AWS CloudWatch, Azure Monitor, GCP Cloud Logging).
+HeatWave/Lakehouse 在 9.x 中继续是重点投资方向：
+- **Parquet 嵌套类型**（WL#17152）：将 Parquet 支持从扁平 schema 扩展到 STRUCT、ARRAY、MAP 类型——对真实数据湖工作负载至关重要
+- **文件级数据放置**（WL#17186）：控制 Lakehouse 文件到物理存储的映射
+- **加载验证**（WL#17124）：新的 ALTER TABLE 操作用于验证 Lakehouse 数据加载
+
+### 🔴 与 HeatWave 整体战略的关联
+
+MySQL 9.x 的"Innovation"轨道是 HeatWave 特性的载体，这些特性无法进入 8.0/8.4 LTS。此处的 Parquet 和 Lakehouse 工作与云端独占的 HeatWave 服务不同——这些是服务器内置功能。
 
 ---
 
-## 4. Foreign Key Cascading (WL#11249)
+## 3. Audit Log 与可观测性（3 个 WL）
+
+| WL | 描述 | 影响 |
+|----|------|------|
+| WL#12716 | Audit Log 插件组件化 | 架构级：从旧插件迁移到 MySQL 8.0 组件框架 |
+| WL#17167 | PERFORMANCE_SCHEMA：增强 OTEL 日志插桩 | 可观测性：打通 P_S → OpenTelemetry |
+| WL#17178 | 适配审计日志卸载到 LogAnalytics | 云集成 |
+
+### 分析
+
+- **WL#12716** 架构意义最大：将 Audit Log 组件化意味着它遵循与其他 MySQL 8.0 组件（keyring、clone 等）相同的模式。这支持动态加载/卸载和版本化 API。
+- **WL#17167** 是可观测性布局：将 Performance Schema 的插桩接入 OpenTelemetry 日志。面向云原生监控栈（AWS CloudWatch、Azure Monitor、GCP Cloud Logging）。
+
+---
+
+## 4. 外键级联操作（WL#11249）
 
 ```
 9e1e77fac10 WL#11249 - Support Foreign Key Cascading Operation in server
 ```
 
-### What it likely enables
+### 它可能实现了什么
 
-Foreign key cascading operations (ON DELETE CASCADE, ON UPDATE CASCADE) traditionally execute in the storage engine. This WL brings cascade logic into the SQL layer, enabling:
-- Cross-engine cascading (InnoDB → NDB, etc.)
-- Better error reporting for cascade failures
-- Potentially: parallel cascade execution
+外键级联操作（ON DELETE CASCADE、ON UPDATE CASCADE）传统上在存储引擎中执行。此 WL 将级联逻辑提升到 SQL 层，实现：
+- 跨引擎级联（InnoDB → NDB 等）
+- 更好的级联失败错误报告
+- 潜在可能：并行级联执行
 
-### 🔴 Risk area
+### 🔴 风险区域
 
-FK cascading is inherently recursive and can trigger deadlocks. Bringing it to the server layer adds a new code path that must coordinate with the storage engine's own FK enforcement.
+FK 级联本质上是递归的，可能触发死锁。将其提升到服务器层增加了一条必须与存储引擎自身 FK 执行相协调的新代码路径。
 
 ---
 
-## 5. Critical Bug Fixes
+## 5. 关键 Bug 修复
 
-### 🔴 Bug#38573285 — CPU-eating Denial of Service query (3 commits)
+### 🔴 Bug#38573285 — CPU 消耗型拒绝服务查询（3 commits）
 
 ```
 b56c64b2947 Bug#38573285 MySQL server: CPU-eating Denial_of_Service query
@@ -143,9 +144,9 @@ b56c64b2947 Bug#38573285 MySQL server: CPU-eating Denial_of_Service query
 ebdf65e0703 Bug#38573285 MySQL server: CPU-eating Denial_of_Service query
 ```
 
-Three separate commits for the same bug — suggests a complex fix touching multiple subsystems (likely optimizer + executor). This is the highest-severity bug in the window: a crafted query can consume 100% CPU indefinitely.
+同一个 bug 三次独立提交——说明修复涉及多个子系统（可能是优化器 + 执行器）。这是本窗口内严重程度最高的 bug：一条精心构造的查询可以无限期消耗 100% CPU。
 
-### 🔴 Bug#38448700 — Server crash with EXPLAIN SELECT (3 commits)
+### 🔴 Bug#38448700 — EXPLAIN SELECT 导致服务器崩溃（3 commits）
 
 ```
 44361ef23da Bug#38448700: Server crash with EXPLAIN SELECT on LEFT JOIN with derived table containing stored function and GROUP BY
@@ -153,22 +154,22 @@ Three separate commits for the same bug — suggests a complex fix touching mult
 572f252c253 Bug#38448700: Server crash with EXPLAIN SELECT on LEFT JOIN with derived table containing stored function and GROUP BY
 ```
 
-Server crash on EXPLAIN — a critical stability issue. The combination of LEFT JOIN + derived table + stored function + GROUP BY creates a complex optimization plan where EXPLAIN hits an unhandled edge case.
+EXPLAIN 上服务器崩溃——严重的稳定性问题。LEFT JOIN + 派生表 + 存储函数 + GROUP BY 的组合创建了一个复杂的优化计划，EXPLAIN 在其中遇到了未处理的边界情况。
 
-### 🟡 Bug#38208188 — Bulk insert + GIS index crash
+### 🟡 Bug#38208188 — 批量插入 + GIS 索引崩溃
 
 ```
 a9cf8c54580 Bug#38208188: Bulk inserts into temporary tables with GIS indexes will inevitably cause crashes
 d338ba09220 Bug#38208188: Bulk inserts into temporary tables with GIS indexes will inevitably cause crashes
 ```
 
-### 🟡 Bug#38680162 — SET PERSIST duplicate entries
+### 🟡 Bug#38680162 — SET PERSIST 重复条目
 
 ```
 1a78995a233 Bug#38680162 SET PERSIST creates duplicate variable entries across sections after upgrade
 ```
 
-### 🟡 Bug#38077617 — caching_sha2_password always used in initial handshake
+### 🟡 Bug#38077617 — 初始握手中始终使用 caching_sha2_password
 
 ```
 c3956ef47af Bug#38077617: MySQL 8.4 always uses caching_sha2_password in the initial connection handshake
@@ -178,44 +179,44 @@ c3956ef47af Bug#38077617: MySQL 8.4 always uses caching_sha2_password in the ini
 
 ## 6. Group Replication / Router
 
-| WL | Description |
-|----|-------------|
-| WL#17008 | Add timestamps to GCS/XCOM trace file entries |
-| WL#17027 | Store volatile router statistics in dedicated table |
-| WL#17184 | Allow redefinition of secondary engine |
+| WL | 描述 |
+|----|------|
+| WL#17008 | 为 GCS/XCOM trace 文件条目添加时间戳 |
+| WL#17027 | 将 Router 易失性统计数据存储在专用表中 |
+| WL#17184 | 允许重定义 secondary engine |
 
-### Analysis
+### 分析
 
-- **WL#17008**: GCS/XCOM (Group Communication System) is the consensus layer for MGR. Adding timestamps to trace entries improves debuggability — currently diagnosing MGR stalls requires correlating logs across nodes by message content rather than timestamps.
-- **WL#17027**: Router statistics previously lived in-memory only. Storing them in `mysql_innodb_cluster_metadata` enables historical analysis (e.g., "was there a routing issue at 3 AM?").
-- **WL#17184**: Allows changing a table's secondary engine without dropping/recreating. Relevant for HeatWave secondary engine scenarios.
-
----
-
-## 7. NDB Cluster Fixes
-
-Multiple NDB-specific bug fixes in the window, suggesting active NDB Cluster maintenance:
-- `Bug#38608189` / `Bug#38608102` — ndbxfrm/ndb_restore fixes
-- `Bug#38558868` — ndb_restore parallelism fix
-- `Bug#38593666` — ndb_restore skip FK checks option
-- `Bug#38592288` — backup/restore reporting discrepancies
+- **WL#17008**：GCS/XCOM（Group Communication System）是 MGR 的共识层。为 trace 条目添加时间戳提升了可调试性——目前诊断 MGR 停顿需要按消息内容跨节点关联日志，而非按时间戳。
+- **WL#17027**：Router 统计数据此前仅存于内存中。将其存入 `mysql_innodb_cluster_metadata` 支持历史分析（如"凌晨 3 点是否有路由问题？"）。
+- **WL#17184**：允许在不删除/重建的情况下更改表的 secondary engine。与 HeatWave secondary engine 场景相关。
 
 ---
 
-## 8. Build & Packaging
+## 7. NDB Cluster 修复
 
-- `BUG#38784394` — mysql packages failing with conflicts on FC43 (Fedora)
-- `BUG#38758163` — MSVC 19.29 (VS16.11) build fix
-- `BUG#38730874` — pb2 mysql-trunk-cloud-asan bulk load failures (ASAN fix)
-- `BUG#38330571` — cmake/abi_check.cmake stalls on Windows 11 24h2
+本窗口内有多个 NDB 专项 bug 修复，表明 NDB Cluster 在持续维护中：
+- `Bug#38608189` / `Bug#38608102` — ndbxfrm/ndb_restore 修复
+- `Bug#38558868` — ndb_restore 并行度修复
+- `Bug#38593666` — ndb_restore 跳过 FK 检查选项
+- `Bug#38592288` — 备份/恢复报告差异
 
 ---
 
-## Key Variable: Contributor Concentration
+## 8. 构建与打包
+
+- `BUG#38784394` — mysql 包在 FC43（Fedora）上冲突失败
+- `BUG#38758163` — MSVC 19.29（VS16.11）构建修复
+- `BUG#38730874` — pb2 mysql-trunk-cloud-asan 批量加载失败（ASAN 修复）
+- `BUG#38330571` — cmake/abi_check.cmake 在 Windows 11 24h2 上卡死
+
+---
+
+## 关键变量：贡献者集中度
 
 ```
-Sven Sandberg      44 commits  (WL#16076 — GTID library refactoring)
-Mauritz Sundell     8 commits  (NDB Cluster / build)
+Sven Sandberg      44 commits  (WL#16076 — GTID 库重构)
+Mauritz Sundell     8 commits  (NDB Cluster / 构建)
 Frazer Clement      8 commits  (NDB Cluster)
 Miroslav Rajcic     6 commits
 Marc Alff           4 commits
@@ -224,41 +225,41 @@ Knut Anders Hatlen  4 commits
 Kajori Banerjee     4 commits
 ```
 
-**44 of 148 commits (30%) from one author.** Sven Sandberg is clearly the lead on the library modernization effort.
+**148 个 commit 中的 44 个（30%）来自同一作者。** Sven Sandberg 明显是库现代化工作的主导者。
 
 ---
 
-## Timeline Analysis
+## 时间线分析
 
 ```
-2025-11: 101 commits  ← Peak activity (WL#16076 bulk, Lakehouse features)
-2025-12:  47 commits  ← Tapering (bug fixes, post-push fixes, merges)
-2026-01:   0 commits  ← Holiday shutdown
+2025-11: 101 commits  ← 活动高峰（WL#16076 大量提交、Lakehouse 特性）
+2025-12:  47 commits  ← 逐渐减少（bug 修复、post-push 修复、合并）
+2026-01:   0 commits  ← 假期停摆
 2026-02:   0 commits  ←
 2026-03:   0 commits  ←
 2026-04:   0 commits  ←
-2026-05:   0 commits  ← (through May 16)
+2026-05:   0 commits  ←（截至5月16日）
 ```
 
-The 5-month gap since the last commit (Dec 23, 2025) is notable. Possible explanations:
-1. Oracle's internal development uses separate repositories; trunk only receives periodic merges
-2. Holiday break extended into Q1 planning
-3. Major release preparation (9.6.0 GA) in a separate stabilization branch
+自上次提交（2025年12月23日）以来 5 个月的间隔值得注意。可能的解释：
+1. Oracle 内部开发使用独立仓库；trunk 仅接收周期性合并
+2. 假期延长至 Q1 规划期
+3. 重大版本发布（9.6.0 GA）在独立稳定分支中进行
 
 ---
 
-## Trends & Takeaways
+## 趋势与总结
 
-1. **Library modernization is the #1 investment.** WL#16076's 39-step refactoring of `libs/mysql/` is not a user-visible feature — it's infrastructure for future GTID/replication work. This suggests the replication team is preparing for a significant feature push.
+1. **库现代化是 #1 投资。** WL#16076 对 `libs/mysql/` 的 39 步重构不是用户可见的功能——它是为未来 GTID/复制工作打基础。这表明复制团队正在为重要的功能推进做准备。
 
-2. **HeatWave/Lakehouse is the #2 priority.** Four WL items covering Parquet, data placement, load validation, and schema union. MySQL 9.x Innovation is the vehicle for these features.
+2. **HeatWave/Lakehouse 是 #2 优先级。** 四个 WL 涵盖 Parquet、数据放置、加载验证和 schema 联合。MySQL 9.x Innovation 是这些特性的载体。
 
-3. **Observability is maturing.** Audit Log componentization + OTEL instrumentation + LogAnalytics offload = cloud-native observability stack.
+3. **可观测性正在成熟。** Audit Log 组件化 + OTEL 插桩 + LogAnalytics 卸载 = 云原生可观测性栈。
 
-4. **Critical stability fixes.** The CPU-eating DoS query and EXPLAIN crash bugs required 3 commits each — complex, multi-subsystem fixes.
+4. **关键稳定性修复。** CPU 消耗型 DoS 查询和 EXPLAIN 崩溃 bug 各需 3 次提交——属于复杂的、跨子系统的修复。
 
-5. **NDB Cluster is actively maintained** despite being a niche engine — 8 commits from 2 dedicated engineers.
+5. **NDB Cluster 仍在积极维护**——尽管是细分市场引擎，来自 2 名专职工程师的 8 个 commit。
 
-6. **Group Replication enhancements are incremental** — timestamps, stats storage, secondary engine redefinition — rather than architectural.
+6. **Group Replication 增强是渐进式的**——时间戳、统计存储、secondary engine 重定义——而非架构级的。
 
-7. **Zero InnoDB core architecture changes.** The 6 InnoDB commits are all bug fixes, no new features. InnoDB appears stable/mature at this point in the 9.x cycle.
+7. **InnoDB 核心架构零变更。** 6 个 InnoDB commit 全部是 bug 修复，无新特性。InnoDB 在 9.x 此阶段表现为稳定/成熟。
