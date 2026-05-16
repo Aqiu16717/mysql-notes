@@ -15,10 +15,10 @@ _(empty)_
 _(empty)_
 
 ### Concurrency & Lock-Free
-- [[../notes/mysql/innodb/2026-05-16-mysql-shore-mt.md|Shore-MT (EDBT 2009)]] — Baseline: scalable storage manager bottleneck analysis. Maturity: Research Prototype.
-- [[../notes/mysql/innodb/2026-05-16-mysql-silo.md|Silo (SOSP 2013)]] — Epoch-based deterministic serialization. Maturity: Research Prototype.
-- [[../notes/mysql/innodb/2026-05-16-mysql-hekaton.md|Hekaton (SIGMOD 2013)]] — SQL Server memory-optimized OLTP. Maturity: Widely Deployed.
-- [[../notes/mysql/innodb/2026-05-16-mysql-bwtree.md|BwTree (SIGMOD 2013)]] — Latch-free B-tree with mapping table. Maturity: Industrial Adoption.
+- [[../content/mysql/innodb/2026-05-16-mysql-shore-mt.md|Shore-MT (EDBT 2009)]] — Baseline: scalable storage manager bottleneck analysis. Maturity: Research Prototype.
+- [[../content/mysql/innodb/2026-05-16-mysql-silo.md|Silo (SOSP 2013)]] — Epoch-based deterministic serialization. Maturity: Research Prototype.
+- [[../content/mysql/innodb/2026-05-16-mysql-hekaton.md|Hekaton (SIGMOD 2013)]] — SQL Server memory-optimized OLTP. Maturity: Widely Deployed.
+- [[../content/mysql/innodb/2026-05-16-mysql-bwtree.md|BwTree (SIGMOD 2013)]] — Latch-free B-tree with mapping table. Maturity: Industrial Adoption.
 
 ### Serverless & Elastic OLTP
 _(empty)_
