@@ -78,5 +78,5 @@ sequenceDiagram
 
 ---
 
-> 📖 深入阅读：[Silo 完整论文卡片](notes/2026-05-16-mysql-silo.md)
-> 🔗 关联：[Lock-Free 技术演进总览](notes/2026-05-16-mysql-lock-free-oltp-lineage-learning-card.md)
+> 📖 深入阅读：[Silo 完整论文卡片](content/2026-05-16-mysql-silo.md)
+> 🔗 关联：[Lock-Free 技术演进总览](content/2026-05-16-mysql-lock-free-oltp-lineage-learning-card.md)

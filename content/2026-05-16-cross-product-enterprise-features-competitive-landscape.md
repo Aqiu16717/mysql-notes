@@ -9,7 +9,7 @@ source:
     ref: "@mns-scribe: MySQL 9.x 开发生态报告 (2026-05-16)"
   - url: "https://docs.percona.com/percona-server/8.4/feature-comparison.html"
   - url: "https://blogs.oracle.com/mysql/mysql-9-7-is-out-and-the-community-wins"
-  - url: "https://mariadb.com/docs/release-notes/community-server/old-releases/11.7/what-is-mariadb-117"
+  - url: "https://mariadb.com/docs/release-content/community-server/old-releases/11.7/what-is-mariadb-117"
   - url: "https://docs.pingcap.com/tidb/stable"
   - url: "https://en.oceanbase.com/docs/common-oceanbase-database-10000000001784944"
 version: "MySQL 9.7.0 LTS / Percona Server 8.4 / MariaDB 11.8 LTS / TiDB 8.1 / OceanBase 4.3.3"

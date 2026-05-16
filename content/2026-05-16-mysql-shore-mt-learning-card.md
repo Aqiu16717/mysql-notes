@@ -79,5 +79,5 @@ MySQL 8.0 的 **竞争感知事务调度 (WL#11624)** 是 MySQL 对 Shore-MT 发
 
 ---
 
-> 📖 深入阅读：[Shore-MT 完整论文卡片](notes/2026-05-16-mysql-shore-mt.md)
-> 🔗 关联：[Lock-Free 技术演进总览](notes/2026-05-16-mysql-lock-free-oltp-lineage-learning-card.md)
+> 📖 深入阅读：[Shore-MT 完整论文卡片](content/2026-05-16-mysql-shore-mt.md)
+> 🔗 关联：[Lock-Free 技术演进总览](content/2026-05-16-mysql-lock-free-oltp-lineage-learning-card.md)

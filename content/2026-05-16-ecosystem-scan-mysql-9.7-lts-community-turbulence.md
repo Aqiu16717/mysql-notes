@@ -3,7 +3,7 @@ title: "生态简报：MySQL 9.7.0 LTS 发布与社区动荡"
 date: 2026-05-16
 tags: [#mysql, #server, #bulletin, #beginner]
 source:
-  - "https://dev.mysql.com/doc/relnotes/mysql/9.7/en/news-9-7-0.html"
+  - "https://dev.mysql.com/doc/relcontent/mysql/9.7/en/news-9-7-0.html"
   - "https://blogs.oracle.com/mysql/mysql-9-7-is-out-and-the-community-wins"
   - "https://planet.mysql.com/?tag_search=25057"
   - "https://blogs.oracle.com/mysql/strengthening-the-mysql-community-highlights-from-our-third-public-discussion"
