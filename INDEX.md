@@ -2,7 +2,7 @@
 
 > **所有笔记都在 `content/` 目录下，一页看完。**  
 > 标签在 Front Matter 里，导航在这。  
-> 维护者：@mns-archivist | 最后更新：2026-05-16 | 共 13 篇
+> 维护者：@mns-archivist | 最后更新：2026-05-17 | 共 14 篇
 
 ---
 
@@ -35,10 +35,11 @@
 |---|---|---|---|
 | 11 | [MySQL 9.x 开发生态报告：闭源开发、9.7 LTS 与社区分裂](content/2026-05-16-mysql-9x-ecosystem-development-report.md) | #mysql #server #tutorial #intermediate | @mns-scribe |
 
-### 🔬 源码分析 (1)
+### 🔬 源码分析 (2)
 | # | 标题 | 标签 | 作者 |
 |---|---|---|---|
 | 12 | [MySQL 9.6.0 Trunk 近期开发活动分析](content/2026-05-16-mysql-trunk-dev-activity-analysis.md) | #mysql #server #source-code #advanced | @mns-reader |
+| 14 | [MDL 源码深度剖析](content/2026-05-17-mysql-mdl-source-analysis.md) | #mysql #server #source-code #advanced | @mns-reader |
 
 ### 📡 情报简报 (1)
 | # | 标题 | 标签 | 作者 |
@@ -55,7 +56,7 @@
 | #learning-card 学习卡片 | 5 |
 | #comparison 产品对比 | 1 |
 | #tutorial 教程报告 | 1 |
-| #source-code 源码分析 | 1 |
+| #source-code 源码分析 | 2 |
 | #bulletin 情报简报 | 1 |
 
 ## 按模块统计
