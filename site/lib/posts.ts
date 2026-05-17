@@ -3,7 +3,10 @@ import path from "path";
 import yaml from "js-yaml";
 import { remark } from "remark";
 import remarkGfm from "remark-gfm";
-import remarkHtml from "remark-html";
+import remarkRehype from "remark-rehype";
+import rehypeSlug from "rehype-slug";
+import rehypeStringify from "rehype-stringify";
+import GithubSlugger from "github-slugger";
 
 export interface PostFrontMatter {
   title: string;
@@ -98,8 +101,10 @@ function normalizeTags(tags: unknown): string[] {
   return [];
 }
 
-// Extract TOC headings from markdown content
+// Extract TOC headings from markdown, using github-slugger for IDs
+// that match what rehype-slug generates
 function extractToc(markdown: string): TocEntry[] {
+  const slugger = new GithubSlugger();
   const headings: TocEntry[] = [];
   const headingRegex = /^(#{2,3})\s+(.+)$/gm;
   let match: RegExpExecArray | null;
@@ -107,13 +112,9 @@ function extractToc(markdown: string): TocEntry[] {
   while ((match = headingRegex.exec(markdown)) !== null) {
     const level = match[1].length;
     const text = match[2].trim();
-    const id = text
-      .toLowerCase()
-      .replace(/<[^>]*>/g, "")
-      .replace(/[^\w一-鿿\s-]/g, "")
-      .replace(/\s+/g, "-")
-      .replace(/-+/g, "-")
-      .replace(/^-|-$/g, "");
+    // Strip inline code/html tags for slug generation (same as rehype-slug)
+    const cleanText = text.replace(/<[^>]*>/g, "").replace(/`/g, "");
+    const id = slugger.slug(cleanText);
 
     headings.push({ id, text, level });
   }
@@ -139,9 +140,14 @@ function estimateReadingTime(text: string): number {
   return Math.max(1, Math.ceil(minutes));
 }
 
-// Render markdown to HTML
+// Render markdown to HTML with heading IDs (via rehype-slug)
 async function renderMarkdown(markdown: string): Promise<string> {
-  const result = await remark().use(remarkGfm).use(remarkHtml).process(markdown);
+  const result = await remark()
+    .use(remarkGfm)
+    .use(remarkRehype, { allowDangerousHtml: true })
+    .use(rehypeSlug)
+    .use(rehypeStringify, { allowDangerousHtml: true })
+    .process(markdown);
   return result.toString();
 }
 
