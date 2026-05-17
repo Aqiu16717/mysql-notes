@@ -1,0 +1,319 @@
+1:"$Sreact.fragment"
+2:I[22016,["/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js","/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js","/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js","/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js","/mysql-notes/_next/static/chunks/0p8~.s.k9oh65.js","/mysql-notes/_next/static/chunks/08k3ot07zd2t5.js"],""]
+d:I[69035,["/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js","/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js","/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js","/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js","/mysql-notes/_next/static/chunks/0p8~.s.k9oh65.js","/mysql-notes/_next/static/chunks/08k3ot07zd2t5.js"],"Separator"]
+e:I[45462,["/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js","/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js","/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js","/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js","/mysql-notes/_next/static/chunks/0p8~.s.k9oh65.js","/mysql-notes/_next/static/chunks/08k3ot07zd2t5.js"],"MermaidContent"]
+10:I[42080,["/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js","/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js","/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js","/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js","/mysql-notes/_next/static/chunks/0p8~.s.k9oh65.js","/mysql-notes/_next/static/chunks/08k3ot07zd2t5.js"],"TocSidebar"]
+11:I[97367,["/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js","/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js","/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js","/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js"],"OutletBoundary"]
+12:"$Sreact.suspense"
+0:{"rsc":["$","$1","c",{"children":[["$","div",null,{"className":"mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8","children":["$","div",null,{"className":"flex gap-8","children":[["$","article",null,{"className":"flex-1 min-w-0 max-w-3xl","children":[["$","header",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-2xl sm:text-3xl font-bold tracking-tight mb-4","children":"Shore-MT：多核时代的可扩展存储管理器（2009）"}],["$","div",null,{"className":"flex flex-wrap items-center gap-2 text-sm text-muted-foreground mb-4","children":[["$","time",null,{"dateTime":"Sat May 16 2026 00:00:00 GMT+0000 (Coordinated Universal Time)","children":"Sat May 16 2026 00:00:00 GMT+0000 (Coordinated Universal Time)"}],["$","span",null,{"children":"·"}],["$","span",null,{"children":[16," min read"]}],["$","span",null,{"children":"·"}],["$","span",null,{"children":"@mns-hunter"}]]}],["$","div",null,{"className":"flex flex-wrap gap-1.5","children":[["$","$L2","#mysql",{"href":"/tags/mysql","children":["$","span",null,{"data-slot":"badge","data-variant":"default","className":"group/badge inline-flex h-5 w-fit shrink-0 items-center justify-center gap-1 overflow-hidden rounded-4xl border border-transparent px-2 py-0.5 font-medium whitespace-nowrap focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&>svg]:pointer-events-none [&>svg]:size-3! bg-primary text-primary-foreground [a]:hover:bg-primary/80 cursor-pointer hover:opacity-80 transition-opacity text-xs","children":"mysql"}]}],["$","$L2","#innodb",{"href":"/tags/innodb","children":["$","span",null,{"data-slot":"badge","data-variant":"default","className":"group/badge inline-flex h-5 w-fit shrink-0 items-center justify-center gap-1 overflow-hidden rounded-4xl border border-transparent px-2 py-0.5 font-medium whitespace-nowrap focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&>svg]:pointer-events-none [&>svg]:size-3! bg-primary text-primary-foreground [a]:hover:bg-primary/80 cursor-pointer hover:opacity-80 transition-opacity text-xs","children":"innodb"}]}],["$","$L2","#paper",{"href":"/tags/paper","children":["$","span",null,{"data-slot":"badge","data-variant":"secondary","className":"group/badge inline-flex h-5 w-fit shrink-0 items-center justify-center gap-1 overflow-hidden rounded-4xl border border-transparent px-2 py-0.5 font-medium whitespace-nowrap focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&>svg]:pointer-events-none [&>svg]:size-3! bg-secondary text-secondary-foreground [a]:hover:bg-secondary/80 cursor-pointer hover:opacity-80 transition-opacity text-xs","children":"paper"}]}],["$","$L2","#advanced",{"href":"/tags/advanced","children":["$","span",null,{"data-slot":"badge","data-variant":"outline","className":"group/badge inline-flex h-5 w-fit shrink-0 items-center justify-center gap-1 overflow-hidden rounded-4xl border px-2 py-0.5 font-medium whitespace-nowrap focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&>svg]:pointer-events-none [&>svg]:size-3! border-border text-foreground [a]:hover:bg-muted [a]:hover:text-muted-foreground cursor-pointer hover:opacity-80 transition-opacity text-xs","children":"advanced"}]}]]}],"$L3"]}],"$L4","$L5","$L6","$L7","$L8"]}],"$L9"]}]}],["$La","$Lb"],"$Lc"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"qXkI9snRhaw2qMl5vra9Y"}
+3:["$","p",null,{"className":"text-xs text-muted-foreground mt-3","children":["Version: ","MySQL 9.6.0"]}]
+4:["$","$Ld",null,{"className":"mb-8"}]
+f:T4096,<h1 id="shore-mtedbt-2009">Shore-MT（EDBT 2009）</h1>
+<h2 id="多核时代的可扩展存储管理器">多核时代的可扩展存储管理器</h2>
+<p><strong>作者：</strong> Ryan Johnson、Ippokratis Pandis、Nikos Hardavellas、Anastasia Ailamaki、Babak Falsafi（EPFL / 卡内基梅隆大学）</p>
+<hr>
+<h2 id="1-背景">1. 背景</h2>
+<p>2009 年，数据库社区面临一个危机：CPU 核心数每 18 个月翻一番，但 OLTP 吞吐量在 8-16 核处停滞不前。Shore-MT 项目问了一个极其简单的问题：<strong>传统的基于锁的存储管理器到底把时间花在了哪里？哪个瓶颈最关键？</strong></p>
+<p>Shore-MT 成为了整个无锁 OLTP 文献（Silo、Hekaton、BwTree）赖以建立的<strong>基线测量基础设施</strong>。2015 年之前几乎每一篇多核 OLTP 论文都把 Shore-MT 作为它们所超越的基线。</p>
+<hr>
+<h2 id="2-问题">2. 问题</h2>
+<p>问题的性质是<strong>诊断性的</strong>，而非规定性的：</p>
+<ol>
+<li><strong>没有人系统性地测量过</strong>基于锁的存储管理器在什么位置触及可扩展性天花板。</li>
+<li><strong>坊间常识</strong>会说"锁管理器是瓶颈"，但究竟是锁表哈希冲突、死锁检测、日志互斥锁，还是别的什么？</li>
+<li><strong>没有开源的多线程存储管理器</strong>可用于受控实验。Shore（前身）是单线程的。BerkeleyDB 的并发能力有限。InnoDB 是闭源的（当时归 Oracle 所有）。</li>
+</ol>
+<p>Shore-MT 的首要贡献：<strong>一个公开可用的、带测量仪器的、多线程的存储管理器，供研究人员运行受控的可扩展性实验。</strong></p>
+<hr>
+<h2 id="3-方案">3. 方案</h2>
+<p>Shore-MT 不是一种新的并发模型。它是一个<strong>基准测试平台</strong>，有四个关键设计决策：</p>
+<h3 id="31-架构从-shore-fork-出全多线程版本">3.1 架构：从 Shore Fork 出全多线程版本</h3>
+<ul>
+<li>取 Shore（威斯康星大学麦迪逊分校的单线程存储管理器）并将其完全多线程化。</li>
+<li><strong>每连接一线程模型</strong>（与 MySQL 的 <code>one-thread-per-connection</code> 相同）。</li>
+<li>多个工作线程对同一数据库并发执行事务。</li>
+<li>**2PL（两阶段锁）**作为并发控制模型——没有任何无锁机制。这就是标准基线。</li>
+</ul>
+<h3 id="32-瓶颈测量仪表">3.2 瓶颈测量仪表</h3>
+<ul>
+<li>关键创新：Shore-MT 用周期精度的时戳对<strong>每一个争用点</strong>进行测量。</li>
+<li>测量指标：
+<ul>
+<li><strong>锁管理器开销</strong>（锁表哈希冲突、死锁检测图遍历、锁获取/释放延迟）</li>
+<li><strong>缓冲池争用</strong>（页闩锁获取/释放、缓冲区淘汰互斥锁、LRU 链表锁）</li>
+<li><strong>日志管理器开销</strong>（日志缓冲互斥锁、日志刷盘 I/O 停顿）</li>
+<li><strong>事务协调</strong>（事务开始/提交/准备开销）</li>
+</ul>
+</li>
+<li>每个测量点报告：消耗的总周期数、占事务时间的百分比、争用程度（被阻塞的线程数）。</li>
+</ul>
+<h3 id="33-线程本地内存池">3.3 线程本地内存池</h3>
+<ul>
+<li>为数不多的架构创新之一：<strong>线程本地分配区域（thread-local allocation arenas）</strong>。</li>
+<li>每个工作线程从自己的内存池中分配，不存在全局 <code>malloc()</code> 互斥锁。</li>
+<li>当线程的池耗尽时，从全局分配器获取一个新块（全局分配器只在池耗尽时发生争用，而非每次分配都争用）。</li>
+<li>这就是 Hekaton 和 BwTree 后来采纳的思路——但 Shore-MT 在存储管理器语境中最先演示了这一点。</li>
+</ul>
+<h3 id="34-死锁检测带超时的-dfs">3.4 死锁检测：带超时的 DFS</h3>
+<ul>
+<li>传统 2PL 死锁检测：对等待图做周期性 DFS。</li>
+<li>Shore-MT 的优化：部分 DFS——仅从被阻塞节点开始遍历子图，而非整个图。</li>
+<li>结合基于超时的中止：如果事务等待时间超过 N 毫秒，则中止它，而不是等待死锁检测器。</li>
+<li>这种混合方式与 InnoDB 的做法非常接近（<code>innodb_deadlock_detect</code> + <code>innodb_lock_wait_timeout</code>）。</li>
+</ul>
+<hr>
+<h2 id="4-权衡">4. 权衡</h2>
+<table>
+<thead>
+<tr>
+<th>收益</th>
+<th>代价</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>首个多核 OLTP 瓶颈的量化图谱</td>
+<td>硬件是 2009 年的：16 核 Xeon，无 NUMA，无 HT，无 SMT</td>
+</tr>
+<tr>
+<td>开源基线催生了 Silo/Hekaton/BwTree 的研究</td>
+<td>2PL 基线现已过时——连 InnoDB 都通过争用感知调度（MySQL 8.0.20）做了优化</td>
+</tr>
+<tr>
+<td>线程本地池证明了 3-5 倍的分配吞吐量提升</td>
+<td>架构假定基于磁盘存储——瓶颈分析未干净地区分 I/O 停顿与锁争用</td>
+</tr>
+<tr>
+<td>测量方法成为 OLTP 可扩展性论文的标准套路</td>
+<td>Shore-MT 的锁管理器比 InnoDB 简单——没有间隙锁、无 next-key 锁、无意向锁。瓶颈画像不能完全代表 InnoDB</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="5-论文摘要中未提及的失败模式">5. 论文摘要中未提及的失败模式</h2>
+<p><strong>来自论文自身的基准测试和后续工作：</strong></p>
+<ol>
+<li>
+<p>**锁管理器在 2 核时并非主要瓶颈。**意外发现：低并发时，缓冲池（页闩锁争用 + 缓冲区淘汰）占主导地位。锁管理器只在 8 核以上才成为第一瓶颈。含义：增加更多核心并不会线性地移动瓶颈——瓶颈画像会随核心数增加发生质变。</p>
+</li>
+<li>
+<p>**日志 I/O 是硬性地板。**无论并发模型如何无锁，如果持久性需要同步日志写入，吞吐量受限于磁盘/闪存的写入带宽。Shore-MT 表明，在 16 核时，即使有专用日志刷盘线程，日志 I/O 仍消耗 25-30% 的事务延迟。</p>
+</li>
+<li>
+<p>**线程本地池只解决了分配问题，未解决释放问题。**Shore-MT 的线程本地池只处理分配，释放走的是全局空闲链表（受互斥锁保护），在高流失率工作负载下成为新的瓶颈。Hekaton 后来用每线程垃圾链表 + 基于 epoch 的回收解决了这个问题。</p>
+</li>
+<li>
+<p>**DFS 死锁检测的复杂度为等待图的 O(V+E)。**在 100+ 并发线程且访问模式复杂时，死锁检测开销占 CPU 的 5-8%。InnoDB 的 <code>lock_deadlock_detect()</code> 面临同样的扩展问题——MySQL 8.0 增加了 <code>innodb_deadlock_detect=OFF</code> 作为变通方案。</p>
+</li>
+<li>
+<p>**基线数字是乐观的。**Shore-MT 的 TPC-C 工作负载使用了简化 schema（无二级索引、无外键约束、无触发器）。真实数据库有大量的额外锁交互（间隙锁、插入意向锁、自增锁），会改变瓶颈画像。</p>
+</li>
+</ol>
+<hr>
+<h2 id="6-mysql-代码邻近度">6. MySQL 代码邻近度</h2>
+<p>Shore-MT 的测量仪表直接映射到 InnoDB 的已知热点：</p>
+<table>
+<thead>
+<tr>
+<th>Shore-MT 瓶颈</th>
+<th>InnoDB 对应物</th>
+<th>文件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>锁管理器哈希冲突</td>
+<td><code>lock_sys->rec_hash</code> — 行锁哈希表</td>
+<td><code>storage/innobase/lock/lock0lock.cc: lock_rec_hash()</code></td>
+</tr>
+<tr>
+<td>死锁检测 DFS</td>
+<td><code>lock_deadlock_detect()</code> — 等待图 DFS</td>
+<td><code>storage/innobase/lock/lock0lock.cc: DeadlockChecker::search()</code></td>
+</tr>
+<tr>
+<td>缓冲池页闩锁争用</td>
+<td><code>buf_page_get_gen()</code> — 每页 RW-latch + <code>buf_pool->mutex</code></td>
+<td><code>storage/innobase/buf/buf0buf.cc</code></td>
+</tr>
+<tr>
+<td>日志缓冲互斥锁</td>
+<td><code>log_sys->mutex</code> + <code>log_sys->write_mutex</code> — 串行化日志写入</td>
+<td><code>storage/innobase/log/log0log.cc, log0write.cc</code></td>
+</tr>
+<tr>
+<td>事务提交协调</td>
+<td><code>trx_commit_for_mysql()</code> → <code>trx_commit_in_memory()</code> → <code>trx_commit_complete_for_mysql()</code></td>
+<td><code>storage/innobase/trx/trx0trx.cc</code></td>
+</tr>
+<tr>
+<td>线程本地分配</td>
+<td><code>THD::mem_root</code> — 每 THD 区域</td>
+<td><code>sql/sql_class.h</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="mysql-特有发现">MySQL 特有发现：</h3>
+<ul>
+<li>**InnoDB 在 8+ 核时的瓶颈画像比 Shore-MT 更严重。**InnoDB 有间隙锁、next-key 锁和插入意向锁，是 Shore-MT 简单锁模型所忽略的。对 InnoDB 做一次现代版 Shore-MT 式测量，很可能会显示出更高的锁管理器开销。</li>
+<li>**MySQL 8.0 的争用感知事务调度（WL#11624）**直接针对 Shore-MT 识别出的模式：按数据访问模式排队事务以降低锁管理器争用。这是 MySQL "承认 Shore-MT 发现并在现有 2PL 框架内缓解"的路径。</li>
+<li>**线程本地池：**MySQL 已有每 THD 的 <code>MEM_ROOT</code>。差距在于<em>共享</em>数据结构的分配（如锁结构体、事务结构体）仍走全局分配器。</li>
+</ul>
+<hr>
+<h2 id="7-产品映射">7. 产品映射</h2>
+<table>
+<thead>
+<tr>
+<th>产品</th>
+<th>状态</th>
+<th>证据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>MySQL 8.0</strong></td>
+<td>部分采纳</td>
+<td>争用感知事务调度（WL#11624）直接回应了 Shore-MT 的发现。每 THD <code>MEM_ROOT</code> 用于线程本地分配。但锁管理器和缓冲池架构仍是经典 2PL。</td>
+</tr>
+<tr>
+<td><strong>Aurora</strong></td>
+<td>不适用</td>
+<td>Aurora 的存储层是日志结构且分离的。计算层不存在 Shore-MT 所测量的页闩锁瓶颈。</td>
+</tr>
+<tr>
+<td><strong>Percona</strong></td>
+<td>部分采纳</td>
+<td>Percona 的线程池插件和 <code>innodb_thread_concurrency</code> 调优遵循了 Shore-MT 的建议——将活跃线程数限制在争用悬崖以下。</td>
+</tr>
+<tr>
+<td><strong>MariaDB</strong></td>
+<td>部分采纳</td>
+<td>MariaDB 5.5+ 的线程池解决了类似的并发管理原则。</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="8-性能论断附实验条件">8. 性能论断（附实验条件）</h2>
+<p>**声称：**确定了传统基于锁的 OLTP 的可扩展性上限：8-16 核。量化了锁管理器占 16%、缓冲池占 12%、日志管理器占饱和状态下事务时间的 10%。</p>
+<p><strong>实验条件：</strong></p>
+<ul>
+<li>**硬件：**4 插槽 4 核 Intel Xeon MP（共 16 核），32 GB RAM</li>
+<li>**数据集：**TPC-C（简化——无二级索引），100 仓库，全内存（缓冲池 100% 命中率）</li>
+<li>**工作负载：**TPC-C 混合（50% NewOrder，50% Payment），100% 内存</li>
+<li>**对比对象：**无——这是首个多线程 Shore，建立基线</li>
+<li>**关键结果：**1 核 10K TPS，8 核 30K TPS（3 倍扩展），<strong>12-16 核处出现平台期</strong>（不再扩展）。16 核时锁管理器 = 16% 周期。</li>
+</ul>
+<p><strong>注意事项：</strong></p>
+<ul>
+<li>硬件是 2009 年的——16 核 Xeon MP，非现代 32-128 核机器。扩展悬崖在今天的核心数下会出现在更高位置，但曲线形状相同。</li>
+<li>无 NUMA 评估（4 插槽，但论文未做 NUMA 分区）</li>
+<li>TPC-C 简化（无二级索引 → 无索引锁争用）</li>
+<li>仅内存（瓶颈画像中无 I/O 停顿）</li>
+<li>在 16 核机器上 1→8 核仅 3 倍扩展，说明即使中等并发下也存在显著的串行化开销</li>
+</ul>
+<hr>
+<h2 id="9-mysql-生态启示">9. MySQL 生态启示</h2>
+<ol>
+<li>
+<p>**Shore-MT 是一面镜子——它科学地测量了 MySQL 的本来面目。**每个 InnoDB DBA 都直觉上知道"更多连接 = 更多锁争用"。Shore-MT 精确量化了多少、在哪里。</p>
+</li>
+<li>
+<p>**基线已过时，但方法论永不过时。**今天没有人应该使用 Shore-MT 的 2009 年硬件数字。但<em>测量方法</em>——对每个争用点做周期精度测量——应该应用于现代 InnoDB 构建。这是一个具体项目：构建一个 Shore-MT 风格的带测量仪表的 InnoDB，发布现代瓶颈画像。</p>
+</li>
+<li>
+<p>**对 MySQL 最具可操作性的发现：争用感知调度有效。**MySQL 8.0 的 WL#11624（争用感知事务调度）是 MySQL 对 Shore-MT 发现的直接回应。它没有消除锁——而是通过排队事务减少锁冲突。这是务实的工程路线，而非学术界的"把所有东西都换成无锁"路线。</p>
+</li>
+<li>
+<p><strong>线程本地池在 MySQL 中已解决。</strong><code>THD::mem_root</code> 提供了每会话分配。剩余的分配争用在于共享结构（锁记录、事务对象）——仅占总分配的一小部分。</p>
+</li>
+</ol>
+<hr>
+<h2 id="传承各后继系统从-shore-mt-继承了什么">传承：各后继系统从 Shore-MT 继承了什么</h2>
+<table>
+<thead>
+<tr>
+<th>Shore-MT 概念</th>
+<th>Silo（SOSP 2013）</th>
+<th>Hekaton（SIGMOD 2013）</th>
+<th>BwTree（SIGMOD 2013）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>每连接一线程模型</strong></td>
+<td><strong>放弃</strong>：epoch 工作线程替代每事务线程</td>
+<td><strong>保留</strong>：每个连接有一个工作线程，但无锁</td>
+<td>不适用（数据结构，非完整引擎）</td>
+</tr>
+<tr>
+<td><strong>线程本地分配池</strong></td>
+<td><strong>保留并扩展</strong>：每线程区域 + EBR 用于释放</td>
+<td><strong>保留并扩展</strong>：每线程区域 + 基于 epoch 的 GC</td>
+<td><strong>保留</strong>：每线程页分配</td>
+</tr>
+<tr>
+<td><strong>2PL 锁管理器</strong></td>
+<td><strong>放弃</strong>：替换为基于 TID 的确定性序列化</td>
+<td><strong>放弃</strong>：替换为 MVCC + 乐观验证</td>
+<td>不适用（无事务级锁）</td>
+</tr>
+<tr>
+<td><strong>死锁检测（DFS）</strong></td>
+<td><strong>放弃</strong>：确定性序列化下无死锁</td>
+<td><strong>放弃</strong>：无死锁——改为中止并重试</td>
+<td>不适用</td>
+</tr>
+<tr>
+<td><strong>瓶颈测量仪表</strong></td>
+<td><strong>保留</strong>：Silo 的评估明确对标 Shore-MT</td>
+<td><strong>保留</strong>：Hekaton 对标传统 SQL Server（类似瓶颈画像）</td>
+<td><strong>保留</strong>：BwTree 对标带闩锁的 BerkeleyDB B-tree</td>
+</tr>
+<tr>
+<td><strong>缓冲池页闩锁</strong></td>
+<td><strong>放弃</strong>：Masstree 是无锁的</td>
+<td><strong>放弃</strong>：BwTree + 无锁哈希索引</td>
+<td><strong>替换</strong>：映射表 + 增量链</td>
+</tr>
+<tr>
+<td><strong>日志管理器（集中式）</strong></td>
+<td><strong>保留但重新设计</strong>：基于 epoch 的组提交替代日志互斥锁</td>
+<td><strong>保留但重新设计</strong>：日志写入通过专用日志写入线程，非每事务写入</td>
+<td>不适用</td>
+</tr>
+<tr>
+<td><strong>基于磁盘存储的假设</strong></td>
+<td><strong>放弃</strong>：仅内存</td>
+<td><strong>放弃</strong>：仅内存优化表</td>
+<td><strong>假定内存</strong>（后来适配了 SCM）</td>
+</tr>
+</tbody>
+</table>
+<h3 id="经受生产检验而存活的思想">经受生产检验而存活的思想：</h3>
+<ul>
+<li><strong>线程本地池</strong>——被全部三个后继系统和 InnoDB（<code>MEM_ROOT</code>）采纳。唯一一个普遍正确的思想。</li>
+<li><strong>瓶颈测量方法论</strong>——成为所有 OLTP 论文的标准评估方法。</li>
+<li><strong>2PL 的替代</strong>——三个后继系统都放弃了 2PL，但用了不同的替代方案。今天（2026）MySQL 中没有任何一个替代方案落地。</li>
+</ul>
+<h3 id="未能存活的思想">未能存活的思想：</h3>
+<ul>
+<li><strong>2PL 本身</strong>——被所有无锁后继系统放弃。但 MySQL 和大多数生产数据库仍在使用 2PL。学术共识与生产现实之间的鸿沟在这里非常显著。</li>
+<li><strong>DFS 死锁检测</strong>——被全部三个后继系统放弃，因为它们的模型不会产生死锁。但 InnoDB 仍在使用 DFS 死锁检测（<code>lock0lock.cc</code> 中的 <code>lock_deadlock_detect()</code>）。</li>
+</ul>
+<hr>
+<h2 id="参见">参见</h2>
+<ul>
+<li>Silo 论文卡片（基于 epoch 的 2PL 替代方案）</li>
+<li>Hekaton 论文卡片（基于 MVCC 的 2PL 替代方案，生产环境部署）</li>
+<li>BwTree 论文卡片（无锁 B 树结构变更）</li>
+<li>@mns-reader：InnoDB 锁等待图与死锁检测（<code>lock0lock.cc: DeadlockChecker</code>）</li>
+<li>@mns-reader：现代 InnoDB 瓶颈画像（应用 Shore-MT 的测量方法论）</li>
+</ul>5:["$","div",null,{"className":"article-content max-w-none","children":["$","$Le",null,{"html":"$f"}]}]
+6:["$","$Ld",null,{"className":"my-8"}]
+7:["$","div",null,{"className":"mb-8","children":[["$","h3",null,{"className":"text-sm font-semibold mb-2","children":"Sources"}],["$","ul",null,{"className":"space-y-1","children":[["$","li","0",{"className":"text-sm","children":["$","a",null,{"href":"https://github.com/Aqiu16717/mysql-notes/EDBT 2009","className":"text-primary underline underline-offset-4 hover:no-underline break-all","target":"_blank","rel":"noopener noreferrer","children":"EDBT 2009"}]}],["$","li","1",{"className":"text-sm","children":["$","a",null,{"href":"https://dl.acm.org/doi/10.1145/1516360.1516395","className":"text-primary underline underline-offset-4 hover:no-underline break-all","target":"_blank","rel":"noopener noreferrer","children":"https://dl.acm.org/doi/10.1145/1516360.1516395"}]}]]}]]}]
+8:["$","footer",null,{"className":"space-y-6","children":[["$","nav",null,{"className":"grid grid-cols-2 gap-4","children":[["$","$L2",null,{"href":"/posts/mysql-silo-learning-card","className":"group block p-4 border border-border rounded-lg hover:border-primary/50 transition-colors","children":[["$","span",null,{"className":"text-xs text-muted-foreground","children":"← Previous"}],["$","p",null,{"className":"text-sm font-medium mt-1 group-hover:text-primary transition-colors line-clamp-1","children":"一张图看懂：Silo — Epoch 无锁事务为什么不能搬进 MySQL"}]]}],["$","$L2",null,{"href":"/posts/mysql-shore-mt-learning-card","className":"group block p-4 border border-border rounded-lg hover:border-primary/50 transition-colors text-right","children":[["$","span",null,{"className":"text-xs text-muted-foreground","children":"Next →"}],["$","p",null,{"className":"text-sm font-medium mt-1 group-hover:text-primary transition-colors line-clamp-1","children":"一张图看懂：Shore-MT — 锁式 OLTP 瓶颈诊断方法论"}]]}]]}],["$","div",null,{"children":[["$","h3",null,{"className":"text-sm font-semibold mb-3","children":"Related Posts"}],["$","div",null,{"className":"grid gap-3 sm:grid-cols-2 lg:grid-cols-3","children":[["$","$L2","mysql-bwtree",{"href":"/posts/mysql-bwtree","className":"block p-3 border border-border rounded-lg hover:border-primary/50 transition-colors","children":[["$","p",null,{"className":"text-sm font-medium line-clamp-2","children":"Bw-Tree：面向新硬件平台的 B 树（2013）"}],["$","p",null,{"className":"text-xs text-muted-foreground mt-1","children":"Sat May 16 2026 00:00:00 GMT+0000 (Coordinated Universal Time)"}]]}],["$","$L2","mysql-hekaton",{"href":"/posts/mysql-hekaton","className":"block p-3 border border-border rounded-lg hover:border-primary/50 transition-colors","children":[["$","p",null,{"className":"text-sm font-medium line-clamp-2","children":"Hekaton：SQL Server 的内存优化 OLTP 引擎（2013）"}],["$","p",null,{"className":"text-xs text-muted-foreground mt-1","children":"Sat May 16 2026 00:00:00 GMT+0000 (Coordinated Universal Time)"}]]}],["$","$L2","mysql-silo",{"href":"/posts/mysql-silo","className":"block p-3 border border-border rounded-lg hover:border-primary/50 transition-colors","children":[["$","p",null,{"className":"text-sm font-medium line-clamp-2","children":"Silo：多核内存数据库的高速事务处理（2013）"}],["$","p",null,{"className":"text-xs text-muted-foreground mt-1","children":"Sat May 16 2026 00:00:00 GMT+0000 (Coordinated Universal Time)"}]]}]]}]]}],["$","div",null,{"className":"text-sm","children":["$","a",null,{"href":"https://github.com/Aqiu16717/mysql-notes/blob/main/content/2026-05-16-mysql-shore-mt.md","className":"text-muted-foreground hover:text-foreground transition-colors underline underline-offset-4","target":"_blank","rel":"noopener noreferrer","children":"Edit this page on GitHub"}]}]]}]
+9:["$","$L10",null,{"entries":[{"id":"多核时代的可扩展存储管理器","text":"多核时代的可扩展存储管理器","level":2},{"id":"1-背景","text":"1. 背景","level":2},{"id":"2-问题","text":"2. 问题","level":2},{"id":"3-方案","text":"3. 方案","level":2},{"id":"31-架构从-shore-fork-出全多线程版本","text":"3.1 架构：从 Shore Fork 出全多线程版本","level":3},{"id":"32-瓶颈测量仪表","text":"3.2 瓶颈测量仪表","level":3},{"id":"33-线程本地内存池","text":"3.3 线程本地内存池","level":3},{"id":"34-死锁检测带超时的-dfs","text":"3.4 死锁检测：带超时的 DFS","level":3},{"id":"4-权衡","text":"4. 权衡","level":2},{"id":"5-论文摘要中未提及的失败模式","text":"5. 论文摘要中未提及的失败模式","level":2},{"id":"6-mysql-代码邻近度","text":"6. MySQL 代码邻近度","level":2},{"id":"mysql-特有发现","text":"MySQL 特有发现：","level":3},{"id":"7-产品映射","text":"7. 产品映射","level":2},{"id":"8-性能论断附实验条件","text":"8. 性能论断（附实验条件）","level":2},{"id":"9-mysql-生态启示","text":"9. MySQL 生态启示","level":2},{"id":"传承各后继系统从-shore-mt-继承了什么","text":"传承：各后继系统从 Shore-MT 继承了什么","level":2},{"id":"经受生产检验而存活的思想","text":"经受生产检验而存活的思想：","level":3},{"id":"未能存活的思想","text":"未能存活的思想：","level":3},{"id":"参见","text":"参见","level":2}]}]
+a:["$","script","script-0",{"src":"/mysql-notes/_next/static/chunks/0p8~.s.k9oh65.js","async":true}]
+b:["$","script","script-1",{"src":"/mysql-notes/_next/static/chunks/08k3ot07zd2t5.js","async":true}]
+c:["$","$L11",null,{"children":["$","$12",null,{"name":"Next.MetadataOutlet","children":"$@13"}]}]
+13:null

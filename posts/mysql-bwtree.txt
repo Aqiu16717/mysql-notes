@@ -1,0 +1,271 @@
+1:"$Sreact.fragment"
+2:I[96923,["/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js","/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js","/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js","/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js"],"Providers"]
+3:I[22016,["/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js","/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js","/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js","/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js","/mysql-notes/_next/static/chunks/0p8~.s.k9oh65.js","/mysql-notes/_next/static/chunks/08k3ot07zd2t5.js"],""]
+4:I[57477,["/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js","/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js","/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js","/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js"],"Search"]
+5:I[93539,["/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js","/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js","/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js","/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js"],"ThemeToggle"]
+6:I[39756,["/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js","/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js","/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js","/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js"],"default"]
+7:I[37457,["/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js","/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js","/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js","/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js"],"default"]
+d:I[68027,["/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js","/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js","/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js","/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js"],"default",1]
+:HL["/mysql-notes/_next/static/chunks/046n7_4_wz89b.css","style"]
+0:{"P":null,"c":["","posts","mysql-bwtree"],"q":"","i":false,"f":[[["",{"children":["posts",{"children":[["slug","mysql-bwtree","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/mysql-notes/_next/static/chunks/046n7_4_wz89b.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js","async":true,"nonce":"$undefined"}],["$","script","script-2",{"src":"/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js","async":true,"nonce":"$undefined"}],["$","script","script-3",{"src":"/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"zh-CN","className":"h-full antialiased","suppressHydrationWarning":true,"children":[["$","head",null,{"children":["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n              (function() {\n                try {\n                  var theme = localStorage.getItem('theme');\n                  if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {\n                    document.documentElement.classList.add('dark');\n                  }\n                } catch(e) {}\n              })();\n            "}}]}],["$","body",null,{"className":"min-h-full flex flex-col bg-background text-foreground","children":["$","$L2",null,{"children":[["$","header",null,{"className":"sticky top-0 z-40 border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60","children":["$","div",null,{"className":"mx-auto max-w-7xl px-4 sm:px-6 lg:px-8","children":["$","div",null,{"className":"flex h-16 items-center justify-between gap-4","children":[["$","div",null,{"className":"flex items-center gap-6 shrink-0","children":[["$","$L3",null,{"href":"/","className":"font-bold text-lg tracking-tight hover:text-primary transition-colors","children":"mysql-notes"}],["$","nav",null,{"className":"hidden sm:flex items-center gap-4 text-sm","children":[["$","$L3",null,{"href":"/tags","className":"text-muted-foreground hover:text-foreground transition-colors","children":"Tags"}],["$","a",null,{"href":"https://github.com/Aqiu16717/mysql-notes","className":"text-muted-foreground hover:text-foreground transition-colors","target":"_blank","rel":"noopener noreferrer","children":"GitHub"}]]}]]}],["$","div",null,{"className":"flex items-center gap-3 flex-1 max-w-md justify-end","children":[["$","$L4",null,{}],["$","$L5",null,{}]]}]]}]}]}],["$","main",null,{"className":"flex-1","children":["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"border-t border-border py-8","children":["$","div",null,{"className":"mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center text-sm text-muted-foreground","children":["$","p",null,{"children":["Built with Next.js · Content by"," ",["$","a",null,{"href":"https://github.com/Aqiu16717/mysql-notes","className":"underline underline-offset-4 hover:text-foreground","target":"_blank","rel":"noopener noreferrer","children":"mysql-notes"}]," ","team"]}]}]}]]}]}]]}]]}],{"children":["$L8",{"children":["$L9",{"children":["$La",{},null,false,null]},null,false,"$@b"]},null,false,"$@b"]},null,false,null],"$Lc",false]],"m":"$undefined","G":["$d",["$Le"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"qXkI9snRhaw2qMl5vra9Y"}
+10:I[97367,["/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js","/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js","/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js","/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js"],"OutletBoundary"]
+11:"$Sreact.suspense"
+14:I[97367,["/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js","/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js","/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js","/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js"],"ViewportBoundary"]
+16:I[97367,["/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js","/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js","/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js","/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js"],"MetadataBoundary"]
+8:["$","$1","c",{"children":[null,["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+9:["$","$1","c",{"children":[null,["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":["$Lf",[["$","script","script-0",{"src":"/mysql-notes/_next/static/chunks/0p8~.s.k9oh65.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/mysql-notes/_next/static/chunks/08k3ot07zd2t5.js","async":true,"nonce":"$undefined"}]],["$","$L10",null,{"children":["$","$11",null,{"name":"Next.MetadataOutlet","children":"$@12"}]}]]}]
+13:[]
+b:"$W13"
+c:["$","$1","h",{"children":[null,["$","$L14",null,{"children":"$L15"}],["$","div",null,{"hidden":true,"children":["$","$L16",null,{"children":["$","$11",null,{"name":"Next.Metadata","children":"$L17"}]}]}],null]}]
+e:["$","link","0",{"rel":"stylesheet","href":"/mysql-notes/_next/static/chunks/046n7_4_wz89b.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+15:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+18:I[27201,["/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js","/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js","/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js","/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js"],"IconMark"]
+12:null
+17:[["$","title","0",{"children":"Bw-Tree：面向新硬件平台的 B 树（2013） | mysql-notes"}],["$","meta","1",{"name":"description","content":"Bw-Tree（SIGMOD 2013） 面向新硬件平台的 B 树 作者： Justin Levandoski、David Lomet、Sudipta Sengupta（Microsoft Research） 1. 背景 传统 B 树（如 InnoDB 的 B+树）使用闩锁耦合实现并发：读者或写者从根到叶对每一页加闩锁，在子页被安全闩锁之前一直持有父页闩锁。此协议在现代硬件上有两个根本问题：…"}],["$","link","2",{"rel":"icon","href":"/mysql-notes/favicon.ico?favicon.0x3dzn~oxb6tn.ico","sizes":"256x256","type":"image/x-icon"}],["$","$L18","3",{}]]
+f:["$","div",null,{"className":"mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8","children":["$","div",null,{"className":"flex gap-8","children":[["$","article",null,{"className":"flex-1 min-w-0 max-w-3xl","children":[["$","header",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-2xl sm:text-3xl font-bold tracking-tight mb-4","children":"Bw-Tree：面向新硬件平台的 B 树（2013）"}],["$","div",null,{"className":"flex flex-wrap items-center gap-2 text-sm text-muted-foreground mb-4","children":[["$","time",null,{"dateTime":"Sat May 16 2026 00:00:00 GMT+0000 (Coordinated Universal Time)","children":"Sat May 16 2026 00:00:00 GMT+0000 (Coordinated Universal Time)"}],["$","span",null,{"children":"·"}],["$","span",null,{"children":[15," min read"]}],["$","span",null,{"children":"·"}],["$","span",null,{"children":"@mns-hunter"}]]}],["$","div",null,{"className":"flex flex-wrap gap-1.5","children":[["$","$L3","#mysql",{"href":"/tags/mysql","children":["$","span",null,{"data-slot":"badge","data-variant":"default","className":"group/badge inline-flex h-5 w-fit shrink-0 items-center justify-center gap-1 overflow-hidden rounded-4xl border border-transparent px-2 py-0.5 font-medium whitespace-nowrap focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&>svg]:pointer-events-none [&>svg]:size-3! bg-primary text-primary-foreground [a]:hover:bg-primary/80 cursor-pointer hover:opacity-80 transition-opacity text-xs","children":"mysql"}]}],["$","$L3","#innodb",{"href":"/tags/innodb","children":["$","span",null,{"data-slot":"badge","data-variant":"default","className":"group/badge inline-flex h-5 w-fit shrink-0 items-center justify-center gap-1 overflow-hidden rounded-4xl border border-transparent px-2 py-0.5 font-medium whitespace-nowrap focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&>svg]:pointer-events-none [&>svg]:size-3! bg-primary text-primary-foreground [a]:hover:bg-primary/80 cursor-pointer hover:opacity-80 transition-opacity text-xs","children":"innodb"}]}],["$","$L3","#paper",{"href":"/tags/paper","children":["$","span",null,{"data-slot":"badge","data-variant":"secondary","className":"group/badge inline-flex h-5 w-fit shrink-0 items-center justify-center gap-1 overflow-hidden rounded-4xl border border-transparent px-2 py-0.5 font-medium whitespace-nowrap focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&>svg]:pointer-events-none [&>svg]:size-3! bg-secondary text-secondary-foreground [a]:hover:bg-secondary/80 cursor-pointer hover:opacity-80 transition-opacity text-xs","children":"paper"}]}],["$","$L3","#advanced",{"href":"/tags/advanced","children":["$","span",null,{"data-slot":"badge","data-variant":"outline","className":"group/badge inline-flex h-5 w-fit shrink-0 items-center justify-center gap-1 overflow-hidden rounded-4xl border px-2 py-0.5 font-medium whitespace-nowrap focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&>svg]:pointer-events-none [&>svg]:size-3! border-border text-foreground [a]:hover:bg-muted [a]:hover:text-muted-foreground cursor-pointer hover:opacity-80 transition-opacity text-xs","children":"advanced"}]}]]}],"$L19"]}],"$L1a","$L1b","$L1c","$L1d","$L1e"]}],"$L1f"]}]}]
+20:I[69035,["/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js","/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js","/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js","/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js","/mysql-notes/_next/static/chunks/0p8~.s.k9oh65.js","/mysql-notes/_next/static/chunks/08k3ot07zd2t5.js"],"Separator"]
+21:I[45462,["/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js","/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js","/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js","/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js","/mysql-notes/_next/static/chunks/0p8~.s.k9oh65.js","/mysql-notes/_next/static/chunks/08k3ot07zd2t5.js"],"MermaidContent"]
+23:I[42080,["/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js","/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js","/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js","/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js","/mysql-notes/_next/static/chunks/0p8~.s.k9oh65.js","/mysql-notes/_next/static/chunks/08k3ot07zd2t5.js"],"TocSidebar"]
+19:["$","p",null,{"className":"text-xs text-muted-foreground mt-3","children":["Version: ","MySQL 9.6.0"]}]
+1a:["$","$L20",null,{"className":"mb-8"}]
+22:T3bfb,<h1 id="bw-treesigmod-2013">Bw-Tree（SIGMOD 2013）</h1>
+<h2 id="面向新硬件平台的-b-树">面向新硬件平台的 B 树</h2>
+<p><strong>作者：</strong> Justin Levandoski、David Lomet、Sudipta Sengupta（Microsoft Research）</p>
+<hr>
+<h2 id="1-背景">1. 背景</h2>
+<p>传统 B 树（如 InnoDB 的 B+树）使用<strong>闩锁耦合</strong>实现并发：读者或写者从根到叶对每一页加闩锁，在子页被安全闩锁之前一直持有父页闩锁。此协议在现代硬件上有两个根本问题：</p>
+<ol>
+<li><strong>根页和近根页成为争用热点</strong>——每次访问都从根开始，在高并发下根页闩锁获取甚至串行化了只读流量。</li>
+<li><strong>缓存行争用上的闩锁开销</strong>——闩锁使用原子操作（compare-and-swap），迫使缓存行跨核心失效。B 树的分扇出意味着根页被<em>每个</em>事务触碰，即使没有写者活跃也产生每次访问的缓存一致性惩罚。</li>
+</ol>
+<p>BwTree 通过使<strong>每一个 B 树操作都无闩锁</strong>来解决此问题，包括结构修改（分裂/合并）。</p>
+<hr>
+<h2 id="2-问题">2. 问题</h2>
+<p>传统闩锁耦合 B 树在规模化时的具体问题：</p>
+<ol>
+<li><strong>根闩锁瓶颈</strong>：在 32+ 核时，根页闩锁获取串行化所有并发访问。即使是读闩锁（共享）也会导致缓存行弹跳。</li>
+<li><strong>分裂级联</strong>：页分裂沿树向上传播。每层需要排他闩锁，在分裂期间阻塞该子树上的所有读者和写者。</li>
+<li><strong>NUMA 不友好</strong>：单个 NUMA 节点上的闩锁变量产生与核心数成正比的跨插槽一致性流量。</li>
+<li><strong>Flash/SCM（存储级内存）不匹配</strong>：闩锁假定 DRAM 延迟（约 100ns）。在 SCM 上（约 1-10μs），在 SCM 访问期间持有闩锁会阻塞所有其他线程微秒级别时间。</li>
+</ol>
+<p>核心洞见：<strong>闩锁保护的是结构修改（分裂/合并），但如果结构可以原子性地改变，读操作根本不需要闩锁。</strong></p>
+<hr>
+<h2 id="3-方案">3. 方案</h2>
+<p>BwTree 使用三个关键创新来消除闩锁：</p>
+<h3 id="31-映射表间接层">3.1 映射表间接层</h3>
+<ul>
+<li>一个全局<strong>映射表</strong>（哈希映射）将<strong>逻辑页 ID（PID）<strong>映射到</strong>物理页指针</strong>。</li>
+<li>每个 B 树节点由 PID 标识，而非直接指针。</li>
+<li>读取一个页：在映射表中查找 PID → 获取物理指针 → 读取页内容。</li>
+<li>**结构修改改变的是映射表，而非页本身。**举例：页分裂创建两个新页（PID_new_left、PID_new_right），在映射表条目上做 CAS：old_PID → [PID_new_left, PID_new_right]。</li>
+<li>读者永远不会看到不一致的树，因为映射表变更是原子的（单次 CAS）。</li>
+</ul>
+<h3 id="32-增量更新无原地写入">3.2 增量更新（无原地写入）</h3>
+<ul>
+<li><strong>写入永远不原地修改页。<strong>相反，一个</strong>增量记录</strong>被前插到页的增量链上。</li>
+<li>增量记录描述单次修改："插入键 K，值 V"或"删除键 K"。</li>
+<li><strong>基础页</strong>（原始页内容）一旦创建不可变。</li>
+<li>从页 P 读取键 K：从最新到最旧遍历增量链，首次匹配为胜。</li>
+<li>增量链是单向链接的。前插增量记录 = 对页的增量链头指针做 CAS。</li>
+</ul>
+<h3 id="33-基于-cas-的结构修改smo">3.3 基于 CAS 的结构修改（SMO）</h3>
+<ul>
+<li><strong>页分裂</strong>：创建两个新页（左/右）。构建反映分裂边界的增量链。在映射表上做 CAS 重定向旧 PID → [左 PID，右 PID]。</li>
+<li><strong>页合并</strong>：在映射表上做 CAS 将两个 PID 重定向 → 单个合并后的 PID。</li>
+<li><strong>节点合并</strong>：当页的增量链太长（可配置阈值），创建一个新的合并页（基础页 + 全部增量应用后的结果），在映射表上做 CAS 指向新页，淘汰旧页。</li>
+<li><strong>SMO 期间无闩锁</strong>：分裂期间执行读操作的线程要么看到旧映射（仍然有效，分裂尚未完成），要么看到新映射（分裂完成）。两者均为一致性视图。</li>
+</ul>
+<h3 id="垃圾回收">垃圾回收</h3>
+<ul>
+<li>旧页（被分裂/合并/节点合并所替代）通过<strong>基于 epoch 的回收</strong>释放（与 Silo 相同的 EBR 概念，但应用于页节点而非事务状态）。</li>
+<li>Epoch 管理器推进 epoch，线程公布其当前 epoch，当所有线程都推进到超过页的替代 epoch 后释放旧页。</li>
+</ul>
+<hr>
+<h2 id="4-权衡">4. 权衡</h2>
+<table>
+<thead>
+<tr>
+<th>收益</th>
+<th>代价</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>所有 B 树操作零闩锁争用，包括分裂/合并</td>
+<td><strong>增量链遍历成本</strong>：从有 100 条增量记录的页中读取键 K 需要遍历 100 个节点——每次读取成本为 O(增量链长度) 而非 O(1)</td>
+</tr>
+<tr>
+<td>读者永不阻塞，写者永不阻塞读者</td>
+<td><strong>内存开销</strong>：映射表（约 8 字节/页）、增量记录（每次修改的头 + 载荷）、等待 GC 的旧页。较传统 B 树增加 20-40% 内存开销</td>
+</tr>
+<tr>
+<td>缓存友好：映射表条目上的 CAS 触碰一个缓存行，对比页闩锁触碰该页的缓存行</td>
+<td><strong>合并 CPU 成本</strong>：增量链变长时，合并重建整个页——是一个延迟指标不可见的 CPU 尖峰</td>
+</tr>
+<tr>
+<td>NUMA 友好：映射表可每 NUMA 节点分区</td>
+<td><strong>EBR 依赖</strong>：与 Silo 相同的 epoch 延迟问题。慢线程阻塞旧页 GC → 内存无限增长</td>
+</tr>
+<tr>
+<td>直接在 Hekaton（SQL Server）内部使用——非独立原型</td>
+<td><strong>无基于磁盘的版本</strong>：BwTree 假设 DRAM（后来适配了 SCM）。映射表必须装入内存。磁盘上的页需要不同的间接层</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="5-论文摘要中未提及的失败模式">5. 论文摘要中未提及的失败模式</h2>
+<p><strong>来自后续工作（OpenBwTree，CMU 2016-2018；Ziqi Wang 等，SIGMOD 2018）：</strong></p>
+<ol>
+<li>
+<p><strong>增量链长度爆炸</strong>：在更新密集型工作负载下，增量链在合并线程介入前常规达到 500+ 记录。点读从 O(log N) 退化到 O(增量链长度)，将 3 页访问的查询变成 500 次指针遍历。OpenBwTree 的修复：主动合并在 8 条增量时触发（激进）或 64 条（平衡）。</p>
+</li>
+<li>
+<p><strong>内存压力下的合并停顿</strong>：当 GC 跟不上（epoch 线程慢），旧页堆积。合并线程运行在自己的 epoch 中，但如果 GC epoch 滞后，合并产生垃圾的速度比释放更快。OpenBwTree 项目记录了在大量插入工作负载下 2 分钟内 8GB+ 僵尸页的堆积。</p>
+</li>
+<li>
+<p><strong>规模化下的映射表争用</strong>：原始 BwTree 使用单个全局映射表。在 >32 线程时，映射表上的 CAS 成为新的瓶颈（取代了根闩锁）。修复方案：分区映射表（每 NUMA 节点），但这使分裂/合并复杂化——一个 NUMA 节点上的分裂必须对所有分区可见。</p>
+</li>
+<li>
+<p><strong>范围扫描不一致</strong>：BwTree 的增量链是从最新到最旧的单向链表。向前遍历的范围扫描必须使用闩锁或容忍不一致的时间点读取。Hekaton 的解决方案：范围扫描使用扫描游标上的单独闩锁（而非 B 树），这为唯一无法完全无闩锁的操作重新引入了闩锁。</p>
+</li>
+<li>
+<p><strong>SCM（Optane）写入放大</strong>：当适配为持久内存时（Wang 等，SIGMOD 2018），增量更新模型导致大量 NVM 写入放大，因为每个增量记录是单独的缓存行写入。传统 B 树中的单行更新 = 一次页写入（含 WAL）。在 BwTree 上 SCM = 增量记录写入 + 最终合并写入 = 2-3 倍放大。</p>
+</li>
+</ol>
+<hr>
+<h2 id="6-mysql-代码邻近度">6. MySQL 代码邻近度</h2>
+<h3 id="若将-bwtree-的无闩锁设计移植到-innodb-的-b树">若将 BwTree 的无闩锁设计移植到 InnoDB 的 B+树：</h3>
+<table>
+<thead>
+<tr>
+<th>MySQL 区域</th>
+<th>文件</th>
+<th>变更内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>B+树页分裂</td>
+<td><code>storage/innobase/btr/btr0btr.cc: btr_page_split_and_insert()</code></td>
+<td>完全重写。当前分裂：排他闩锁父页 + 子页，重新分布记录，更新父页指针。BwTree 分裂：映射表条目上的 CAS。不需要父页指针。</td>
+</tr>
+<tr>
+<td>B+树游标</td>
+<td><code>storage/innobase/btr/btr0cur.cc: btr_cur_search_to_nth_level()</code></td>
+<td>当前：闩锁耦合遍历 根→叶，使用 <code>buf_page_get_gen(RW_S_LATCH/RW_X_LATCH)</code>。BwTree：每层做映射表查找，无闩锁。游标状态 = [当前 PID，增量链内位置]。</td>
+</tr>
+<tr>
+<td>缓冲池 / 页访问</td>
+<td><code>storage/innobase/buf/buf0buf.cc: buf_page_get_gen()</code></td>
+<td>当前：对 page_id 做哈希查找 → (fix_count++、闩锁、指针)。BwTree：对 PID 做映射表查找 → (无闩锁指针 + 版本)。无 fix_count，无闩锁。</td>
+</tr>
+<tr>
+<td>页结构</td>
+<td><code>storage/innobase/page/page0page.cc</code>、<code>page0cur.cc</code></td>
+<td>当前：固定大小 16KB 页，含记录堆 + 页目录。BwTree：基础页 + 增量链 + 不可变基础。记录访问 = 从最新遍历增量链。</td>
+</tr>
+<tr>
+<td>自适应哈希索引（AHI）</td>
+<td><code>storage/innobase/btr/btr0sea.cc</code></td>
+<td>AHI 就是 MySQL 的映射表！它将 (index_id, key_prefix) → page 做了映射。BwTree 将其一般化：PID → 物理页。AHI 可以作为 BwTree 式映射表的种子——它已经做了无锁读取。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="mysql-特有障碍">MySQL 特有障碍：</h3>
+<ul>
+<li><strong>InnoDB 的压缩页</strong>（<code>page_zip</code>）：对压缩页做增量更新会爆炸——每个增量记录需要自己的压缩上下文，合并需要解压 + 应用 + 重新压缩。净效果：压缩率退化 30-50%。</li>
+<li><strong>崩溃恢复</strong>：InnoDB 的 redo log 记录页级变更。BwTree 的映射表和增量链创建了根本不同的恢复模型：映射表是恢复目标，而非单个页面。Redo log 需要映射表层级的记录。</li>
+<li><strong><code>TRUNCATE TABLE</code></strong>：InnoDB 丢弃所有页并释放表空间。BwTree 的映射表需要基于 epoch 的旧页 GC——<code>TRUNCATE</code> 变成了一个有无限完成时间的异步操作。</li>
+</ul>
+<hr>
+<h2 id="7-产品映射">7. 产品映射</h2>
+<table>
+<thead>
+<tr>
+<th>产品</th>
+<th>状态</th>
+<th>证据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>SQL Server Hekaton</strong></td>
+<td>已采纳</td>
+<td>BwTree 是 Hekaton 内存优化表的范围索引。随 SQL Server 2014 发布。</td>
+</tr>
+<tr>
+<td><strong>SQL Server 实时运营分析</strong></td>
+<td>已采纳</td>
+<td>SQL Server 2016+ 中用于 HTAP 的列存储 + BwTree 混合方案。</td>
+</tr>
+<tr>
+<td><strong>Sled（Rust 嵌入式数据库）</strong></td>
+<td>已采纳实验</td>
+<td>Sled 实现了类似 BwTree 的结构，含增量链和基于 CAS 的 SMO——深受 BwTree 论文启发。</td>
+</tr>
+<tr>
+<td><strong>Aurora</strong></td>
+<td>未采纳</td>
+<td>Aurora 的存储是日志结构的，非基于 B 树。页闩锁不是瓶颈，因为存储是分离的。</td>
+</tr>
+<tr>
+<td><strong>MySQL 上游 / InnoDB</strong></td>
+<td>未采纳</td>
+<td>InnoDB 的 B+树是闩锁耦合的。无映射表，无增量链，无基于 CAS 的 SMO。</td>
+</tr>
+<tr>
+<td><strong>Percona / MariaDB</strong></td>
+<td>未采纳</td>
+<td>同为 InnoDB B+树架构。</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="8-性能论断附实验条件">8. 性能论断（附实验条件）</h2>
+<p>**声称：**BwTree 在多核上匹配或超过传统闩锁耦合 B 树的吞吐量。读密集型工作负载下接近线性扩展到 32+ 核。</p>
+<p><strong>实验条件：</strong></p>
+<ul>
+<li>**硬件：**双插槽 8 核 Intel Xeon E5-2690（16 逻辑核），64 GB RAM</li>
+<li>**数据集：**合成键值对（8 字节键，8 字节值），1000 万记录</li>
+<li>**工作负载：**读写混合（80/20、50/50）、均匀和 Zipfian 分布</li>
+<li>**对比对象：**BerkeleyDB B-tree（闩锁耦合，页级闩锁）、Masstree（无锁 trie+B+树混合）</li>
+<li>**关键结果：**均匀工作负载上比 BerkeleyDB 吞吐量提升 1.5-2 倍；读密集型上与 Masstree 持平；写密集型上比 Masstree 提升 1.2 倍。</li>
+</ul>
+<p><strong>注意事项：</strong></p>
+<ul>
+<li>评估在 16 核上，非 32+（按 2013 年标准算偏小）</li>
+<li>无 NUMA 评估（双插槽，但工作负载未做 NUMA 分区）</li>
+<li>BerkeleyDB 对比：BDB 不是最先进的闩锁耦合 B 树——它是通用嵌入式数据库。InnoDB 的 B+树优化更充分</li>
+<li>增量链长度参数调至最优（每链 8 条增量）——有突发写入的真实工作负载会超出此值</li>
+<li>GC 开销排除在吞吐量数字外（实验在干净系统上，无持续写入压力）</li>
+</ul>
+<hr>
+<h2 id="9-mysql-生态启示">9. MySQL 生态启示</h2>
+<ol>
+<li>
+<p>**InnoDB 的自适应哈希索引（AHI）是出人意料的 BwTree 先驱。**AHI 已经在做键前缀到页的无锁映射。将 AHI 从哈希索引一般化到完整映射表（PID → 物理页），是 MySQL 通往无闩锁 B 树操作的最自然路径。这不是完全重写——这是对现有机制的扩展。</p>
+</li>
+<li>
+<p>**增量链模型解决了 InnoDB 不存在的问题。**InnoDB 的页是固定大小（默认 16KB），并通过闩锁保护进行原地更新。增量更新以读放大（遍历增量链）换取闩锁开销。在 InnoDB 基于磁盘的模型中，读放大成本（额外的页访问）将是灾难性的。BwTree 仅在页在内存中时才有意义。</p>
+</li>
+<li>
+<p>**映射表是挂接到 InnoDB 上最困难的一块。**缓冲池（<code>buf0buf.cc</code>）深深耦合于页 ID 是物理块地址这一事实。增加逻辑到物理的映射层意味着每次 <code>buf_page_get_gen()</code> 调用都需要映射表查找。这是热路径上的约 50-100ns 开销（缓存命中的映射表查找 + 表条目上的 CAS）对比当前约 30ns（对 page_id 做哈希 + 闩锁）。</p>
+</li>
+<li>
+<p>**对 MySQL 而言，"无闩锁页分裂"与"无闩锁读"是可以分离的。**InnoDB 可以在保持读闩锁的同时采用基于 CAS 的页分裂（映射表方法）。这将消除持有时间最长的排他闩锁（分裂沿树向上传播）而不触碰读路径。这种增量路径比完整的 BwTree 移植更现实。</p>
+</li>
+</ol>
+<hr>
+<h2 id="参见">参见</h2>
+<ul>
+<li>Hekaton 论文卡片（BwTree 用作范围索引）</li>
+<li>Silo 论文卡片（使用 Masstree，不同的无锁 B 树设计）</li>
+<li>Shore-MT 论文卡片（传统闩锁耦合基线）</li>
+<li>@mns-reader：InnoDB B+树页分裂代码路径（<code>btr0btr.cc</code> 中的 <code>btr_page_split_and_insert</code>）</li>
+<li>@mns-reader：AHI 无锁查找路径（<code>btr0sea.cc</code> 中的 <code>btr_search_guess_on_hash</code>）</li>
+</ul>1b:["$","div",null,{"className":"article-content max-w-none","children":["$","$L21",null,{"html":"$22"}]}]
+1c:["$","$L20",null,{"className":"my-8"}]
+1d:["$","div",null,{"className":"mb-8","children":[["$","h3",null,{"className":"text-sm font-semibold mb-2","children":"Sources"}],["$","ul",null,{"className":"space-y-1","children":[["$","li","0",{"className":"text-sm","children":["$","a",null,{"href":"https://github.com/Aqiu16717/mysql-notes/SIGMOD 2013","className":"text-primary underline underline-offset-4 hover:no-underline break-all","target":"_blank","rel":"noopener noreferrer","children":"SIGMOD 2013"}]}],["$","li","1",{"className":"text-sm","children":["$","a",null,{"href":"https://dl.acm.org/doi/10.1145/2463676.2465294","className":"text-primary underline underline-offset-4 hover:no-underline break-all","target":"_blank","rel":"noopener noreferrer","children":"https://dl.acm.org/doi/10.1145/2463676.2465294"}]}]]}]]}]
+1e:["$","footer",null,{"className":"space-y-6","children":[["$","nav",null,{"className":"grid grid-cols-2 gap-4","children":[["$","$L3",null,{"href":"/posts/mysql-hekaton-learning-card","className":"group block p-4 border border-border rounded-lg hover:border-primary/50 transition-colors","children":[["$","span",null,{"className":"text-xs text-muted-foreground","children":"← Previous"}],["$","p",null,{"className":"text-sm font-medium mt-1 group-hover:text-primary transition-colors line-clamp-1","children":"一张图看懂：Hekaton — 唯一量产的无锁 OLTP 引擎，踩了哪些坑"}]]}],["$","$L3",null,{"href":"/posts/mysql-bwtree-learning-card","className":"group block p-4 border border-border rounded-lg hover:border-primary/50 transition-colors text-right","children":[["$","span",null,{"className":"text-xs text-muted-foreground","children":"Next →"}],["$","p",null,{"className":"text-sm font-medium mt-1 group-hover:text-primary transition-colors line-clamp-1","children":"一张图看懂：BwTree — 为什么 AHI 是 MySQL 的无锁 B-tree 起点"}]]}]]}],["$","div",null,{"children":[["$","h3",null,{"className":"text-sm font-semibold mb-3","children":"Related Posts"}],["$","div",null,{"className":"grid gap-3 sm:grid-cols-2 lg:grid-cols-3","children":[["$","$L3","mysql-hekaton",{"href":"/posts/mysql-hekaton","className":"block p-3 border border-border rounded-lg hover:border-primary/50 transition-colors","children":[["$","p",null,{"className":"text-sm font-medium line-clamp-2","children":"Hekaton：SQL Server 的内存优化 OLTP 引擎（2013）"}],["$","p",null,{"className":"text-xs text-muted-foreground mt-1","children":"Sat May 16 2026 00:00:00 GMT+0000 (Coordinated Universal Time)"}]]}],["$","$L3","mysql-shore-mt",{"href":"/posts/mysql-shore-mt","className":"block p-3 border border-border rounded-lg hover:border-primary/50 transition-colors","children":[["$","p",null,{"className":"text-sm font-medium line-clamp-2","children":"Shore-MT：多核时代的可扩展存储管理器（2009）"}],["$","p",null,{"className":"text-xs text-muted-foreground mt-1","children":"Sat May 16 2026 00:00:00 GMT+0000 (Coordinated Universal Time)"}]]}],["$","$L3","mysql-silo",{"href":"/posts/mysql-silo","className":"block p-3 border border-border rounded-lg hover:border-primary/50 transition-colors","children":[["$","p",null,{"className":"text-sm font-medium line-clamp-2","children":"Silo：多核内存数据库的高速事务处理（2013）"}],["$","p",null,{"className":"text-xs text-muted-foreground mt-1","children":"Sat May 16 2026 00:00:00 GMT+0000 (Coordinated Universal Time)"}]]}]]}]]}],["$","div",null,{"className":"text-sm","children":["$","a",null,{"href":"https://github.com/Aqiu16717/mysql-notes/blob/main/content/2026-05-16-mysql-bwtree.md","className":"text-muted-foreground hover:text-foreground transition-colors underline underline-offset-4","target":"_blank","rel":"noopener noreferrer","children":"Edit this page on GitHub"}]}]]}]
+1f:["$","$L23",null,{"entries":[{"id":"面向新硬件平台的-b-树","text":"面向新硬件平台的 B 树","level":2},{"id":"1-背景","text":"1. 背景","level":2},{"id":"2-问题","text":"2. 问题","level":2},{"id":"3-方案","text":"3. 方案","level":2},{"id":"31-映射表间接层","text":"3.1 映射表间接层","level":3},{"id":"32-增量更新无原地写入","text":"3.2 增量更新（无原地写入）","level":3},{"id":"33-基于-cas-的结构修改smo","text":"3.3 基于 CAS 的结构修改（SMO）","level":3},{"id":"垃圾回收","text":"垃圾回收","level":3},{"id":"4-权衡","text":"4. 权衡","level":2},{"id":"5-论文摘要中未提及的失败模式","text":"5. 论文摘要中未提及的失败模式","level":2},{"id":"6-mysql-代码邻近度","text":"6. MySQL 代码邻近度","level":2},{"id":"若将-bwtree-的无闩锁设计移植到-innodb-的-b树","text":"若将 BwTree 的无闩锁设计移植到 InnoDB 的 B+树：","level":3},{"id":"mysql-特有障碍","text":"MySQL 特有障碍：","level":3},{"id":"7-产品映射","text":"7. 产品映射","level":2},{"id":"8-性能论断附实验条件","text":"8. 性能论断（附实验条件）","level":2},{"id":"9-mysql-生态启示","text":"9. MySQL 生态启示","level":2},{"id":"参见","text":"参见","level":2}]}]

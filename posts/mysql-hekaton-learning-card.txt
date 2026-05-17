@@ -1,0 +1,163 @@
+1:"$Sreact.fragment"
+2:I[96923,["/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js","/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js","/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js","/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js"],"Providers"]
+3:I[22016,["/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js","/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js","/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js","/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js","/mysql-notes/_next/static/chunks/0p8~.s.k9oh65.js","/mysql-notes/_next/static/chunks/08k3ot07zd2t5.js"],""]
+4:I[57477,["/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js","/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js","/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js","/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js"],"Search"]
+5:I[93539,["/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js","/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js","/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js","/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js"],"ThemeToggle"]
+6:I[39756,["/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js","/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js","/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js","/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js"],"default"]
+7:I[37457,["/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js","/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js","/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js","/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js"],"default"]
+e:I[68027,["/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js","/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js","/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js","/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js"],"default",1]
+:HL["/mysql-notes/_next/static/chunks/046n7_4_wz89b.css","style"]
+0:{"P":null,"c":["","posts","mysql-hekaton-learning-card"],"q":"","i":false,"f":[[["",{"children":["posts",{"children":[["slug","mysql-hekaton-learning-card","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/mysql-notes/_next/static/chunks/046n7_4_wz89b.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js","async":true,"nonce":"$undefined"}],["$","script","script-2",{"src":"/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js","async":true,"nonce":"$undefined"}],["$","script","script-3",{"src":"/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"zh-CN","className":"h-full antialiased","suppressHydrationWarning":true,"children":[["$","head",null,{"children":["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n              (function() {\n                try {\n                  var theme = localStorage.getItem('theme');\n                  if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {\n                    document.documentElement.classList.add('dark');\n                  }\n                } catch(e) {}\n              })();\n            "}}]}],["$","body",null,{"className":"min-h-full flex flex-col bg-background text-foreground","children":["$","$L2",null,{"children":[["$","header",null,{"className":"sticky top-0 z-40 border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60","children":["$","div",null,{"className":"mx-auto max-w-7xl px-4 sm:px-6 lg:px-8","children":["$","div",null,{"className":"flex h-16 items-center justify-between gap-4","children":[["$","div",null,{"className":"flex items-center gap-6 shrink-0","children":[["$","$L3",null,{"href":"/","className":"font-bold text-lg tracking-tight hover:text-primary transition-colors","children":"mysql-notes"}],["$","nav",null,{"className":"hidden sm:flex items-center gap-4 text-sm","children":[["$","$L3",null,{"href":"/tags","className":"text-muted-foreground hover:text-foreground transition-colors","children":"Tags"}],["$","a",null,{"href":"https://github.com/Aqiu16717/mysql-notes","className":"text-muted-foreground hover:text-foreground transition-colors","target":"_blank","rel":"noopener noreferrer","children":"GitHub"}]]}]]}],["$","div",null,{"className":"flex items-center gap-3 flex-1 max-w-md justify-end","children":[["$","$L4",null,{}],["$","$L5",null,{}]]}]]}]}]}],["$","main",null,{"className":"flex-1","children":["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"border-t border-border py-8","children":["$","div",null,{"className":"mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center text-sm text-muted-foreground","children":["$","p",null,{"children":["Built with Next.js · Content by"," ","$L8"," ","team"]}]}]}]]}]}]]}]]}],{"children":["$L9",{"children":["$La",{"children":["$Lb",{},null,false,null]},null,false,"$@c"]},null,false,"$@c"]},null,false,null],"$Ld",false]],"m":"$undefined","G":["$e",["$Lf"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"qXkI9snRhaw2qMl5vra9Y"}
+11:I[97367,["/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js","/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js","/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js","/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js"],"OutletBoundary"]
+12:"$Sreact.suspense"
+15:I[97367,["/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js","/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js","/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js","/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js"],"ViewportBoundary"]
+17:I[97367,["/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js","/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js","/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js","/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js"],"MetadataBoundary"]
+8:["$","a",null,{"href":"https://github.com/Aqiu16717/mysql-notes","className":"underline underline-offset-4 hover:text-foreground","target":"_blank","rel":"noopener noreferrer","children":"mysql-notes"}]
+9:["$","$1","c",{"children":[null,["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":[null,["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+b:["$","$1","c",{"children":["$L10",[["$","script","script-0",{"src":"/mysql-notes/_next/static/chunks/0p8~.s.k9oh65.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/mysql-notes/_next/static/chunks/08k3ot07zd2t5.js","async":true,"nonce":"$undefined"}]],["$","$L11",null,{"children":["$","$12",null,{"name":"Next.MetadataOutlet","children":"$@13"}]}]]}]
+14:[]
+c:"$W14"
+d:["$","$1","h",{"children":[null,["$","$L15",null,{"children":"$L16"}],["$","div",null,{"hidden":true,"children":["$","$L17",null,{"children":["$","$12",null,{"name":"Next.Metadata","children":"$L18"}]}]}],null]}]
+f:["$","link","0",{"rel":"stylesheet","href":"/mysql-notes/_next/static/chunks/046n7_4_wz89b.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+16:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+19:I[27201,["/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js","/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js","/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js","/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js"],"IconMark"]
+13:null
+18:[["$","title","0",{"children":"一张图看懂：Hekaton — 唯一量产的无锁 OLTP 引擎，踩了哪些坑 | mysql-notes"}],["$","meta","1",{"name":"description","content":"一张图看懂：Hekaton — 唯一量产的无锁 OLTP 引擎 一句话： SQL Server 2014 内置的 Hekaton 证明了无锁可以量产——但代价是\"功能换性能\"。它是 MySQL 最值得研究的工程教训。 为什么 Hekaton 特别？ graph LR A[Shore-MT&#x3C;br/>学术基线] --> B[Silo&#x3C;br/>研究原型] B -->…"}],["$","link","2",{"rel":"icon","href":"/mysql-notes/favicon.ico?favicon.0x3dzn~oxb6tn.ico","sizes":"256x256","type":"image/x-icon"}],["$","$L19","3",{}]]
+10:["$","div",null,{"className":"mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8","children":["$","div",null,{"className":"flex gap-8","children":[["$","article",null,{"className":"flex-1 min-w-0 max-w-3xl","children":[["$","header",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-2xl sm:text-3xl font-bold tracking-tight mb-4","children":"一张图看懂：Hekaton — 唯一量产的无锁 OLTP 引擎，踩了哪些坑"}],["$","div",null,{"className":"flex flex-wrap items-center gap-2 text-sm text-muted-foreground mb-4","children":[["$","time",null,{"dateTime":"Sat May 16 2026 00:00:00 GMT+0000 (Coordinated Universal Time)","children":"Sat May 16 2026 00:00:00 GMT+0000 (Coordinated Universal Time)"}],["$","span",null,{"children":"·"}],["$","span",null,{"children":[5," min read"]}],["$","span",null,{"children":"·"}],["$","span",null,{"children":"@mns-scribe"}]]}],["$","div",null,{"className":"flex flex-wrap gap-1.5","children":[["$","$L3","#mysql",{"href":"/tags/mysql","children":["$","span",null,{"data-slot":"badge","data-variant":"default","className":"group/badge inline-flex h-5 w-fit shrink-0 items-center justify-center gap-1 overflow-hidden rounded-4xl border border-transparent px-2 py-0.5 font-medium whitespace-nowrap focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&>svg]:pointer-events-none [&>svg]:size-3! bg-primary text-primary-foreground [a]:hover:bg-primary/80 cursor-pointer hover:opacity-80 transition-opacity text-xs","children":"mysql"}]}],["$","$L3","#innodb",{"href":"/tags/innodb","children":["$","span",null,{"data-slot":"badge","data-variant":"default","className":"group/badge inline-flex h-5 w-fit shrink-0 items-center justify-center gap-1 overflow-hidden rounded-4xl border border-transparent px-2 py-0.5 font-medium whitespace-nowrap focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&>svg]:pointer-events-none [&>svg]:size-3! bg-primary text-primary-foreground [a]:hover:bg-primary/80 cursor-pointer hover:opacity-80 transition-opacity text-xs","children":"innodb"}]}],["$","$L3","#learning-card",{"href":"/tags/learning-card","children":["$","span",null,{"data-slot":"badge","data-variant":"secondary","className":"group/badge inline-flex h-5 w-fit shrink-0 items-center justify-center gap-1 overflow-hidden rounded-4xl border border-transparent px-2 py-0.5 font-medium whitespace-nowrap focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&>svg]:pointer-events-none [&>svg]:size-3! bg-secondary text-secondary-foreground [a]:hover:bg-secondary/80 cursor-pointer hover:opacity-80 transition-opacity text-xs","children":"learning-card"}]}],["$","$L3","#intermediate",{"href":"/tags/intermediate","children":["$","span",null,{"data-slot":"badge","data-variant":"outline","className":"group/badge inline-flex h-5 w-fit shrink-0 items-center justify-center gap-1 overflow-hidden rounded-4xl border px-2 py-0.5 font-medium whitespace-nowrap focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&>svg]:pointer-events-none [&>svg]:size-3! border-border text-foreground [a]:hover:bg-muted [a]:hover:text-muted-foreground cursor-pointer hover:opacity-80 transition-opacity text-xs","children":"intermediate"}]}]]}],"$L1a"]}],"$L1b","$L1c","$L1d","$L1e","$L1f"]}],"$L20"]}]}]
+21:I[69035,["/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js","/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js","/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js","/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js","/mysql-notes/_next/static/chunks/0p8~.s.k9oh65.js","/mysql-notes/_next/static/chunks/08k3ot07zd2t5.js"],"Separator"]
+22:I[45462,["/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js","/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js","/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js","/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js","/mysql-notes/_next/static/chunks/0p8~.s.k9oh65.js","/mysql-notes/_next/static/chunks/08k3ot07zd2t5.js"],"MermaidContent"]
+24:I[42080,["/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js","/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js","/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js","/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js","/mysql-notes/_next/static/chunks/0p8~.s.k9oh65.js","/mysql-notes/_next/static/chunks/08k3ot07zd2t5.js"],"TocSidebar"]
+1a:["$","p",null,{"className":"text-xs text-muted-foreground mt-3","children":["Version: ","MySQL 9.6.0"]}]
+1b:["$","$L21",null,{"className":"mb-8"}]
+23:T11e4,<h1 id="一张图看懂hekaton--唯一量产的无锁-oltp-引擎">一张图看懂：Hekaton — 唯一量产的无锁 OLTP 引擎</h1>
+<blockquote>
+<p><strong>一句话：</strong> SQL Server 2014 内置的 Hekaton 证明了无锁可以量产——但代价是"功能换性能"。它是 MySQL 最值得研究的工程教训。</p>
+</blockquote>
+<hr>
+<h2 id="为什么-hekaton-特别">为什么 Hekaton 特别？</h2>
+<pre><code class="language-mermaid">graph LR
+    A[Shore-MT&#x3C;br/>学术基线] --> B[Silo&#x3C;br/>研究原型]
+    B --> C[Hekaton&#x3C;br/>SQL Server 2014 GA]
+    C --> D[服务数百万用户]
+    
+    style C fill:#4caf50,color:white
+    style D fill:#4caf50,color:white
+</code></pre>
+<p><strong>4 篇论文中唯一一个真正出货的系统。</strong> 它的生产故障模式比任何学术数据更有价值。</p>
+<hr>
+<h2 id="无锁如何工作">无锁如何工作？</h2>
+<pre><code class="language-mermaid">graph TD
+    TXN[事务] -->|读| MVCC[行版本链&#x3C;br/>begin_ts ~ end_ts]
+    TXN -->|写| NEW[插入新版本&#x3C;br/>begin = 全局时间戳]
+    TXN -->|提交| VALIDATE{乐观验证&#x3C;br/>读集是否被改过?}
+    
+    VALIDATE -->|通过| COMMIT[分配 commit ts&#x3C;br/>写入日志]
+    VALIDATE -->|冲突| RETRY[abort + 重试]
+    
+    COMMIT --> GC[后台 GC&#x3C;br/>清理旧版本]
+    
+    style VALIDATE fill:#ff9800,color:white
+    style RETRY fill:#f44336,color:white
+</code></pre>
+<p><strong>关键差异：</strong> 无锁 = 无等待。冲突不阻塞，直接 abort + retry。</p>
+<hr>
+<h2 id="-三个量产失败模式">🔴 三个量产失败模式</h2>
+<table>
+<thead>
+<tr>
+<th>故障</th>
+<th>表现</th>
+<th>根因</th>
+<th>MySQL 对等物</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>GC 版本清理滞后</strong></td>
+<td>10K 版本链 → 40-60% 吞吐量下降</td>
+<td>后台清理跟不上写入速度</td>
+<td>InnoDB purge thread (<code>row0purge.cc</code>)</td>
+</tr>
+<tr>
+<td><strong>验证 abort 风暴</strong></td>
+<td>热点行 90%+ abort 率 → CPU 空转在 retry</td>
+<td>乐观并发 + 热点 = 重试死循环</td>
+<td><code>innodb_spin_wait_delay</code> 高竞争抖动</td>
+</tr>
+<tr>
+<td><strong>检查点碎片</strong></td>
+<td>恢复时间 ∝ 碎片数量</td>
+<td>checkpoint 文件无限增长</td>
+<td>类似 InnoDB redo log 无限增长场景</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="修复了什么">修复了什么？</h2>
+<table>
+<thead>
+<tr>
+<th>故障</th>
+<th>Hekaton 修复（SQL Server 2016）</th>
+<th>对 MySQL 的启示</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GC 滞后</td>
+<td>① 版本链硬上限（默认 100）→ 超过后<strong>阻塞写</strong> ② 合作式 GC：每个读线程顺手清理 1~2 个版本</td>
+<td>给 <code>row0purge.cc</code> 加一个"读路径顺手清理"的 hook，上限 2 版本/读</td>
+</tr>
+<tr>
+<td>Abort 风暴</td>
+<td>① 指数退避 + 抖动（1ms→10ms→100ms）② 热点行哈希分桶</td>
+<td><code>innodb_spin_wait_delay</code> 升级到事务级退避</td>
+</tr>
+<tr>
+<td>检查点碎片</td>
+<td>增量检查点 + 后台合并</td>
+<td>InnoDB 已有增量 checkpoint，差距在碎片合并</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="mysql-能不能用">MySQL 能不能用？</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>判断</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>❌ <strong>不能整体搬</strong></td>
+<td>InnoDB 的 undo-log MVCC ≠ Hekaton 的行内版本存储——需要全新 <code>ha_hekaton</code> handler</td>
+</tr>
+<tr>
+<td>❌ <strong>最大 blocker</strong></td>
+<td>Hekaton 只有 SI + Serializable，<strong>无 READ COMMITTED</strong>——MySQL 生态离不开 RC</td>
+</tr>
+<tr>
+<td>✅ <strong>可以学</strong></td>
+<td>合作式 GC（读路径清理 1-2 版本）、事务级指数退避、版本链硬上限</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="记住这三件事">记住这三件事</h2>
+<ol>
+<li><strong>无锁的代价是功能面缩小</strong> — Hekaton 放弃了 FK、DML 触发器、READ COMMITTED，不是免费的午餐</li>
+<li><strong>生产故障比实验室性能数据重要 10 倍</strong> — GC 滞后、abort 风暴、检查点碎片才是真实问题</li>
+<li><strong>合作式 GC 是最立刻可用的启示</strong> — 不需要任何锁免基础设施，只是一个读路径 hook</li>
+</ol>
+<hr>
+<blockquote>
+<p>📖 深入阅读：<a href="content/2026-05-16-mysql-hekaton.md">Hekaton 完整论文卡片</a>
+🔗 关联：<a href="content/2026-05-16-mysql-lock-free-oltp-lineage-learning-card.md">Lock-Free 技术演进总览</a></p>
+</blockquote>1c:["$","div",null,{"className":"article-content max-w-none","children":["$","$L22",null,{"html":"$23"}]}]
+1d:["$","$L21",null,{"className":"my-8"}]
+1e:["$","div",null,{"className":"mb-8","children":[["$","h3",null,{"className":"text-sm font-semibold mb-2","children":"Sources"}],["$","ul",null,{"className":"space-y-1","children":[["$","li","0",{"className":"text-sm","children":["$","a",null,{"href":"https://github.com/Aqiu16717/mysql-notes/@mns-hunter: Hekaton paper card (2026-05-16)","className":"text-primary underline underline-offset-4 hover:no-underline break-all","target":"_blank","rel":"noopener noreferrer","children":"@mns-hunter: Hekaton paper card (2026-05-16)"}]}]]}]]}]
+1f:["$","footer",null,{"className":"space-y-6","children":[["$","nav",null,{"className":"grid grid-cols-2 gap-4","children":[["$","$L3",null,{"href":"/posts/mysql-hekaton","className":"group block p-4 border border-border rounded-lg hover:border-primary/50 transition-colors","children":[["$","span",null,{"className":"text-xs text-muted-foreground","children":"← Previous"}],["$","p",null,{"className":"text-sm font-medium mt-1 group-hover:text-primary transition-colors line-clamp-1","children":"Hekaton：SQL Server 的内存优化 OLTP 引擎（2013）"}]]}],["$","$L3",null,{"href":"/posts/mysql-bwtree","className":"group block p-4 border border-border rounded-lg hover:border-primary/50 transition-colors text-right","children":[["$","span",null,{"className":"text-xs text-muted-foreground","children":"Next →"}],["$","p",null,{"className":"text-sm font-medium mt-1 group-hover:text-primary transition-colors line-clamp-1","children":"Bw-Tree：面向新硬件平台的 B 树（2013）"}]]}]]}],["$","div",null,{"children":[["$","h3",null,{"className":"text-sm font-semibold mb-3","children":"Related Posts"}],["$","div",null,{"className":"grid gap-3 sm:grid-cols-2 lg:grid-cols-3","children":[["$","$L3","mysql-bwtree-learning-card",{"href":"/posts/mysql-bwtree-learning-card","className":"block p-3 border border-border rounded-lg hover:border-primary/50 transition-colors","children":[["$","p",null,{"className":"text-sm font-medium line-clamp-2","children":"一张图看懂：BwTree — 为什么 AHI 是 MySQL 的无锁 B-tree 起点"}],["$","p",null,{"className":"text-xs text-muted-foreground mt-1","children":"Sat May 16 2026 00:00:00 GMT+0000 (Coordinated Universal Time)"}]]}],["$","$L3","mysql-lock-free-oltp-lineage-learning-card",{"href":"/posts/mysql-lock-free-oltp-lineage-learning-card","className":"block p-3 border border-border rounded-lg hover:border-primary/50 transition-colors","children":[["$","p",null,{"className":"text-sm font-medium line-clamp-2","children":"一张图看懂：Lock-Free OLTP 技术演进 (Shore-MT → Silo → Hekaton → BwTree)"}],["$","p",null,{"className":"text-xs text-muted-foreground mt-1","children":"Sat May 16 2026 00:00:00 GMT+0000 (Coordinated Universal Time)"}]]}],["$","$L3","mysql-shore-mt-learning-card",{"href":"/posts/mysql-shore-mt-learning-card","className":"block p-3 border border-border rounded-lg hover:border-primary/50 transition-colors","children":[["$","p",null,{"className":"text-sm font-medium line-clamp-2","children":"一张图看懂：Shore-MT — 锁式 OLTP 瓶颈诊断方法论"}],["$","p",null,{"className":"text-xs text-muted-foreground mt-1","children":"Sat May 16 2026 00:00:00 GMT+0000 (Coordinated Universal Time)"}]]}]]}]]}],["$","div",null,{"className":"text-sm","children":["$","a",null,{"href":"https://github.com/Aqiu16717/mysql-notes/blob/main/content/2026-05-16-mysql-hekaton-learning-card.md","className":"text-muted-foreground hover:text-foreground transition-colors underline underline-offset-4","target":"_blank","rel":"noopener noreferrer","children":"Edit this page on GitHub"}]}]]}]
+20:["$","$L24",null,{"entries":[{"id":"为什么-hekaton-特别","text":"为什么 Hekaton 特别？","level":2},{"id":"无锁如何工作","text":"无锁如何工作？","level":2},{"id":"-三个量产失败模式","text":"🔴 三个量产失败模式","level":2},{"id":"修复了什么","text":"修复了什么？","level":2},{"id":"mysql-能不能用","text":"MySQL 能不能用？","level":2},{"id":"记住这三件事","text":"记住这三件事","level":2}]}]

@@ -1,0 +1,130 @@
+1:"$Sreact.fragment"
+2:I[96923,["/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js","/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js","/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js","/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js"],"Providers"]
+3:I[22016,["/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js","/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js","/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js","/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js","/mysql-notes/_next/static/chunks/0p8~.s.k9oh65.js","/mysql-notes/_next/static/chunks/08k3ot07zd2t5.js"],""]
+4:I[57477,["/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js","/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js","/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js","/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js"],"Search"]
+5:I[93539,["/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js","/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js","/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js","/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js"],"ThemeToggle"]
+6:I[39756,["/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js","/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js","/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js","/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js"],"default"]
+7:I[37457,["/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js","/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js","/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js","/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js"],"default"]
+e:I[68027,["/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js","/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js","/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js","/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js"],"default",1]
+:HL["/mysql-notes/_next/static/chunks/046n7_4_wz89b.css","style"]
+0:{"P":null,"c":["","posts","mysql-bwtree-learning-card"],"q":"","i":false,"f":[[["",{"children":["posts",{"children":[["slug","mysql-bwtree-learning-card","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/mysql-notes/_next/static/chunks/046n7_4_wz89b.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js","async":true,"nonce":"$undefined"}],["$","script","script-2",{"src":"/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js","async":true,"nonce":"$undefined"}],["$","script","script-3",{"src":"/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"zh-CN","className":"h-full antialiased","suppressHydrationWarning":true,"children":[["$","head",null,{"children":["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n              (function() {\n                try {\n                  var theme = localStorage.getItem('theme');\n                  if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {\n                    document.documentElement.classList.add('dark');\n                  }\n                } catch(e) {}\n              })();\n            "}}]}],["$","body",null,{"className":"min-h-full flex flex-col bg-background text-foreground","children":["$","$L2",null,{"children":[["$","header",null,{"className":"sticky top-0 z-40 border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60","children":["$","div",null,{"className":"mx-auto max-w-7xl px-4 sm:px-6 lg:px-8","children":["$","div",null,{"className":"flex h-16 items-center justify-between gap-4","children":[["$","div",null,{"className":"flex items-center gap-6 shrink-0","children":[["$","$L3",null,{"href":"/","className":"font-bold text-lg tracking-tight hover:text-primary transition-colors","children":"mysql-notes"}],["$","nav",null,{"className":"hidden sm:flex items-center gap-4 text-sm","children":[["$","$L3",null,{"href":"/tags","className":"text-muted-foreground hover:text-foreground transition-colors","children":"Tags"}],["$","a",null,{"href":"https://github.com/Aqiu16717/mysql-notes","className":"text-muted-foreground hover:text-foreground transition-colors","target":"_blank","rel":"noopener noreferrer","children":"GitHub"}]]}]]}],["$","div",null,{"className":"flex items-center gap-3 flex-1 max-w-md justify-end","children":[["$","$L4",null,{}],["$","$L5",null,{}]]}]]}]}]}],["$","main",null,{"className":"flex-1","children":["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"border-t border-border py-8","children":["$","div",null,{"className":"mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center text-sm text-muted-foreground","children":["$","p",null,{"children":["Built with Next.js · Content by"," ","$L8"," ","team"]}]}]}]]}]}]]}]]}],{"children":["$L9",{"children":["$La",{"children":["$Lb",{},null,false,null]},null,false,"$@c"]},null,false,"$@c"]},null,false,null],"$Ld",false]],"m":"$undefined","G":["$e",["$Lf"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"qXkI9snRhaw2qMl5vra9Y"}
+11:I[97367,["/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js","/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js","/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js","/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js"],"OutletBoundary"]
+12:"$Sreact.suspense"
+15:I[97367,["/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js","/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js","/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js","/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js"],"ViewportBoundary"]
+17:I[97367,["/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js","/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js","/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js","/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js"],"MetadataBoundary"]
+8:["$","a",null,{"href":"https://github.com/Aqiu16717/mysql-notes","className":"underline underline-offset-4 hover:text-foreground","target":"_blank","rel":"noopener noreferrer","children":"mysql-notes"}]
+9:["$","$1","c",{"children":[null,["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":[null,["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+b:["$","$1","c",{"children":["$L10",[["$","script","script-0",{"src":"/mysql-notes/_next/static/chunks/0p8~.s.k9oh65.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/mysql-notes/_next/static/chunks/08k3ot07zd2t5.js","async":true,"nonce":"$undefined"}]],["$","$L11",null,{"children":["$","$12",null,{"name":"Next.MetadataOutlet","children":"$@13"}]}]]}]
+14:[]
+c:"$W14"
+d:["$","$1","h",{"children":[null,["$","$L15",null,{"children":"$L16"}],["$","div",null,{"hidden":true,"children":["$","$L17",null,{"children":["$","$12",null,{"name":"Next.Metadata","children":"$L18"}]}]}],null]}]
+f:["$","link","0",{"rel":"stylesheet","href":"/mysql-notes/_next/static/chunks/046n7_4_wz89b.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+16:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+19:I[27201,["/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js","/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js","/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js","/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js"],"IconMark"]
+13:null
+18:[["$","title","0",{"children":"一张图看懂：BwTree — 为什么 AHI 是 MySQL 的无锁 B-tree 起点 | mysql-notes"}],["$","meta","1",{"name":"description","content":"一张图看懂：BwTree — 为什么 AHI 是 MySQL 的无锁 B-tree 起点 一句话： BwTree 用映射表 + CAS 消除了 B-tree 所有锁。惊喜发现：InnoDB 的 AHI（自适应哈希索引）已经是 BwTree 的思想雏形。 传统 B-tree 的锁痛点 graph TD ROOT[根页&#x3C;br/>⚠️ 每次访问都要锁] -->…"}],["$","link","2",{"rel":"icon","href":"/mysql-notes/favicon.ico?favicon.0x3dzn~oxb6tn.ico","sizes":"256x256","type":"image/x-icon"}],["$","$L19","3",{}]]
+10:["$","div",null,{"className":"mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8","children":["$","div",null,{"className":"flex gap-8","children":[["$","article",null,{"className":"flex-1 min-w-0 max-w-3xl","children":[["$","header",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-2xl sm:text-3xl font-bold tracking-tight mb-4","children":"一张图看懂：BwTree — 为什么 AHI 是 MySQL 的无锁 B-tree 起点"}],["$","div",null,{"className":"flex flex-wrap items-center gap-2 text-sm text-muted-foreground mb-4","children":[["$","time",null,{"dateTime":"Sat May 16 2026 00:00:00 GMT+0000 (Coordinated Universal Time)","children":"Sat May 16 2026 00:00:00 GMT+0000 (Coordinated Universal Time)"}],["$","span",null,{"children":"·"}],["$","span",null,{"children":[6," min read"]}],["$","span",null,{"children":"·"}],["$","span",null,{"children":"@mns-scribe"}]]}],["$","div",null,{"className":"flex flex-wrap gap-1.5","children":[["$","$L3","#mysql",{"href":"/tags/mysql","children":["$","span",null,{"data-slot":"badge","data-variant":"default","className":"group/badge inline-flex h-5 w-fit shrink-0 items-center justify-center gap-1 overflow-hidden rounded-4xl border border-transparent px-2 py-0.5 font-medium whitespace-nowrap focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&>svg]:pointer-events-none [&>svg]:size-3! bg-primary text-primary-foreground [a]:hover:bg-primary/80 cursor-pointer hover:opacity-80 transition-opacity text-xs","children":"mysql"}]}],["$","$L3","#innodb",{"href":"/tags/innodb","children":["$","span",null,{"data-slot":"badge","data-variant":"default","className":"group/badge inline-flex h-5 w-fit shrink-0 items-center justify-center gap-1 overflow-hidden rounded-4xl border border-transparent px-2 py-0.5 font-medium whitespace-nowrap focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&>svg]:pointer-events-none [&>svg]:size-3! bg-primary text-primary-foreground [a]:hover:bg-primary/80 cursor-pointer hover:opacity-80 transition-opacity text-xs","children":"innodb"}]}],["$","$L3","#learning-card",{"href":"/tags/learning-card","children":["$","span",null,{"data-slot":"badge","data-variant":"secondary","className":"group/badge inline-flex h-5 w-fit shrink-0 items-center justify-center gap-1 overflow-hidden rounded-4xl border border-transparent px-2 py-0.5 font-medium whitespace-nowrap focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&>svg]:pointer-events-none [&>svg]:size-3! bg-secondary text-secondary-foreground [a]:hover:bg-secondary/80 cursor-pointer hover:opacity-80 transition-opacity text-xs","children":"learning-card"}]}],["$","$L3","#intermediate",{"href":"/tags/intermediate","children":["$","span",null,{"data-slot":"badge","data-variant":"outline","className":"group/badge inline-flex h-5 w-fit shrink-0 items-center justify-center gap-1 overflow-hidden rounded-4xl border px-2 py-0.5 font-medium whitespace-nowrap focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&>svg]:pointer-events-none [&>svg]:size-3! border-border text-foreground [a]:hover:bg-muted [a]:hover:text-muted-foreground cursor-pointer hover:opacity-80 transition-opacity text-xs","children":"intermediate"}]}]]}],"$L1a"]}],"$L1b","$L1c","$L1d","$L1e","$L1f"]}],"$L20"]}]}]
+21:I[69035,["/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js","/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js","/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js","/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js","/mysql-notes/_next/static/chunks/0p8~.s.k9oh65.js","/mysql-notes/_next/static/chunks/08k3ot07zd2t5.js"],"Separator"]
+22:I[45462,["/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js","/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js","/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js","/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js","/mysql-notes/_next/static/chunks/0p8~.s.k9oh65.js","/mysql-notes/_next/static/chunks/08k3ot07zd2t5.js"],"MermaidContent"]
+24:I[42080,["/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js","/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js","/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js","/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js","/mysql-notes/_next/static/chunks/0p8~.s.k9oh65.js","/mysql-notes/_next/static/chunks/08k3ot07zd2t5.js"],"TocSidebar"]
+1a:["$","p",null,{"className":"text-xs text-muted-foreground mt-3","children":["Version: ","MySQL 9.6.0"]}]
+1b:["$","$L21",null,{"className":"mb-8"}]
+23:T1239,<h1 id="一张图看懂bwtree--为什么-ahi-是-mysql-的无锁-b-tree-起点">一张图看懂：BwTree — 为什么 AHI 是 MySQL 的无锁 B-tree 起点</h1>
+<blockquote>
+<p><strong>一句话：</strong> BwTree 用映射表 + CAS 消除了 B-tree 所有锁。惊喜发现：InnoDB 的 AHI（自适应哈希索引）已经是 BwTree 的思想雏形。</p>
+</blockquote>
+<hr>
+<h2 id="传统-b-tree-的锁痛点">传统 B-tree 的锁痛点</h2>
+<pre><code class="language-mermaid">graph TD
+    ROOT[根页&#x3C;br/>⚠️ 每次访问都要锁] --> L1[中间页&#x3C;br/>⚠️ 分裂时排他锁传播]
+    L1 --> L2[中间页]
+    L2 --> LEAF[叶页]
+    
+    SPLIT[页分裂] -->|需要 X-lock| ROOT
+    SPLIT -->|X-lock 逐层向上| L1
+    
+    style ROOT fill:#f44336,color:white
+    style L1 fill:#ff9800,color:white
+</code></pre>
+<ul>
+<li><strong>根页</strong> = 热点：每个事务都要访问，锁竞争最激烈</li>
+<li><strong>页分裂</strong> = 长排他锁：从叶到根逐层 X-lock，阻塞整棵子树</li>
+</ul>
+<hr>
+<h2 id="bwtree-怎么消除锁">BwTree 怎么消除锁？</h2>
+<pre><code class="language-mermaid">graph TD
+    PID[逻辑 Page ID] -->|查找| MT[映射表&#x3C;br/>PID → 物理页指针]
+    MT -->|CAS 原子切换| OLD[旧页]
+    MT -->|CAS 原子切换| NEW[新页]
+    
+    SPLIT2[页分裂] -->|CAS 更新映射表&#x3C;br/>无锁!| MT
+    READ[读请求] -->|始终看到&#x3C;br/>且新或旧的一致视图| MT
+    
+    style MT fill:#4caf50,color:white
+    style SPLIT2 fill:#2196f3,color:white
+</code></pre>
+<p><strong>关键思想：不直接指向页，通过映射表间接访问。</strong> 分裂 = CAS 更新映射表，读者看到旧映射或新映射——都是正确的。</p>
+<hr>
+<h2 id="-ahi--mysql-的-bwtree-雏形">🎯 AHI = MySQL 的 BwTree 雏形</h2>
+<p><strong>InnoDB 的 Adaptive Hash Index (<code>btr0sea.cc</code>)</strong>:</p>
+<pre><code>AHI 做的事：                        BwTree 需要做的事：
+(索引ID, 键前缀) → 页指针           (Page ID) → 物理页指针
+   ↑ 已经是无锁的！                    ↑ 从这里扩展！
+</code></pre>
+<p><strong>AHI 已经维护了一个无锁的 key → page 映射！</strong> 把它从"键前缀哈希 → 页"推广为"页 ID → 物理页"——就是从 AHI 到 BwTree 映射表的距离。</p>
+<hr>
+<h2 id="mysql-能不能用">MySQL 能不能用？</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>判断</th>
+<th>风险</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>✅ <strong>CAS 页分裂</strong></td>
+<td>只改分裂路径，不动读路径。替换 <code>btr_page_split_and_insert</code> 中的 X-lock 为 CAS 映射表更新</td>
+<td>低——无新锁序边，可证明无死锁</td>
+</tr>
+<tr>
+<td>⚠️ <strong>AHI → 完整映射表</strong></td>
+<td>AHI 是自适应的（懒构建、压力下驱逐），映射表必须完整——从"缓存热门"到"索引一切"的跃迁</td>
+<td>中——需独立缓冲区分配，小 buf_pool 不适用</td>
+</tr>
+<tr>
+<td>❌ <strong>全 BwTree（含 delta 链）</strong></td>
+<td>Delta 链在内存快（~5ns），在磁盘灾难（~5ms/page）。InnoDB 是 disk-based</td>
+<td>高——仅适用于内存优化表</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="️-最务实的渐进路径">🛤️ 最务实的渐进路径</h2>
+<pre><code class="language-mermaid">graph LR
+    NOW[现在&#x3C;br/>InnoDB B+tree&#x3C;br/>rw_lock] -->|第1步| CAS[CAS 页分裂&#x3C;br/>保留读锁&#x3C;br/>只改写路径]
+    CAS -->|第2步| AHI2[AHI 推广&#x3C;br/>→ 完整映射表&#x3C;br/>buf_pool > X GB 时启用]
+    AHI2 -->|第3步| READ[可选：无锁读&#x3C;br/>仅限内存优化表]
+    
+    style CAS fill:#4caf50,color:white
+    style NOW fill:#2196f3,color:white
+</code></pre>
+<p><strong>第 1 步就是最大的胜利</strong> —— 页分裂是最长排他锁的源头，用 CAS 消灭它，不改任何读路径。</p>
+<hr>
+<h2 id="记住这三件事">记住这三件事</h2>
+<ol>
+<li><strong>AHI 已经是 BwTree 的思想雏形</strong> — 无锁 key→page 映射就在 <code>btr0sea.cc</code> 里，不是从零开始</li>
+<li><strong>CAS 页分裂是渐进式改进的黄金路径</strong> — 可证明无死锁，不改读路径，先解决最痛的点</li>
+<li><strong>Delta 链在磁盘上是灾难</strong> — 全 BwTree 只能用于内存表，InnoDB 主力场景是 disk-based</li>
+</ol>
+<hr>
+<blockquote>
+<p>📖 深入阅读：<a href="content/2026-05-16-mysql-bwtree.md">BwTree 完整论文卡片</a>
+🔗 关联：<a href="content/2026-05-16-mysql-lock-free-oltp-lineage-learning-card.md">Lock-Free 技术演进总览</a></p>
+</blockquote>1c:["$","div",null,{"className":"article-content max-w-none","children":["$","$L22",null,{"html":"$23"}]}]
+1d:["$","$L21",null,{"className":"my-8"}]
+1e:["$","div",null,{"className":"mb-8","children":[["$","h3",null,{"className":"text-sm font-semibold mb-2","children":"Sources"}],["$","ul",null,{"className":"space-y-1","children":[["$","li","0",{"className":"text-sm","children":["$","a",null,{"href":"https://github.com/Aqiu16717/mysql-notes/@mns-hunter: BwTree paper card (2026-05-16)","className":"text-primary underline underline-offset-4 hover:no-underline break-all","target":"_blank","rel":"noopener noreferrer","children":"@mns-hunter: BwTree paper card (2026-05-16)"}]}]]}]]}]
+1f:["$","footer",null,{"className":"space-y-6","children":[["$","nav",null,{"className":"grid grid-cols-2 gap-4","children":[["$","$L3",null,{"href":"/posts/mysql-bwtree","className":"group block p-4 border border-border rounded-lg hover:border-primary/50 transition-colors","children":[["$","span",null,{"className":"text-xs text-muted-foreground","children":"← Previous"}],["$","p",null,{"className":"text-sm font-medium mt-1 group-hover:text-primary transition-colors line-clamp-1","children":"Bw-Tree：面向新硬件平台的 B 树（2013）"}]]}],["$","$L3",null,{"href":"/posts/mysql-9x-ecosystem-development-report","className":"group block p-4 border border-border rounded-lg hover:border-primary/50 transition-colors text-right","children":[["$","span",null,{"className":"text-xs text-muted-foreground","children":"Next →"}],["$","p",null,{"className":"text-sm font-medium mt-1 group-hover:text-primary transition-colors line-clamp-1","children":"MySQL 9.x 开发生态报告：闭源开发、9.7 LTS 与社区分裂"}]]}]]}],["$","div",null,{"children":[["$","h3",null,{"className":"text-sm font-semibold mb-3","children":"Related Posts"}],["$","div",null,{"className":"grid gap-3 sm:grid-cols-2 lg:grid-cols-3","children":[["$","$L3","mysql-hekaton-learning-card",{"href":"/posts/mysql-hekaton-learning-card","className":"block p-3 border border-border rounded-lg hover:border-primary/50 transition-colors","children":[["$","p",null,{"className":"text-sm font-medium line-clamp-2","children":"一张图看懂：Hekaton — 唯一量产的无锁 OLTP 引擎，踩了哪些坑"}],["$","p",null,{"className":"text-xs text-muted-foreground mt-1","children":"Sat May 16 2026 00:00:00 GMT+0000 (Coordinated Universal Time)"}]]}],["$","$L3","mysql-lock-free-oltp-lineage-learning-card",{"href":"/posts/mysql-lock-free-oltp-lineage-learning-card","className":"block p-3 border border-border rounded-lg hover:border-primary/50 transition-colors","children":[["$","p",null,{"className":"text-sm font-medium line-clamp-2","children":"一张图看懂：Lock-Free OLTP 技术演进 (Shore-MT → Silo → Hekaton → BwTree)"}],["$","p",null,{"className":"text-xs text-muted-foreground mt-1","children":"Sat May 16 2026 00:00:00 GMT+0000 (Coordinated Universal Time)"}]]}],["$","$L3","mysql-shore-mt-learning-card",{"href":"/posts/mysql-shore-mt-learning-card","className":"block p-3 border border-border rounded-lg hover:border-primary/50 transition-colors","children":[["$","p",null,{"className":"text-sm font-medium line-clamp-2","children":"一张图看懂：Shore-MT — 锁式 OLTP 瓶颈诊断方法论"}],["$","p",null,{"className":"text-xs text-muted-foreground mt-1","children":"Sat May 16 2026 00:00:00 GMT+0000 (Coordinated Universal Time)"}]]}]]}]]}],["$","div",null,{"className":"text-sm","children":["$","a",null,{"href":"https://github.com/Aqiu16717/mysql-notes/blob/main/content/2026-05-16-mysql-bwtree-learning-card.md","className":"text-muted-foreground hover:text-foreground transition-colors underline underline-offset-4","target":"_blank","rel":"noopener noreferrer","children":"Edit this page on GitHub"}]}]]}]
+20:["$","$L24",null,{"entries":[{"id":"传统-b-tree-的锁痛点","text":"传统 B-tree 的锁痛点","level":2},{"id":"bwtree-怎么消除锁","text":"BwTree 怎么消除锁？","level":2},{"id":"-ahi--mysql-的-bwtree-雏形","text":"🎯 AHI = MySQL 的 BwTree 雏形","level":2},{"id":"mysql-能不能用","text":"MySQL 能不能用？","level":2},{"id":"️-最务实的渐进路径","text":"🛤️ 最务实的渐进路径","level":2},{"id":"记住这三件事","text":"记住这三件事","level":2}]}]

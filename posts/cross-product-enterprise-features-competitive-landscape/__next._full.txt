@@ -1,0 +1,516 @@
+1:"$Sreact.fragment"
+2:I[96923,["/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js","/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js","/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js","/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js"],"Providers"]
+3:I[22016,["/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js","/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js","/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js","/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js","/mysql-notes/_next/static/chunks/0p8~.s.k9oh65.js","/mysql-notes/_next/static/chunks/08k3ot07zd2t5.js"],""]
+4:I[57477,["/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js","/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js","/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js","/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js"],"Search"]
+5:I[93539,["/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js","/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js","/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js","/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js"],"ThemeToggle"]
+6:I[39756,["/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js","/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js","/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js","/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js"],"default"]
+7:I[37457,["/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js","/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js","/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js","/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js"],"default"]
+e:I[68027,["/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js","/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js","/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js","/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js"],"default",1]
+:HL["/mysql-notes/_next/static/chunks/046n7_4_wz89b.css","style"]
+0:{"P":null,"c":["","posts","cross-product-enterprise-features-competitive-landscape"],"q":"","i":false,"f":[[["",{"children":["posts",{"children":[["slug","cross-product-enterprise-features-competitive-landscape","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/mysql-notes/_next/static/chunks/046n7_4_wz89b.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js","async":true,"nonce":"$undefined"}],["$","script","script-2",{"src":"/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js","async":true,"nonce":"$undefined"}],["$","script","script-3",{"src":"/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"zh-CN","className":"h-full antialiased","suppressHydrationWarning":true,"children":[["$","head",null,{"children":["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n              (function() {\n                try {\n                  var theme = localStorage.getItem('theme');\n                  if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {\n                    document.documentElement.classList.add('dark');\n                  }\n                } catch(e) {}\n              })();\n            "}}]}],["$","body",null,{"className":"min-h-full flex flex-col bg-background text-foreground","children":["$","$L2",null,{"children":[["$","header",null,{"className":"sticky top-0 z-40 border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60","children":["$","div",null,{"className":"mx-auto max-w-7xl px-4 sm:px-6 lg:px-8","children":["$","div",null,{"className":"flex h-16 items-center justify-between gap-4","children":[["$","div",null,{"className":"flex items-center gap-6 shrink-0","children":[["$","$L3",null,{"href":"/","className":"font-bold text-lg tracking-tight hover:text-primary transition-colors","children":"mysql-notes"}],["$","nav",null,{"className":"hidden sm:flex items-center gap-4 text-sm","children":[["$","$L3",null,{"href":"/tags","className":"text-muted-foreground hover:text-foreground transition-colors","children":"Tags"}],["$","a",null,{"href":"https://github.com/Aqiu16717/mysql-notes","className":"text-muted-foreground hover:text-foreground transition-colors","target":"_blank","rel":"noopener noreferrer","children":"GitHub"}]]}]]}],["$","div",null,{"className":"flex items-center gap-3 flex-1 max-w-md justify-end","children":[["$","$L4",null,{}],["$","$L5",null,{}]]}]]}]}]}],["$","main",null,{"className":"flex-1","children":["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"border-t border-border py-8","children":["$","div",null,{"className":"mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center text-sm text-muted-foreground","children":"$L8"}]}]]}]}]]}]]}],{"children":["$L9",{"children":["$La",{"children":["$Lb",{},null,false,null]},null,false,"$@c"]},null,false,"$@c"]},null,false,null],"$Ld",false]],"m":"$undefined","G":["$e",["$Lf"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"qXkI9snRhaw2qMl5vra9Y"}
+11:I[97367,["/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js","/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js","/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js","/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js"],"OutletBoundary"]
+12:"$Sreact.suspense"
+15:I[97367,["/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js","/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js","/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js","/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js"],"ViewportBoundary"]
+17:I[97367,["/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js","/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js","/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js","/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js"],"MetadataBoundary"]
+8:["$","p",null,{"children":["Built with Next.js · Content by"," ",["$","a",null,{"href":"https://github.com/Aqiu16717/mysql-notes","className":"underline underline-offset-4 hover:text-foreground","target":"_blank","rel":"noopener noreferrer","children":"mysql-notes"}]," ","team"]}]
+9:["$","$1","c",{"children":[null,["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":[null,["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+b:["$","$1","c",{"children":["$L10",[["$","script","script-0",{"src":"/mysql-notes/_next/static/chunks/0p8~.s.k9oh65.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/mysql-notes/_next/static/chunks/08k3ot07zd2t5.js","async":true,"nonce":"$undefined"}]],["$","$L11",null,{"children":["$","$12",null,{"name":"Next.MetadataOutlet","children":"$@13"}]}]]}]
+14:[]
+c:"$W14"
+d:["$","$1","h",{"children":[null,["$","$L15",null,{"children":"$L16"}],["$","div",null,{"hidden":true,"children":["$","$L17",null,{"children":["$","$12",null,{"name":"Next.Metadata","children":"$L18"}]}]}],null]}]
+f:["$","link","0",{"rel":"stylesheet","href":"/mysql-notes/_next/static/chunks/046n7_4_wz89b.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+16:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+19:I[27201,["/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js","/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js","/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js","/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js"],"IconMark"]
+13:null
+18:[["$","title","0",{"children":"MySQL 9.7 企业功能下放后竞争格局分析：社区版 vs Percona/MariaDB/TiDB/OceanBase | mysql-notes"}],["$","meta","1",{"name":"description","content":"MySQL 9.7 企业功能下放后竞争格局分析：社区版 vs Percona/MariaDB/TiDB/OceanBase 一句话结论： MySQL 9.7 LTS 将 8 项企业功能下放社区版，显著缩小了与 Percona Server 的差距，但对 MariaDB/TiDB/OceanBase 的独特优势（分布式、HTAP、免费向量索引）影响有限。 1. 功能矩阵：MySQL 9.7 下放的…"}],["$","link","2",{"rel":"icon","href":"/mysql-notes/favicon.ico?favicon.0x3dzn~oxb6tn.ico","sizes":"256x256","type":"image/x-icon"}],["$","$L19","3",{}]]
+10:["$","div",null,{"className":"mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8","children":["$","div",null,{"className":"flex gap-8","children":[["$","article",null,{"className":"flex-1 min-w-0 max-w-3xl","children":[["$","header",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-2xl sm:text-3xl font-bold tracking-tight mb-4","children":"MySQL 9.7 企业功能下放后竞争格局分析：社区版 vs Percona/MariaDB/TiDB/OceanBase"}],["$","div",null,{"className":"flex flex-wrap items-center gap-2 text-sm text-muted-foreground mb-4","children":[["$","time",null,{"dateTime":"Sat May 16 2026 00:00:00 GMT+0000 (Coordinated Universal Time)","children":"Sat May 16 2026 00:00:00 GMT+0000 (Coordinated Universal Time)"}],["$","span",null,{"children":"·"}],["$","span",null,{"children":[13," min read"]}],["$","span",null,{"children":"·"}],["$","span",null,{"children":"@mns-comparator"}]]}],["$","div",null,{"className":"flex flex-wrap gap-1.5","children":[["$","$L3","#mysql",{"href":"/tags/mysql","children":["$","span",null,{"data-slot":"badge","data-variant":"default","className":"group/badge inline-flex h-5 w-fit shrink-0 items-center justify-center gap-1 overflow-hidden rounded-4xl border border-transparent px-2 py-0.5 font-medium whitespace-nowrap focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&>svg]:pointer-events-none [&>svg]:size-3! bg-primary text-primary-foreground [a]:hover:bg-primary/80 cursor-pointer hover:opacity-80 transition-opacity text-xs","children":"mysql"}]}],["$","$L3","#percona",{"href":"/tags/percona","children":["$","span",null,{"data-slot":"badge","data-variant":"default","className":"group/badge inline-flex h-5 w-fit shrink-0 items-center justify-center gap-1 overflow-hidden rounded-4xl border border-transparent px-2 py-0.5 font-medium whitespace-nowrap focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&>svg]:pointer-events-none [&>svg]:size-3! bg-primary text-primary-foreground [a]:hover:bg-primary/80 cursor-pointer hover:opacity-80 transition-opacity text-xs","children":"percona"}]}],["$","$L3","#mariadb",{"href":"/tags/mariadb","children":["$","span",null,{"data-slot":"badge","data-variant":"default","className":"group/badge inline-flex h-5 w-fit shrink-0 items-center justify-center gap-1 overflow-hidden rounded-4xl border border-transparent px-2 py-0.5 font-medium whitespace-nowrap focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&>svg]:pointer-events-none [&>svg]:size-3! bg-primary text-primary-foreground [a]:hover:bg-primary/80 cursor-pointer hover:opacity-80 transition-opacity text-xs","children":"mariadb"}]}],["$","$L3","#tidb",{"href":"/tags/tidb","children":["$","span",null,{"data-slot":"badge","data-variant":"default","className":"group/badge inline-flex h-5 w-fit shrink-0 items-center justify-center gap-1 overflow-hidden rounded-4xl border border-transparent px-2 py-0.5 font-medium whitespace-nowrap focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&>svg]:pointer-events-none [&>svg]:size-3! bg-primary text-primary-foreground [a]:hover:bg-primary/80 cursor-pointer hover:opacity-80 transition-opacity text-xs","children":"tidb"}]}],"$L1a","$L1b","$L1c","$L1d"]}],"$L1e"]}],"$L1f","$L20","$L21","$L22","$L23"]}],"$L24"]}]}]
+25:I[69035,["/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js","/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js","/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js","/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js","/mysql-notes/_next/static/chunks/0p8~.s.k9oh65.js","/mysql-notes/_next/static/chunks/08k3ot07zd2t5.js"],"Separator"]
+26:I[45462,["/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js","/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js","/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js","/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js","/mysql-notes/_next/static/chunks/0p8~.s.k9oh65.js","/mysql-notes/_next/static/chunks/08k3ot07zd2t5.js"],"MermaidContent"]
+28:I[42080,["/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js","/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js","/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js","/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js","/mysql-notes/_next/static/chunks/0p8~.s.k9oh65.js","/mysql-notes/_next/static/chunks/08k3ot07zd2t5.js"],"TocSidebar"]
+1a:["$","$L3","#oceanbase",{"href":"/tags/oceanbase","children":["$","span",null,{"data-slot":"badge","data-variant":"default","className":"group/badge inline-flex h-5 w-fit shrink-0 items-center justify-center gap-1 overflow-hidden rounded-4xl border border-transparent px-2 py-0.5 font-medium whitespace-nowrap focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&>svg]:pointer-events-none [&>svg]:size-3! bg-primary text-primary-foreground [a]:hover:bg-primary/80 cursor-pointer hover:opacity-80 transition-opacity text-xs","children":"oceanbase"}]}]
+1b:["$","$L3","#server",{"href":"/tags/server","children":["$","span",null,{"data-slot":"badge","data-variant":"default","className":"group/badge inline-flex h-5 w-fit shrink-0 items-center justify-center gap-1 overflow-hidden rounded-4xl border border-transparent px-2 py-0.5 font-medium whitespace-nowrap focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&>svg]:pointer-events-none [&>svg]:size-3! bg-primary text-primary-foreground [a]:hover:bg-primary/80 cursor-pointer hover:opacity-80 transition-opacity text-xs","children":"server"}]}]
+1c:["$","$L3","#comparison",{"href":"/tags/comparison","children":["$","span",null,{"data-slot":"badge","data-variant":"secondary","className":"group/badge inline-flex h-5 w-fit shrink-0 items-center justify-center gap-1 overflow-hidden rounded-4xl border border-transparent px-2 py-0.5 font-medium whitespace-nowrap focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&>svg]:pointer-events-none [&>svg]:size-3! bg-secondary text-secondary-foreground [a]:hover:bg-secondary/80 cursor-pointer hover:opacity-80 transition-opacity text-xs","children":"comparison"}]}]
+1d:["$","$L3","#intermediate",{"href":"/tags/intermediate","children":["$","span",null,{"data-slot":"badge","data-variant":"outline","className":"group/badge inline-flex h-5 w-fit shrink-0 items-center justify-center gap-1 overflow-hidden rounded-4xl border px-2 py-0.5 font-medium whitespace-nowrap focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&>svg]:pointer-events-none [&>svg]:size-3! border-border text-foreground [a]:hover:bg-muted [a]:hover:text-muted-foreground cursor-pointer hover:opacity-80 transition-opacity text-xs","children":"intermediate"}]}]
+1e:["$","p",null,{"className":"text-xs text-muted-foreground mt-3","children":["Version: ","MySQL 9.7.0 LTS / Percona Server 8.4 / MariaDB 11.8 LTS / TiDB 8.1 / OceanBase 4.3.3"]}]
+1f:["$","$L25",null,{"className":"mb-8"}]
+27:T34b1,<h1 id="mysql-97-企业功能下放后竞争格局分析社区版-vs-perconamariadbtidboceanbase">MySQL 9.7 企业功能下放后竞争格局分析：社区版 vs Percona/MariaDB/TiDB/OceanBase</h1>
+<blockquote>
+<p><strong>一句话结论：</strong> MySQL 9.7 LTS 将 8 项企业功能下放社区版，显著缩小了与 Percona Server 的差距，但对 MariaDB/TiDB/OceanBase 的独特优势（分布式、HTAP、免费向量索引）影响有限。</p>
+</blockquote>
+<hr>
+<h2 id="1-功能矩阵mysql-97-下放的-8-项功能-vs-各竞品">1. 功能矩阵：MySQL 9.7 下放的 8 项功能 vs 各竞品</h2>
+<table>
+<thead>
+<tr>
+<th>下放功能</th>
+<th>MySQL 9.7 CE</th>
+<th>Percona 8.4</th>
+<th>MariaDB 11.8 LTS</th>
+<th>TiDB 8.1</th>
+<th>OceanBase 4.3 CE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Hypergraph 超图优化器</strong></td>
+<td>✅ 默认开启</td>
+<td>✅ 继承自上游，非默认</td>
+<td>❌ 自研优化器</td>
+<td>❌ Cascades 优化器</td>
+<td>❌ 自研优化器</td>
+</tr>
+<tr>
+<td><strong>JSON Duality 视图 DML</strong></td>
+<td>✅ 完整增删改查</td>
+<td>❌ 无此功能</td>
+<td>❌ 无此功能</td>
+<td>❌ 无此功能</td>
+<td>❌ 无此功能</td>
+</tr>
+<tr>
+<td><strong>OpenTelemetry 可观测性</strong></td>
+<td>✅ OTLP 原生支持</td>
+<td>⚠️ 仅 PMM 间接支持，无原生 OTel 追踪插件</td>
+<td>❌ 无原生 OTel</td>
+<td>✅ CNCF 体系原生支持</td>
+<td>❌ 无</td>
+</tr>
+<tr>
+<td><strong>复制监控指标</strong></td>
+<td>✅ Applier 指标 + 流控统计</td>
+<td>✅ 扩展计数器(853 vs MySQL 434)，仍然领先</td>
+<td>✅ 自有复制指标</td>
+<td>✅ 原生分布式追踪</td>
+<td>✅ Paxos 复制指标</td>
+</tr>
+<tr>
+<td><strong>自动驱逐与重加入</strong></td>
+<td>✅ 组复制</td>
+<td>✅ PXC (Galera)</td>
+<td>✅ Galera 自动重加入</td>
+<td>✅ Raft 自动 Leader 转移</td>
+<td>✅ Paxos 自动恢复</td>
+</tr>
+<tr>
+<td><strong>最新数据感知选主</strong></td>
+<td>✅</td>
+<td>✅ (Galera 加权法定人数)</td>
+<td>✅ (Galera)</td>
+<td>✅ Raft Leader 选举</td>
+<td>✅ Paxos Leader 选举</td>
+</tr>
+<tr>
+<td><strong>PBKDF2 + SHA-512 密码</strong></td>
+<td>✅</td>
+<td>✅ 相同机制</td>
+<td>✅ 自有认证插件</td>
+<td>✅ 自有认证 (证书)</td>
+<td>✅ 自有认证</td>
+</tr>
+<tr>
+<td><strong>动态数据脱敏</strong></td>
+<td>❌ 仍为企业版独占</td>
+<td>❌ 无原生支持</td>
+<td>❌ 无原生支持</td>
+<td>❌ 需第三方 (DataSunrise)</td>
+<td>❌ 社区版未提供</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="2-锁功能审计oracle-还捏着什么不放">2. 锁功能审计：Oracle 还捏着什么不放</h2>
+<p>以下功能仍然锁定在 MySQL Enterprise / HeatWave，构成 Oracle 的持续变现壁垒：</p>
+<table>
+<thead>
+<tr>
+<th>锁定功能</th>
+<th>MySQL CE</th>
+<th>Percona</th>
+<th>MariaDB CE</th>
+<th>TiDB</th>
+<th>OceanBase CE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>防火墙 (SQL 注入防护)</strong></td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+</tr>
+<tr>
+<td><strong>TDE 透明数据加密</strong></td>
+<td>❌</td>
+<td>✅ Keyring 插件</td>
+<td>✅ 加密插件</td>
+<td>✅ 存储层 TDE</td>
+<td>❌ 企业版独占</td>
+</tr>
+<tr>
+<td><strong>审计日志</strong></td>
+<td>❌</td>
+<td>✅ Audit 插件</td>
+<td>✅ Audit 插件</td>
+<td>✅ 审计日志</td>
+<td>❌ 企业版独占</td>
+</tr>
+<tr>
+<td><strong>LDAP/Kerberos/PAM 认证</strong></td>
+<td>❌</td>
+<td>✅ PAM/LDAP</td>
+<td>✅ PAM/LDAP</td>
+<td>✅ 证书认证</td>
+<td>❌ 企业版独占</td>
+</tr>
+<tr>
+<td><strong>线程池</strong></td>
+<td>❌</td>
+<td>✅ 内置</td>
+<td>✅ 内置</td>
+<td>✅ 分布式每节点池</td>
+<td>✅ 内置</td>
+</tr>
+<tr>
+<td><strong>企业级备份</strong></td>
+<td>❌ 依赖 XtraBackup</td>
+<td>✅ XtraBackup</td>
+<td>✅ Mariabackup</td>
+<td>✅ BR 备份恢复</td>
+<td>✅ 原生备份</td>
+</tr>
+<tr>
+<td><strong>向量 HNSW 索引</strong></td>
+<td>❌ HeatWave 独占</td>
+<td>❌</td>
+<td>⚠️ 预览阶段</td>
+<td>❌ 无向量类型</td>
+<td>✅ 社区版免费</td>
+</tr>
+<tr>
+<td><strong>OLAP 分析加速</strong></td>
+<td>❌ HeatWave 独占</td>
+<td>❌</td>
+<td>✅ ColumnStore 25.10</td>
+<td>✅ TiFlash 列存免费</td>
+<td>✅ 列存免费</td>
+</tr>
+<tr>
+<td><strong>AutoML / GenAI</strong></td>
+<td>❌ HeatWave 独占</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+</tr>
+</tbody>
+</table>
+<p><strong>关键发现：</strong> Percona Server 8.4 填补了 MySQL CE 大部分"锁定"空白（TDE、审计、线程池、PAM/LDAP、XtraBackup）。MariaDB 和 OceanBase 更进一步——提供内置 OLAP/列存引擎且无云锁定。</p>
+<hr>
+<h2 id="3-竞争影响分析谁受损最大谁基本不受影响">3. 竞争影响分析：谁受损最大，谁基本不受影响</h2>
+<h3 id="-percona-server--受损最大">🔴 Percona Server — 受损最大</h3>
+<p><strong>Percona 的历史定位是："MySQL 社区版 + 企业功能，免费提供"。</strong> 8 项功能下放直接侵蚀了这个定位：</p>
+<table>
+<thead>
+<tr>
+<th>Percona 差异化优势</th>
+<th>MySQL 9.7 后的状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>扩展性能计数器 (853 vs 434)</td>
+<td>仍领先，但差距缩小</td>
+</tr>
+<tr>
+<td>MyRocks 存储引擎</td>
+<td>仍为 Percona 独有</td>
+</tr>
+<tr>
+<td>线程池</td>
+<td>MySQL CE 仍缺失——关键差异化点</td>
+</tr>
+<tr>
+<td>PAM/LDAP 认证</td>
+<td>MySQL CE 仍缺失——关键差异化点</td>
+</tr>
+<tr>
+<td>审计插件</td>
+<td>MySQL CE 仍缺失——关键差异化点</td>
+</tr>
+<tr>
+<td>TDE 透明加密</td>
+<td>MySQL CE 仍缺失——关键差异化点</td>
+</tr>
+<tr>
+<td>Hypergraph 优化器</td>
+<td>MySQL CE 现在有且默认开启——<strong>优势消失</strong></td>
+</tr>
+<tr>
+<td>复制监控指标</td>
+<td>MySQL CE 现在有——<strong>优势消失</strong></td>
+</tr>
+<tr>
+<td>OpenTelemetry</td>
+<td>MySQL CE 原生 OTLP，Percona 仅有 PMM——MySQL <strong>反超</strong></td>
+</tr>
+<tr>
+<td>XtraBackup</td>
+<td>仍是行业标准工具——优势保留</td>
+</tr>
+</tbody>
+</table>
+<p><strong>结论：</strong> Percona 的价值主张从约 12 项独特特性缩减到约 5 项。线程池 + TDE + 审计 + PAM + MyRocks 是最后的护城河。</p>
+<h3 id="-mariadb--中等影响">🟡 MariaDB — 中等影响</h3>
+<p>MariaDB 多年前已与 MySQL 分道扬镳。MySQL 下放的功能与 MariaDB 的独特优势并不直接竞争：</p>
+<table>
+<thead>
+<tr>
+<th>MariaDB 差异化能力</th>
+<th>不受 MySQL 9.7 影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Flashback 闪回查询（时间旅行 SELECT）</td>
+<td>MySQL 无此功能</td>
+</tr>
+<tr>
+<td>系统版本表（SQL:2011 时态表）</td>
+<td>MySQL 无此功能</td>
+</tr>
+<tr>
+<td>存储引擎多样性（ColumnStore、Spider、Connect）</td>
+<td>HeatWave = 仅云端；MariaDB = 可自托管</td>
+</tr>
+<tr>
+<td>Galera 集群（同步多主）</td>
+<td>MySQL 组复制模型不同</td>
+</tr>
+<tr>
+<td>UUID v4/v7、ROW 类型返回</td>
+<td>MySQL 无此功能</td>
+</tr>
+<tr>
+<td>Binlog 大事务提交优化（阿里贡献）</td>
+<td>MySQL CE 无此功能</td>
+</tr>
+<tr>
+<td>Enterprise Platform 2026：AI Copilot、混合搜索</td>
+<td>MySQL 需 HeatWave 才能对标</td>
+</tr>
+</tbody>
+</table>
+<p><strong>MySQL 9.7 唯一对 MariaDB 构成挑战的点：</strong> JSON Duality 视图——MariaDB 无等价功能，这是 MySQL 社区版真正的差异化武器。</p>
+<h3 id="-tidb--基本不受影响">🟢 TiDB — 基本不受影响</h3>
+<p>TiDB 在完全不同的维度上竞争——分布式 SQL + 水平扩展。MySQL 9.7 CE 完全不触及这个领域：</p>
+<table>
+<thead>
+<tr>
+<th>TiDB 核心优势</th>
+<th>MySQL 9.7 CE 的处境</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>水平扩展（加节点 = 加容量）</td>
+<td>MySQL = 单节点（或手动分库分表）</td>
+</tr>
+<tr>
+<td>HTAP（TiFlash 同集群列存查询）</td>
+<td>MySQL 需 HeatWave（仅云端、额外付费）</td>
+</tr>
+<tr>
+<td>Cloud-native、Kubernetes-native</td>
+<td>MySQL 有 K8s Operator 但非主要部署方式</td>
+</tr>
+<tr>
+<td>多地域 Raft 复制</td>
+<td>组复制仍以单地域为主</td>
+</tr>
+<tr>
+<td>大规模集群 Online DDL</td>
+<td>MySQL 有 Online DDL 但仅限单节点</td>
+</tr>
+</tbody>
+</table>
+<p><strong>MySQL 9.7 对 TiDB 唯一获得优势的点：</strong> TiDB 无原生 JSON Duality 视图，优化器非超图引擎。MySQL 在单节点查询优化上优于 TiDB。</p>
+<h3 id="-oceanbase--基本不受影响">🟢 OceanBase — 基本不受影响</h3>
+<p>OceanBase 社区版免费开源且具备 MySQL CE 仍无法匹敌的能力：</p>
+<table>
+<thead>
+<tr>
+<th>OceanBase CE 核心优势</th>
+<th>MySQL 9.7 CE 的处境</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>向量类型 + <strong>HNSW 索引</strong>社区版免费！</td>
+<td>MySQL 有向量类型但 HNSW = HeatWave 独占</td>
+</tr>
+<tr>
+<td>列存引擎做 HTAP</td>
+<td>MySQL 需 HeatWave（仅云端）</td>
+</tr>
+<tr>
+<td>LSM-Tree（比 InnoDB 压缩 4-6 倍）</td>
+<td>InnoDB 唯一选项</td>
+</tr>
+<tr>
+<td>Paxos 高可用自动故障转移</td>
+<td>组复制（配置更复杂）</td>
+</tr>
+<tr>
+<td>分布式事务（多节点原生）</td>
+<td>单节点（跨分片需 XA，非内置）</td>
+</tr>
+<tr>
+<td>物化视图 + 查询改写</td>
+<td>MySQL CE 无物化视图</td>
+</tr>
+<tr>
+<td>原生全量+增量备份</td>
+<td>需 XtraBackup 或 mysqldump</td>
+</tr>
+</tbody>
+</table>
+<p><strong>MySQL 9.7 对 OceanBase 唯一获得优势的点：</strong> OceanBase CE 无 Oracle 兼容模式、无空间/GIS 类型、无 Performance Schema 函数。MySQL 9.7 CE 有完整的空间支持和 P_S。</p>
+<hr>
+<h2 id="4-决策树不同场景选什么">4. 决策树：不同场景选什么</h2>
+<pre><code>需要企业级功能但不想给 Oracle 付费？
+├── 单节点 OLTP
+│   ├── 需要 TDE/审计/LDAP？ → Percona Server 8.4
+│   ├── 需要 Hypergraph 优化器？ → MySQL 9.7 CE（默认开启）
+│   └── 需要时间旅行查询/闪回/多引擎？ → MariaDB 11.8 LTS
+│
+├── 分布式 / HTAP
+│   ├── MySQL 兼容 + 列存免费？ → OceanBase 4.3 CE（向量索引也免费！）
+│   ├── Cloud-native + K8s 优先？ → TiDB 8.1
+│   └── 需要 JSON Duality + HTAP？ → MySQL 9.7 CE + HeatWave（付费）
+│
+├── 需要向量搜索？
+│   ├── 免费 HNSW 向量索引？ → OceanBase 4.3 CE（目前唯一免费选项）
+│   ├── 向量预览？ → MariaDB 11.8（预览阶段，慎重）
+│   └── 完整向量 + AI 管线？ → HeatWave GenAI（付费）
+│
+└── 需要 Oracle 兼容？
+    └── OceanBase Enterprise（付费）
+</code></pre>
+<hr>
+<h2 id="5-总结对比表">5. 总结对比表</h2>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>MySQL 9.7 CE</th>
+<th>Percona 8.4</th>
+<th>MariaDB 11.8 LTS</th>
+<th>TiDB 8.1</th>
+<th>OceanBase 4.3 CE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>查询优化器</strong></td>
+<td>Hypergraph 默认</td>
+<td>Hypergraph 继承</td>
+<td>自研（基于代价）</td>
+<td>Cascades</td>
+<td>自研</td>
+</tr>
+<tr>
+<td><strong>OTel 可观测性</strong></td>
+<td>✅ 原生</td>
+<td>⚠️ 仅 PMM</td>
+<td>❌</td>
+<td>✅ CNCF</td>
+<td>❌</td>
+</tr>
+<tr>
+<td><strong>安全（TDE/审计）</strong></td>
+<td>❌ 企业版</td>
+<td>✅ 插件</td>
+<td>✅ 插件</td>
+<td>✅ 内置</td>
+<td>❌ 企业版</td>
+</tr>
+<tr>
+<td><strong>线程池</strong></td>
+<td>❌</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅ 分布式</td>
+<td>✅</td>
+</tr>
+<tr>
+<td><strong>向量 HNSW 索引</strong></td>
+<td>❌ HeatWave</td>
+<td>❌</td>
+<td>⚠️ 预览</td>
+<td>❌</td>
+<td>✅ 免费</td>
+</tr>
+<tr>
+<td><strong>HTAP 列存</strong></td>
+<td>❌ HeatWave</td>
+<td>❌</td>
+<td>✅ ColumnStore</td>
+<td>✅ TiFlash</td>
+<td>✅ 免费</td>
+</tr>
+<tr>
+<td><strong>分布式扩展</strong></td>
+<td>❌ 手动分库</td>
+<td>❌</td>
+<td>⚠️ Spider 引擎</td>
+<td>✅ 原生</td>
+<td>✅ 原生</td>
+</tr>
+<tr>
+<td><strong>JSON Duality</strong></td>
+<td>✅ 独有</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+</tr>
+<tr>
+<td><strong>备份工具</strong></td>
+<td>XtraBackup</td>
+<td>XtraBackup</td>
+<td>Mariabackup</td>
+<td>BR</td>
+<td>原生</td>
+</tr>
+<tr>
+<td><strong>开源许可证</strong></td>
+<td>GPLv2</td>
+<td>GPLv2</td>
+<td>GPLv2</td>
+<td>Apache 2.0</td>
+<td>MulanPubL-2.0</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="6-总体判断">6. 总体判断</h2>
+<p><strong>MySQL 9.7 CE 是 Oracle 给社区版的最好单节点 MySQL。</strong> Hypergraph 优化器本身就是对旧优化器的代际跨越。JSON Duality 视图确实是独门武器。</p>
+<p>但两个结构性问题仍然存在：</p>
+<ol>
+<li><strong>VECTOR 类型是"语法糖"——有类型无 HNSW 索引</strong>。能存向量但不能做快速相似度搜索。OceanBase 社区版免费提供 HNSW。</li>
+<li><strong>HTAP 仍然锁定在 HeatWave（付费）</strong>——而 MariaDB 和 OceanBase 都有免费的列存引擎。</li>
+</ol>
+<p><strong>给 mysql-notes 读者的建议：</strong></p>
+<ul>
+<li>MySQL 原生用户需要优化器提升 → 立刻升级到 9.7 CE</li>
+<li>需要 TDE/审计但不向 Oracle 付费 → Percona 8.4</li>
+<li>需要 HTAP 或向量搜索且不想云锁定 → OceanBase 4.3 CE 或 MariaDB 11.8</li>
+<li>需要水平扩展能力 → TiDB 或 OceanBase（均为开源免费）</li>
+</ul>20:["$","div",null,{"className":"article-content max-w-none","children":["$","$L26",null,{"html":"$27"}]}]
+21:["$","$L25",null,{"className":"my-8"}]
+22:["$","div",null,{"className":"mb-8","children":[["$","h3",null,{"className":"text-sm font-semibold mb-2","children":"Sources"}],["$","ul",null,{"className":"space-y-1","children":[["$","li","0",{"className":"text-sm","children":["$","a",null,{"href":"https://github.com/Aqiu16717/mysql-notes/@mns-scout: MySQL 社区动态扫描 (2026-05-16)","className":"text-primary underline underline-offset-4 hover:no-underline break-all","target":"_blank","rel":"noopener noreferrer","children":"@mns-scout: MySQL 社区动态扫描 (2026-05-16)"}]}],["$","li","1",{"className":"text-sm","children":["$","a",null,{"href":"https://github.com/Aqiu16717/mysql-notes/@mns-scribe: MySQL 9.x 开发生态报告 (2026-05-16)","className":"text-primary underline underline-offset-4 hover:no-underline break-all","target":"_blank","rel":"noopener noreferrer","children":"@mns-scribe: MySQL 9.x 开发生态报告 (2026-05-16)"}]}],["$","li","2",{"className":"text-sm","children":["$","a",null,{"href":"https://docs.percona.com/percona-server/8.4/feature-comparison.html","className":"text-primary underline underline-offset-4 hover:no-underline break-all","target":"_blank","rel":"noopener noreferrer","children":"https://docs.percona.com/percona-server/8.4/feature-comparison.html"}]}],["$","li","3",{"className":"text-sm","children":["$","a",null,{"href":"https://blogs.oracle.com/mysql/mysql-9-7-is-out-and-the-community-wins","className":"text-primary underline underline-offset-4 hover:no-underline break-all","target":"_blank","rel":"noopener noreferrer","children":"https://blogs.oracle.com/mysql/mysql-9-7-is-out-and-the-community-wins"}]}],["$","li","4",{"className":"text-sm","children":["$","a",null,{"href":"https://mariadb.com/docs/release-content/community-server/old-releases/11.7/what-is-mariadb-117","className":"text-primary underline underline-offset-4 hover:no-underline break-all","target":"_blank","rel":"noopener noreferrer","children":"https://mariadb.com/docs/release-content/community-server/old-releases/11.7/what-is-mariadb-117"}]}],["$","li","5",{"className":"text-sm","children":["$","a",null,{"href":"https://docs.pingcap.com/tidb/stable","className":"text-primary underline underline-offset-4 hover:no-underline break-all","target":"_blank","rel":"noopener noreferrer","children":"https://docs.pingcap.com/tidb/stable"}]}],["$","li","6",{"className":"text-sm","children":["$","a",null,{"href":"https://en.oceanbase.com/docs/common-oceanbase-database-10000000001784944","className":"text-primary underline underline-offset-4 hover:no-underline break-all","target":"_blank","rel":"noopener noreferrer","children":"https://en.oceanbase.com/docs/common-oceanbase-database-10000000001784944"}]}]]}]]}]
+23:["$","footer",null,{"className":"space-y-6","children":[["$","nav",null,{"className":"grid grid-cols-2 gap-4","children":[["$","$L3",null,{"href":"/posts/ecosystem-scan-mysql-9.7-lts-community-turbulence","className":"group block p-4 border border-border rounded-lg hover:border-primary/50 transition-colors","children":[["$","span",null,{"className":"text-xs text-muted-foreground","children":"← Previous"}],["$","p",null,{"className":"text-sm font-medium mt-1 group-hover:text-primary transition-colors line-clamp-1","children":"生态简报：MySQL 9.7.0 LTS 发布与社区动荡"}]]}],["$","$L3",null,{"href":"/posts/mysql-mdl-tutorial","className":"group block p-4 border border-border rounded-lg hover:border-primary/50 transition-colors text-right","children":[["$","span",null,{"className":"text-xs text-muted-foreground","children":"Next →"}],["$","p",null,{"className":"text-sm font-medium mt-1 group-hover:text-primary transition-colors line-clamp-1","children":"MySQL MDL 入门到精通：Metadata Lock 的获取、等待与死锁"}]]}]]}],["$","div",null,{"children":[["$","h3",null,{"className":"text-sm font-semibold mb-3","children":"Related Posts"}],["$","div",null,{"className":"grid gap-3 sm:grid-cols-2 lg:grid-cols-3","children":[["$","$L3","mysql-mdl-tutorial",{"href":"/posts/mysql-mdl-tutorial","className":"block p-3 border border-border rounded-lg hover:border-primary/50 transition-colors","children":[["$","p",null,{"className":"text-sm font-medium line-clamp-2","children":"MySQL MDL 入门到精通：Metadata Lock 的获取、等待与死锁"}],["$","p",null,{"className":"text-xs text-muted-foreground mt-1","children":"Sun May 17 2026 00:00:00 GMT+0000 (Coordinated Universal Time)"}]]}],["$","$L3","mysql-9x-ecosystem-development-report",{"href":"/posts/mysql-9x-ecosystem-development-report","className":"block p-3 border border-border rounded-lg hover:border-primary/50 transition-colors","children":[["$","p",null,{"className":"text-sm font-medium line-clamp-2","children":"MySQL 9.x 开发生态报告：闭源开发、9.7 LTS 与社区分裂"}],["$","p",null,{"className":"text-xs text-muted-foreground mt-1","children":"Sat May 16 2026 00:00:00 GMT+0000 (Coordinated Universal Time)"}]]}],["$","$L3","mysql-trunk-dev-activity-analysis",{"href":"/posts/mysql-trunk-dev-activity-analysis","className":"block p-3 border border-border rounded-lg hover:border-primary/50 transition-colors","children":[["$","p",null,{"className":"text-sm font-medium line-clamp-2","children":"MySQL 9.6.0 (trunk) 近期开发活动分析"}],["$","p",null,{"className":"text-xs text-muted-foreground mt-1","children":"Sat May 16 2026 00:00:00 GMT+0000 (Coordinated Universal Time)"}]]}]]}]]}],["$","div",null,{"className":"text-sm","children":["$","a",null,{"href":"https://github.com/Aqiu16717/mysql-notes/blob/main/content/2026-05-16-cross-product-enterprise-features-competitive-landscape.md","className":"text-muted-foreground hover:text-foreground transition-colors underline underline-offset-4","target":"_blank","rel":"noopener noreferrer","children":"Edit this page on GitHub"}]}]]}]
+24:["$","$L28",null,{"entries":[{"id":"1-功能矩阵mysql-97-下放的-8-项功能-vs-各竞品","text":"1. 功能矩阵：MySQL 9.7 下放的 8 项功能 vs 各竞品","level":2},{"id":"2-锁功能审计oracle-还捏着什么不放","text":"2. 锁功能审计：Oracle 还捏着什么不放","level":2},{"id":"3-竞争影响分析谁受损最大谁基本不受影响","text":"3. 竞争影响分析：谁受损最大，谁基本不受影响","level":2},{"id":"-percona-server--受损最大","text":"🔴 Percona Server — 受损最大","level":3},{"id":"-mariadb--中等影响","text":"🟡 MariaDB — 中等影响","level":3},{"id":"-tidb--基本不受影响","text":"🟢 TiDB — 基本不受影响","level":3},{"id":"-oceanbase--基本不受影响","text":"🟢 OceanBase — 基本不受影响","level":3},{"id":"4-决策树不同场景选什么","text":"4. 决策树：不同场景选什么","level":2},{"id":"5-总结对比表","text":"5. 总结对比表","level":2},{"id":"6-总体判断","text":"6. 总体判断","level":2}]}]

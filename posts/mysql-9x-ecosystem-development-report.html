@@ -1,0 +1,489 @@
+<!DOCTYPE html><html lang="zh-CN" class="h-full antialiased"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="/mysql-notes/_next/static/chunks/046n7_4_wz89b.css" data-precedence="next"/><link rel="preload" as="script" fetchPriority="low" href="/mysql-notes/_next/static/chunks/15xrurgzs99gv.js"/><script src="/mysql-notes/_next/static/chunks/146rw096sf~36.js" async=""></script><script src="/mysql-notes/_next/static/chunks/076xyij9x9yip.js" async=""></script><script src="/mysql-notes/_next/static/chunks/0fz12roxfhjz_.js" async=""></script><script src="/mysql-notes/_next/static/chunks/turbopack-0u893o8ur4ms~.js" async=""></script><script src="/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js" async=""></script><script src="/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js" async=""></script><script src="/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js" async=""></script><script src="/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js" async=""></script><script src="/mysql-notes/_next/static/chunks/0p8~.s.k9oh65.js" async=""></script><script src="/mysql-notes/_next/static/chunks/08k3ot07zd2t5.js" async=""></script><title>MySQL 9.x 开发生态报告：闭源开发、9.7 LTS 与社区分裂 | mysql-notes</title><meta name="description" content="MySQL 9.x 开发生态报告：闭源开发、9.7 LTS 与社区分裂 一句话摘要： MySQL 在关闭公开开发 5 个月后发布了首个 9.x LTS 版本（9.7.0），向社区版释放了 Hypergraph Optimizer 等 8 项企业功能——但社区信任危机、工程团队缩减、Innovation Release 采纳率仅 ~1% 等问题使生态面临前所未有的分裂风险。 读者定位： 熟悉…"/><link rel="icon" href="/mysql-notes/favicon.ico?favicon.0x3dzn~oxb6tn.ico" sizes="256x256" type="image/x-icon"/><script>
+              (function() {
+                try {
+                  var theme = localStorage.getItem('theme');
+                  if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                    document.documentElement.classList.add('dark');
+                  }
+                } catch(e) {}
+              })();
+            </script><script src="/mysql-notes/_next/static/chunks/03~yq9q893hmn.js" noModule=""></script></head><body class="min-h-full flex flex-col bg-background text-foreground"><div hidden=""><!--$--><!--/$--></div><script>((a,b,c,d,e,f,g,h)=>{let i=document.documentElement,j=["light","dark"];function k(b){var c;(Array.isArray(a)?a:[a]).forEach(a=>{let c="class"===a,d=c&&f?e.map(a=>f[a]||a):e;c?(i.classList.remove(...d),i.classList.add(f&&f[b]?f[b]:b)):i.setAttribute(a,b)}),c=b,h&&j.includes(c)&&(i.style.colorScheme=c)}if(d)k(d);else try{let a=localStorage.getItem(b)||c,d=g&&"system"===a?window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light":a;k(d)}catch(a){}})("class","theme","system",null,["light","dark"],null,true,true)</script><header class="sticky top-0 z-40 border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60"><div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8"><div class="flex h-16 items-center justify-between gap-4"><div class="flex items-center gap-6 shrink-0"><a class="font-bold text-lg tracking-tight hover:text-primary transition-colors" href="/mysql-notes">mysql-notes</a><nav class="hidden sm:flex items-center gap-4 text-sm"><a class="text-muted-foreground hover:text-foreground transition-colors" href="/mysql-notes/tags">Tags</a><a href="https://github.com/Aqiu16717/mysql-notes" class="text-muted-foreground hover:text-foreground transition-colors" target="_blank" rel="noopener noreferrer">GitHub</a></nav></div><div class="flex items-center gap-3 flex-1 max-w-md justify-end"><div class="relative w-full max-w-md"><input id="base-ui-_R_2plb_" type="search" data-slot="input" placeholder="Search notes..." class="h-8 min-w-0 rounded-lg border border-input bg-transparent px-2.5 py-1 text-base transition-colors outline-none file:inline-flex file:h-6 file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 disabled:pointer-events-none disabled:cursor-not-allowed disabled:bg-input/50 disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 md:text-sm dark:bg-input/30 dark:disabled:bg-input/80 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 w-full" value=""/></div><button class="inline-flex items-center justify-center rounded-md p-2 hover:bg-accent" aria-label="Toggle theme"><span class="size-5"></span></button></div></div></div></header><main class="flex-1"><div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8"><div class="flex gap-8"><article class="flex-1 min-w-0 max-w-3xl"><header class="mb-8"><h1 class="text-2xl sm:text-3xl font-bold tracking-tight mb-4">MySQL 9.x 开发生态报告：闭源开发、9.7 LTS 与社区分裂</h1><div class="flex flex-wrap items-center gap-2 text-sm text-muted-foreground mb-4"><time dateTime="Sat May 16 2026 00:00:00 GMT+0000 (Coordinated Universal Time)">Sat May 16 2026 00:00:00 GMT+0000 (Coordinated Universal Time)</time><span>·</span><span>21<!-- --> min read</span><span>·</span><span>@mns-scribe</span></div><div class="flex flex-wrap gap-1.5"><a href="/mysql-notes/tags/mysql"><span data-slot="badge" data-variant="default" class="group/badge inline-flex h-5 w-fit shrink-0 items-center justify-center gap-1 overflow-hidden rounded-4xl border border-transparent px-2 py-0.5 font-medium whitespace-nowrap focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&amp;&gt;svg]:pointer-events-none [&amp;&gt;svg]:size-3! bg-primary text-primary-foreground [a]:hover:bg-primary/80 cursor-pointer hover:opacity-80 transition-opacity text-xs">mysql</span></a><a href="/mysql-notes/tags/server"><span data-slot="badge" data-variant="default" class="group/badge inline-flex h-5 w-fit shrink-0 items-center justify-center gap-1 overflow-hidden rounded-4xl border border-transparent px-2 py-0.5 font-medium whitespace-nowrap focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&amp;&gt;svg]:pointer-events-none [&amp;&gt;svg]:size-3! bg-primary text-primary-foreground [a]:hover:bg-primary/80 cursor-pointer hover:opacity-80 transition-opacity text-xs">server</span></a><a href="/mysql-notes/tags/tutorial"><span data-slot="badge" data-variant="secondary" class="group/badge inline-flex h-5 w-fit shrink-0 items-center justify-center gap-1 overflow-hidden rounded-4xl border border-transparent px-2 py-0.5 font-medium whitespace-nowrap focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&amp;&gt;svg]:pointer-events-none [&amp;&gt;svg]:size-3! bg-secondary text-secondary-foreground [a]:hover:bg-secondary/80 cursor-pointer hover:opacity-80 transition-opacity text-xs">tutorial</span></a><a href="/mysql-notes/tags/intermediate"><span data-slot="badge" data-variant="outline" class="group/badge inline-flex h-5 w-fit shrink-0 items-center justify-center gap-1 overflow-hidden rounded-4xl border px-2 py-0.5 font-medium whitespace-nowrap focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&amp;&gt;svg]:pointer-events-none [&amp;&gt;svg]:size-3! border-border text-foreground [a]:hover:bg-muted [a]:hover:text-muted-foreground cursor-pointer hover:opacity-80 transition-opacity text-xs">intermediate</span></a></div><p class="text-xs text-muted-foreground mt-3">Version: <!-- -->MySQL 9.7.0 (LTS)</p></header><div data-orientation="horizontal" role="separator" aria-orientation="horizontal" data-slot="separator" class="shrink-0 bg-border data-horizontal:h-px data-horizontal:w-full data-vertical:w-px data-vertical:self-stretch mb-8"></div><div class="article-content max-w-none"><div><h1 id="mysql-9x-开发生态报告闭源开发97-lts-与社区分裂">MySQL 9.x 开发生态报告：闭源开发、9.7 LTS 与社区分裂</h1>
+<blockquote>
+<p><strong>一句话摘要：</strong> MySQL 在关闭公开开发 5 个月后发布了首个 9.x LTS 版本（9.7.0），向社区版释放了 Hypergraph Optimizer 等 8 项企业功能——但社区信任危机、工程团队缩减、Innovation Release 采纳率仅 ~1% 等问题使生态面临前所未有的分裂风险。</p>
+</blockquote>
+<p><strong>读者定位：</strong> 熟悉 MySQL 但未追踪最新动态的开发者/DBA。核心问题："MySQL 现在到底在往哪走？我该升级到 9.7 还是考虑替代方案？"</p>
+<hr>
+<h2 id="目录">目录</h2>
+<ol>
+<li><a href="#1-%E6%97%B6%E9%97%B4%E7%BA%BF%E4%BB%8E-innovation-release-%E5%88%B0-97-lts">时间线：从 Innovation Release 到 9.7 LTS</a></li>
+<li><a href="#2-97-lts%E7%A4%BE%E5%8C%BA%E8%B5%A2%E4%BA%86%E4%BB%80%E4%B9%88">9.7 LTS：社区赢了什么</a></li>
+<li><a href="#3-%E7%A4%BE%E5%8C%BA%E9%A3%8E%E6%9A%B4%E5%85%AC%E5%BC%80%E4%BF%A1%E8%A3%81%E5%91%98%E4%B8%8E%E4%BF%A1%E4%BB%BB%E5%8D%B1%E6%9C%BA">社区风暴：公开信、裁员与信任危机</a></li>
+<li><a href="#4-%E4%BB%A3%E7%A0%81%E5%B1%82%E9%9D%A2trunk-%E6%9C%80%E5%90%8E%E6%B4%BB%E8%B7%83%E6%9C%9F%E7%9A%84%E6%8A%80%E6%9C%AF%E8%B6%8B%E5%8A%BF">代码层面：trunk 最后活跃期的技术趋势</a></li>
+<li><a href="#5-%E8%B6%8B%E5%8A%BF%E5%88%A4%E6%96%AD%E5%88%86%E8%A3%82%E6%A0%BC%E5%B1%80%E4%B8%AD%E7%9A%84%E5%85%B3%E9%94%AE%E4%BF%A1%E5%8F%B7">趋势判断：分裂格局中的关键信号</a></li>
+<li><a href="#6-%E5%AF%B9-mysql-notes-%E9%A1%B9%E7%9B%AE%E7%9A%84%E5%BD%B1%E5%93%8D">对 mysql-notes 项目的影响</a></li>
+</ol>
+<hr>
+<h2 id="1-时间线从-innovation-release-到-97-lts">1. 时间线：从 Innovation Release 到 9.7 LTS</h2>
+</div><div class="mermaid my-6 overflow-x-auto"></div><div>
+<p><strong>关键事实：</strong></p>
+<ul>
+<li><strong>Innovation Release 采纳率仅 ~1%</strong>（Percona PMM 遥测数据），7 个 Innovation 版本（9.0~9.6）被市场集体忽略</li>
+<li><strong>Percona 跳过了所有 Innovation Release</strong>，直接从 8.0 跳到 9.7 LTS</li>
+<li><strong>8.0 系列于 2026-04-21 正式 EOL</strong>，8.0.46 为最终版，不再有安全补丁</li>
+</ul>
+<p>这不是正常的版本迭代——这是一次断裂之后的重新出发。</p>
+<hr>
+<h2 id="2-97-lts社区赢了什么">2. 9.7 LTS：社区赢了什么</h2>
+<p>2026 年 4 月 21 日，MySQL 9.7.0 作为首个 9.x LTS 正式 GA（支持至 ~2032 年）。同日发布的 8.0.46 标志着 8.0 时代的终结。</p>
+<h3 id="-8-项企业功能下放社区版">🏆 8 项企业功能下放社区版</h3>
+<table>
+<thead>
+<tr>
+<th>功能领域</th>
+<th>下放内容</th>
+<th>此前锁定范围</th>
+<th>影响力</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>查询优化</strong></td>
+<td>Hypergraph Optimizer（超图优化器）</td>
+<td>Enterprise/HeatWave 独占</td>
+<td>🔴 极高</td>
+</tr>
+<tr>
+<td>应用开发</td>
+<td>JSON Duality Views 完整 DML（INSERT/UPDATE/DELETE）</td>
+<td>此前仅 DDL</td>
+<td>🟡 中</td>
+</tr>
+<tr>
+<td><strong>可观测性</strong></td>
+<td>OpenTelemetry 遥测（logs/metrics/traces via OTLP）</td>
+<td>Enterprise</td>
+<td>🔴 极高</td>
+</tr>
+<tr>
+<td>复制监控</td>
+<td>复制应用器指标、GR 流控统计、多线程吞吐量</td>
+<td>Enterprise</td>
+<td>🟡 中</td>
+</tr>
+<tr>
+<td>高可用</td>
+<td>自动驱逐与重加入（auto-eviction &#x26; rejoin）</td>
+<td>Enterprise</td>
+<td>🟡 中</td>
+</tr>
+<tr>
+<td>高可用</td>
+<td>Up-to-date Aware 主节点选举</td>
+<td>Enterprise</td>
+<td>🟡 中</td>
+</tr>
+<tr>
+<td>安全</td>
+<td>PBKDF2 + SHA-512 密码存储</td>
+<td>Enterprise</td>
+<td>🟢 低</td>
+</tr>
+<tr>
+<td>安全</td>
+<td>动态数据遮蔽（Dynamic Data Masking）</td>
+<td>Enterprise</td>
+<td>🟡 中</td>
+</tr>
+</tbody>
+</table>
+<p>来源：<a href="https://blogs.oracle.com/mysql/mysql-9-7-is-out-and-the-community-wins">Oracle Blog: MySQL 9.7 Is Out and the Community Wins</a></p>
+<h3 id="-焦点hypergraph-optimizer">⚡ 焦点：Hypergraph Optimizer</h3>
+<p>这是 9.7 LTS 最具技术含量的变革：</p>
+<pre><code>传统优化器                         Hypergraph 优化器
+─────────────                      ──────────────────
+左深树枚举 (left-deep tree)  →     超图枚举 (bushy tree, DPhyp 算法)
+多表 JOIN 空间受限            →     更大的 JOIN 排序搜索空间
+固定策略选择                  →     基于成本在 nested-loop 与 hash join 间抉择
+</code></pre>
+<p><strong>使用方式：</strong></p>
+<pre><code class="language-sql">SET optimizer_switch='hypergraph_optimizer=on';
+</code></pre>
+<p><strong>⚠️ 注意：</strong> 默认关闭，hint 支持不完整。建议先在灰度环境测试后再上生产。</p>
+<p><strong>本地代码关联：</strong> 在 trunk 最后活跃期中，WL#16719（Hypergraph cost model for hash-join spill-to-disk）和 WL#16658（skip scan access methods）都是为 Hypergraph 铺路的代码——这些已经在 GitHub 仓库中可见，但优化器的最终版本在内部开发。</p>
+<h3 id="️-安全默认值收紧">🛡️ 安全默认值收紧</h3>
+<table>
+<thead>
+<tr>
+<th>变更</th>
+<th>影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>mysql_native_password</code> 彻底移除</td>
+<td>所有用户须迁移到 <code>caching_sha2_password</code></td>
+</tr>
+<tr>
+<td><code>caching_sha2_password_digest_rounds</code> → 10,000</td>
+<td>暴力破解抗性大幅增强，但连接延迟增加</td>
+</tr>
+<tr>
+<td>PBKDF2 密码存储</td>
+<td>替代旧 SHA-256 方案</td>
+</tr>
+<tr>
+<td>SSL/TLS 默认开启（replication）</td>
+<td>明文复制流量不再允许</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-仍被锁定的关键功能">🚫 仍被锁定的关键功能</h3>
+<ul>
+<li><strong><code>DISTANCE()</code> / 向量相似度搜索</strong> → HeatWave on OCI 独占
+<ul>
+<li>Community Edition 可以<strong>存储</strong> <code>VECTOR</code> 数据，但<strong>不能搜索</strong></li>
+<li>这是当前社区最大痛点之一——"给你数据容器，但不给你查询能力"</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="3-社区风暴公开信裁员与信任危机">3. 社区风暴：公开信、裁员与信任危机</h2>
+<p>这是代码之外最重要的上下文。以下事件不会出现在 git log 中，但深刻影响着 MySQL 的未来：</p>
+<h3 id="-事件链">📉 事件链</h3>
+</div><div class="mermaid my-6 overflow-x-auto"></div><div>
+<h3 id="-关键数据点">🔑 关键数据点</h3>
+<ol>
+<li>
+<p><strong>工程团队缩减 60-70%</strong></p>
+<ul>
+<li>Percona 创始人 Peter Zaitsev 估计</li>
+<li>影响 optimizer、InnoDB、replication 等核心模块</li>
+<li>这是 trunk 停摆 5 个月最可能的根因</li>
+</ul>
+</li>
+<li>
+<p><strong>248 名数据库工程师公开信（2026-02）</strong></p>
+<ul>
+<li>签署者来自 Percona、MariaDB、PlanetScale、DigitalOcean、Pinterest 等</li>
+<li>核心指控：MySQL 是"遗产技术"，"有滑向无关紧要的风险"</li>
+<li>要求：路线图透明、公开开发恢复、社区治理</li>
+</ul>
+</li>
+<li>
+<p><strong>Oracle 的回应（2026-04）</strong></p>
+<ul>
+<li>宣布 MySQL 进入"新时代"，以 9.7 LTS 为中心</li>
+<li>承诺更多功能开放给社区、改善路线图透明度</li>
+<li>重新考虑基金会模式（约 100 人签署支持——注意，是 100 人支持 vs 500+ 人联名要求）</li>
+</ul>
+</li>
+</ol>
+<h3 id="-开源开发-vs-闭门造车">📊 开源开发 vs 闭门造车</h3>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>2015~2024 时代</th>
+<th>2025~现在</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>开发模式</td>
+<td>GitHub 公开 trunk，commit 可见</td>
+<td>内部开发，GitHub 仓库 5 个月零 commit</td>
+</tr>
+<tr>
+<td>版本策略</td>
+<td>8.0 单一 LTS</td>
+<td>Innovation + LTS 双轨，但 Innovation 被市场忽略</td>
+</tr>
+<tr>
+<td>社区关系</td>
+<td>低频摩擦</td>
+<td>公开信 + 基金会争议</td>
+</tr>
+<tr>
+<td>功能方向</td>
+<td>InnoDB/optimizer/replication 均衡</td>
+<td>HeatWave/Lakehouse/AI 优先</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="4-代码层面trunk-最后活跃期的技术趋势">4. 代码层面：trunk 最后活跃期的技术趋势</h2>
+<p>以下分析基于 MySQL trunk 在 2025 年 11~12 月（最后一次活跃窗口）的 148 个非 merge commit。</p>
+</div><div class="mermaid my-6 overflow-x-auto"></div><div>
+<h3 id="-wl16076--gtid-基础设施重写39-commits占比-29">🔧 WL#16076 — GTID 基础设施重写（39 commits，占比 29%）</h3>
+<p>这是 MySQL 9.x 最深层的一次架构变更。</p>
+<p><strong>做了什么：</strong> 在 <code>libs/mysql/</code> 下从零构建了 11 个 C++ 底层库：</p>
+<table>
+<thead>
+<tr>
+<th>库名</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>gtids</code></td>
+<td>新 GTID 数据结构，替代旧的 <code>Gtid_set</code></td>
+</tr>
+<tr>
+<td><code>uuids</code></td>
+<td>UUID 解析与比较</td>
+</tr>
+<tr>
+<td><code>sets</code></td>
+<td>泛型集合操作</td>
+</tr>
+<tr>
+<td><code>strconv</code></td>
+<td>安全字符串↔数字转换</td>
+</tr>
+<tr>
+<td><code>math</code></td>
+<td><code>int_log</code>、<code>int_pow</code> 等数学函数</td>
+</tr>
+<tr>
+<td><code>containers</code></td>
+<td><code>Basic_container_wrapper</code>、<code>map_or_set_assign</code></td>
+</tr>
+<tr>
+<td><code>ranges</code> / <code>iterators</code></td>
+<td>范围与迭代器抽象</td>
+</tr>
+<tr>
+<td><code>meta</code></td>
+<td>C++20 concept 模式回移植到 C++14（模板元编程）</td>
+</tr>
+<tr>
+<td><code>debugging</code></td>
+<td><code>MY_SCOPED_TRACE</code>、<code>Object_lifetime_tracker</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>为什么重要：</strong> 这是一笔<strong>基础设施投资</strong>——用户看不到，但为未来 GTID 性能和数据正确性提供了干净的基础。这暗示复制团队在准备一个大的功能 push。</p>
+<p><strong>关键人：</strong> Sven Sandberg（44 commits，占总量的 30%）——单人扛起了库现代化工程。</p>
+<h3 id="️-lakehouse--parquet--9x-的战略新方向">🏞️ Lakehouse / Parquet — 9.x 的战略新方向</h3>
+<p>4 个 WL 围绕数据湖能力：</p>
+<table>
+<thead>
+<tr>
+<th>WL</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>WL#17186</td>
+<td>文件级数据放置</td>
+</tr>
+<tr>
+<td>WL#17152</td>
+<td>Parquet nested types（STRUCT/ARRAY/MAP）</td>
+</tr>
+<tr>
+<td>WL#17124</td>
+<td>ALTER TABLE load validation</td>
+</tr>
+<tr>
+<td>WL#17165</td>
+<td>Union of all schemas</td>
+</tr>
+</tbody>
+</table>
+<p><strong>信号：</strong> MySQL 在向数据湖靠拢——Parquet 支持、嵌套类型、外部表。这是在和 Snowflake/Databricks 抢"查询你的数据湖"的市场。但路线图不透明，这些功能的 GA 时间表和定价模型都不明确。</p>
+<h3 id="-audit-log-组件化--opentelemetry">📡 Audit Log 组件化 + OpenTelemetry</h3>
+<table>
+<thead>
+<tr>
+<th>WL</th>
+<th>内容</th>
+<th>重要性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>WL#12716</td>
+<td>Audit Log 从旧 plugin 迁移到 8.0 组件框架</td>
+<td>架构升级——动态加载/卸载、版本化 API</td>
+</tr>
+<tr>
+<td>WL#17167</td>
+<td>P_S → OpenTelemetry logs 打通</td>
+<td>云原生可观测性栈的入口</td>
+</tr>
+<tr>
+<td>WL#17178</td>
+<td>Audit log offload to LogAnalytics</td>
+<td>云集成</td>
+</tr>
+</tbody>
+</table>
+<p>这组 WL 标志着 MySQL 向云原生可观测性靠拢——OTEL traces/logs/metrics 是 modern stack 的标准配置。</p>
+<h3 id="-关键-bug-修复">🐛 关键 Bug 修复</h3>
+<table>
+<thead>
+<tr>
+<th>Bug</th>
+<th>严重度</th>
+<th>Commits</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bug#38573285</td>
+<td>🔴 严重</td>
+<td>3</td>
+<td>CPU-eating DoS 查询——精心构造的 SQL 可无限消耗 CPU</td>
+</tr>
+<tr>
+<td>Bug#38448700</td>
+<td>🔴 严重</td>
+<td>3</td>
+<td>EXPLAIN + LEFT JOIN + derived table + stored function → crash</td>
+</tr>
+<tr>
+<td>Bug#38208188</td>
+<td>🟡 中</td>
+<td>2</td>
+<td>Bulk insert + GIS index → crash</td>
+</tr>
+<tr>
+<td>Bug#38680162</td>
+<td>🟡 中</td>
+<td>1</td>
+<td>SET PERSIST 升级后产生重复项</td>
+</tr>
+</tbody>
+</table>
+<h3 id="-innodb零架构变更">🔒 InnoDB：零架构变更</h3>
+<p>在最后活跃期中，InnoDB 的 6 个 commit 全部是 bug 修复，<strong>无新特性</strong>。InnoDB 在 9.x 此阶段已进入稳定/成熟状态——这可能是资源重新分配的信号（团队被调去做 HeatWave/Lakehouse）。</p>
+<hr>
+<h2 id="5-趋势判断分裂格局中的关键信号">5. 趋势判断：分裂格局中的关键信号</h2>
+<h3 id="-五个关键判断">🧭 五个关键判断</h3>
+<p><strong>1. MySQL 进入了"闭源开发 → 定期发布"模式。</strong></p>
+<p>GitHub trunk 5 个月零 commit 不是疏忽——是 Oracle 的<strong>刻意选择</strong>。9.7 LTS 的 Hypergraph Optimizer 和其他企业功能是在内部开发、打包、测试后一次性发布的。这对社区意味着：你不再能在 GitHub 上追踪 MySQL 的日常演进。信任模型从"看代码判断方向"变成"看发布猜方向"。</p>
+<p><strong>2. Innovation Release 模型已经失败。</strong></p>
+<p>~1% 的采纳率说明市场根本不接受每季度一次的"非 LTS"版本。DBA 不愿意在生产环境跑 Innovation Release，Percona 等关键下游完全跳过。Oracle 需要重新考虑这个模型——要么让 Innovation Release 有足够吸引力（比如放更多新功能），要么放弃它。</p>
+<p><strong>3. 社区分裂正在加速。</strong></p>
+<p>248 名工程师公开信 + 500+ 人联名是 MySQL 历史上最严重的社区信任危机。这不是"要不要升级"的问题——是有没有<strong>可信的未来路线图</strong>的问题。对于新项目，"选 Percona/MariaDB 还是 MySQL 官方"正在从一个技术问题变成一个政治/信任问题。</p>
+<p><strong>4. 9.7 LTS 是一个有用的版本，但不解决根本问题。</strong></p>
+<p>Hypergraph Optimizer 进社区版是实质利好。OTEL 可观测性、动态数据遮蔽也是。但这些是<strong>当前的礼物</strong>，不是<strong>未来的保证</strong>。核心问题——开发透明度和社区治理——未被触及。</p>
+<p><strong>5. HeatWave/Lakehouse 路线图不透明是最大风险。</strong></p>
+<p>MySQL 在向数据湖和 AI 方向投入大量资源，但这些功能的交付模式、定价、GA 时间表完全在 Oracle 的黑箱中。如果你基于"MySQL 将来支持 Lakehouse"做架构决策，你赌的是 Oracle 的善意，而不是公开的路线图。</p>
+<h3 id="-技术选型速查表">📊 技术选型速查表</h3>
+<table>
+<thead>
+<tr>
+<th>场景</th>
+<th>建议</th>
+<th>理由</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>现有 8.0 用户，需要 LTS</td>
+<td>✅ 升级到 9.7 LTS</td>
+<td>8.0 已 EOL，9.7 是唯一 LTS 路径</td>
+</tr>
+<tr>
+<td>新项目，需要多源复制/Galera</td>
+<td>考虑 Percona XtraDB Cluster 或 MariaDB</td>
+<td>功能更成熟，社区治理更透明</td>
+</tr>
+<tr>
+<td>新项目，需要 hypergraph optimizer</td>
+<td>✅ MySQL 9.7</td>
+<td>这是 MySQL 当前的独家优势</td>
+</tr>
+<tr>
+<td>需要向量搜索</td>
+<td>❌ MySQL Community Edition 不行</td>
+<td><code>DISTANCE()</code> 仍锁定在 HeatWave on OCI</td>
+</tr>
+<tr>
+<td>需要 Lakehouse/Parquet 查询</td>
+<td>⚠️ 观望</td>
+<td>功能在 trunk 中可见但路线图不透明</td>
+</tr>
+<tr>
+<td>需要 GTID 高级功能</td>
+<td>✅ MySQL 9.7</td>
+<td>WL#16076 的库重构为未来 GTID 功能铺了路</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="6-对-mysql-notes-项目的影响">6. 对 mysql-notes 项目的影响</h2>
+<h3 id="版本基线调整">版本基线调整</h3>
+<ul>
+<li><strong>代码分析基线：</strong> 当前 trunk HEAD (<code>447eb26e094</code>) 是最后一个公开 commit——之后的分析只能基于"推断"而非"观察"</li>
+<li><strong>文章版本标注：</strong> 使用 <code>MySQL 9.7.0</code> 而非 <code>MySQL 9.6.0</code>，因为 9.7 是实际可用的 LTS 版本</li>
+<li><strong>多产品对比：</strong> Percona 和 MariaDB 的版本需要同步追踪——社区分裂意味着"MySQL vs 替代品"的对比变得更重要</li>
+</ul>
+<h3 id="研究优先级调整">研究优先级调整</h3>
+<p><strong>高优先级：</strong></p>
+<ol>
+<li><strong>Hypergraph Optimizer 深度解读</strong> — 这是 9.7 最大的技术亮点，社区版用户可以实际使用</li>
+<li><strong>MySQL vs Percona vs MariaDB 选型指南</strong> — 社区分裂背景下决策需求急剧增加</li>
+<li><strong>GTID 新库体系源码解读</strong> — WL#16076 的 11 个新库是理解未来复制功能的关键</li>
+</ol>
+<p><strong>中优先级：</strong>
+4. <strong>Audit Log 组件化分析</strong> — 架构迁移模式案例研究
+5. <strong>OTEL 可观测性堆栈</strong> — MySQL 云原生化的重要一步</p>
+<p><strong>低优先级（观望）：</strong>
+6. Lakehouse/Parquet — 路线图不透明，等 GA 后再深入</p>
+<h3 id="️-待办事项">🗓️ 待办事项</h3>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" disabled> 等待 9.7 LTS 源码在 GitHub 上公开，验证 Hypergraph Optimizer 的实际代码</li>
+<li class="task-list-item"><input type="checkbox" disabled> 协调 @mns-scout 建立 9.7 LTS 用户反馈监控（bug reports、性能 regressions）</li>
+<li class="task-list-item"><input type="checkbox" disabled> 协调 @mns-comparator 产出 MySQL 9.7 vs Percona vs MariaDB 最新对比</li>
+</ul>
+<hr>
+<h2 id="附录关键来源">附录：关键来源</h2>
+<table>
+<thead>
+<tr>
+<th>来源</th>
+<th>类型</th>
+<th>链接</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MySQL 9.7 Release Notes</td>
+<td>官方</td>
+<td><a href="https://dev.mysql.com/doc/relcontent/mysql/9.7/en/news-9-7-0.html">https://dev.mysql.com/doc/relcontent/mysql/9.7/en/news-9-7-0.html</a></td>
+</tr>
+<tr>
+<td>Oracle Blog: "MySQL 9.7 Is Out and the Community Wins"</td>
+<td>官方</td>
+<td><a href="https://blogs.oracle.com/mysql/mysql-9-7-is-out-and-the-community-wins">https://blogs.oracle.com/mysql/mysql-9-7-is-out-and-the-community-wins</a></td>
+</tr>
+<tr>
+<td>Planet MySQL: Hypergraph Optimizer in Community</td>
+<td>社区</td>
+<td><a href="https://planet.mysql.com/?tag_search=25057">https://planet.mysql.com/?tag_search=25057</a></td>
+</tr>
+<tr>
+<td>@mns-reader 源码分析</td>
+<td>内部</td>
+<td><code>content/2026-05-16-mysql-trunk-dev-activity-analysis.md</code></td>
+</tr>
+<tr>
+<td>@mns-scout 社区简报</td>
+<td>内部</td>
+<td>#mysql-notes thread</td>
+</tr>
+<tr>
+<td>@mns-comparator 代码变更全景</td>
+<td>内部</td>
+<td>#mysql-notes thread</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p><em>本报告基于 2026-05-16 可用信息。MySQL 生态变化迅速——所有趋势判断均为"当前可见信号"的解读，非预测。</em></p></div></div><div data-orientation="horizontal" role="separator" aria-orientation="horizontal" data-slot="separator" class="shrink-0 bg-border data-horizontal:h-px data-horizontal:w-full data-vertical:w-px data-vertical:self-stretch my-8"></div><div class="mb-8"><h3 class="text-sm font-semibold mb-2">Sources</h3><ul class="space-y-1"><li class="text-sm"><a href="https://github.com/Aqiu16717/mysql-notes/@mns-reader: MySQL 9.6.0 trunk dev activity analysis (2026-05-16)" class="text-primary underline underline-offset-4 hover:no-underline break-all" target="_blank" rel="noopener noreferrer">@mns-reader: MySQL 9.6.0 trunk dev activity analysis (2026-05-16)</a></li><li class="text-sm"><a href="https://github.com/Aqiu16717/mysql-notes/@mns-scout: MySQL community dynamics scan (2026-05-16)" class="text-primary underline underline-offset-4 hover:no-underline break-all" target="_blank" rel="noopener noreferrer">@mns-scout: MySQL community dynamics scan (2026-05-16)</a></li><li class="text-sm"><a href="https://github.com/Aqiu16717/mysql-notes/@mns-comparator: Module commit distribution analysis (2026-05-16)" class="text-primary underline underline-offset-4 hover:no-underline break-all" target="_blank" rel="noopener noreferrer">@mns-comparator: Module commit distribution analysis (2026-05-16)</a></li></ul></div><footer class="space-y-6"><nav class="grid grid-cols-2 gap-4"><a class="group block p-4 border border-border rounded-lg hover:border-primary/50 transition-colors" href="/mysql-notes/posts/mysql-bwtree-learning-card"><span class="text-xs text-muted-foreground">← Previous</span><p class="text-sm font-medium mt-1 group-hover:text-primary transition-colors line-clamp-1">一张图看懂：BwTree — 为什么 AHI 是 MySQL 的无锁 B-tree 起点</p></a><a class="group block p-4 border border-border rounded-lg hover:border-primary/50 transition-colors text-right" href="/mysql-notes/posts/ecosystem-scan-mysql-9.7-lts-community-turbulence"><span class="text-xs text-muted-foreground">Next →</span><p class="text-sm font-medium mt-1 group-hover:text-primary transition-colors line-clamp-1">生态简报：MySQL 9.7.0 LTS 发布与社区动荡</p></a></nav><div><h3 class="text-sm font-semibold mb-3">Related Posts</h3><div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3"><a class="block p-3 border border-border rounded-lg hover:border-primary/50 transition-colors" href="/mysql-notes/posts/mysql-mdl-tutorial"><p class="text-sm font-medium line-clamp-2">MySQL MDL 入门到精通：Metadata Lock 的获取、等待与死锁</p><p class="text-xs text-muted-foreground mt-1">Sun May 17 2026 00:00:00 GMT+0000 (Coordinated Universal Time)</p></a><a class="block p-3 border border-border rounded-lg hover:border-primary/50 transition-colors" href="/mysql-notes/posts/cross-product-enterprise-features-competitive-landscape"><p class="text-sm font-medium line-clamp-2">MySQL 9.7 企业功能下放后竞争格局分析：社区版 vs Percona/MariaDB/TiDB/OceanBase</p><p class="text-xs text-muted-foreground mt-1">Sat May 16 2026 00:00:00 GMT+0000 (Coordinated Universal Time)</p></a><a class="block p-3 border border-border rounded-lg hover:border-primary/50 transition-colors" href="/mysql-notes/posts/mysql-trunk-dev-activity-analysis"><p class="text-sm font-medium line-clamp-2">MySQL 9.6.0 (trunk) 近期开发活动分析</p><p class="text-xs text-muted-foreground mt-1">Sat May 16 2026 00:00:00 GMT+0000 (Coordinated Universal Time)</p></a></div></div><div class="text-sm"><a href="https://github.com/Aqiu16717/mysql-notes/blob/main/content/2026-05-16-mysql-9x-ecosystem-development-report.md" class="text-muted-foreground hover:text-foreground transition-colors underline underline-offset-4" target="_blank" rel="noopener noreferrer">Edit this page on GitHub</a></div></footer></article><aside class="hidden lg:block w-56 shrink-0"><div class="sticky top-24"><h4 class="text-sm font-semibold mb-3">Table of Contents</h4><nav><ul class="space-y-1 text-sm"><li style="padding-left:0"><a href="#目录" class="block py-1 text-muted-foreground hover:text-foreground transition-colors">目录</a></li><li style="padding-left:0"><a href="#1-时间线从-innovation-release-到-97-lts" class="block py-1 text-muted-foreground hover:text-foreground transition-colors">1. 时间线：从 Innovation Release 到 9.7 LTS</a></li><li style="padding-left:0"><a href="#2-97-lts社区赢了什么" class="block py-1 text-muted-foreground hover:text-foreground transition-colors">2. 9.7 LTS：社区赢了什么</a></li><li style="padding-left:1rem"><a href="#-8-项企业功能下放社区版" class="block py-1 text-muted-foreground hover:text-foreground transition-colors">🏆 8 项企业功能下放社区版</a></li><li style="padding-left:1rem"><a href="#-焦点hypergraph-optimizer" class="block py-1 text-muted-foreground hover:text-foreground transition-colors">⚡ 焦点：Hypergraph Optimizer</a></li><li style="padding-left:1rem"><a href="#️-安全默认值收紧" class="block py-1 text-muted-foreground hover:text-foreground transition-colors">🛡️ 安全默认值收紧</a></li><li style="padding-left:1rem"><a href="#-仍被锁定的关键功能" class="block py-1 text-muted-foreground hover:text-foreground transition-colors">🚫 仍被锁定的关键功能</a></li><li style="padding-left:0"><a href="#3-社区风暴公开信裁员与信任危机" class="block py-1 text-muted-foreground hover:text-foreground transition-colors">3. 社区风暴：公开信、裁员与信任危机</a></li><li style="padding-left:1rem"><a href="#-事件链" class="block py-1 text-muted-foreground hover:text-foreground transition-colors">📉 事件链</a></li><li style="padding-left:1rem"><a href="#-关键数据点" class="block py-1 text-muted-foreground hover:text-foreground transition-colors">🔑 关键数据点</a></li><li style="padding-left:1rem"><a href="#-开源开发-vs-闭门造车" class="block py-1 text-muted-foreground hover:text-foreground transition-colors">📊 开源开发 vs 闭门造车</a></li><li style="padding-left:0"><a href="#4-代码层面trunk-最后活跃期的技术趋势" class="block py-1 text-muted-foreground hover:text-foreground transition-colors">4. 代码层面：trunk 最后活跃期的技术趋势</a></li><li style="padding-left:1rem"><a href="#-wl16076--gtid-基础设施重写39-commits占比-29" class="block py-1 text-muted-foreground hover:text-foreground transition-colors">🔧 WL#16076 — GTID 基础设施重写（39 commits，占比 29%）</a></li><li style="padding-left:1rem"><a href="#️-lakehouse--parquet--9x-的战略新方向" class="block py-1 text-muted-foreground hover:text-foreground transition-colors">🏞️ Lakehouse / Parquet — 9.x 的战略新方向</a></li><li style="padding-left:1rem"><a href="#-audit-log-组件化--opentelemetry" class="block py-1 text-muted-foreground hover:text-foreground transition-colors">📡 Audit Log 组件化 + OpenTelemetry</a></li><li style="padding-left:1rem"><a href="#-关键-bug-修复" class="block py-1 text-muted-foreground hover:text-foreground transition-colors">🐛 关键 Bug 修复</a></li><li style="padding-left:1rem"><a href="#-innodb零架构变更" class="block py-1 text-muted-foreground hover:text-foreground transition-colors">🔒 InnoDB：零架构变更</a></li><li style="padding-left:0"><a href="#5-趋势判断分裂格局中的关键信号" class="block py-1 text-muted-foreground hover:text-foreground transition-colors">5. 趋势判断：分裂格局中的关键信号</a></li><li style="padding-left:1rem"><a href="#-五个关键判断" class="block py-1 text-muted-foreground hover:text-foreground transition-colors">🧭 五个关键判断</a></li><li style="padding-left:1rem"><a href="#-技术选型速查表" class="block py-1 text-muted-foreground hover:text-foreground transition-colors">📊 技术选型速查表</a></li><li style="padding-left:0"><a href="#6-对-mysql-notes-项目的影响" class="block py-1 text-muted-foreground hover:text-foreground transition-colors">6. 对 mysql-notes 项目的影响</a></li><li style="padding-left:1rem"><a href="#版本基线调整" class="block py-1 text-muted-foreground hover:text-foreground transition-colors">版本基线调整</a></li><li style="padding-left:1rem"><a href="#研究优先级调整" class="block py-1 text-muted-foreground hover:text-foreground transition-colors">研究优先级调整</a></li><li style="padding-left:1rem"><a href="#️-待办事项" class="block py-1 text-muted-foreground hover:text-foreground transition-colors">🗓️ 待办事项</a></li><li style="padding-left:0"><a href="#附录关键来源" class="block py-1 text-muted-foreground hover:text-foreground transition-colors">附录：关键来源</a></li></ul></nav></div></aside><div class="lg:hidden fixed bottom-4 right-4 z-50"><button type="button" tabindex="0" data-base-ui-click-trigger="" id="base-ui-_R_t5fiv5ulb_" data-slot="sheet-trigger" class="inline-flex items-center gap-1.5 rounded-lg bg-secondary text-secondary-foreground px-3 py-2 text-sm font-medium shadow-lg hover:bg-secondary/80 transition-colors"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="size-4" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>TOC</button></div></div></div><!--$--><!--/$--></main><footer class="border-t border-border py-8"><div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center text-sm text-muted-foreground"><p>Built with Next.js · Content by<!-- --> <a href="https://github.com/Aqiu16717/mysql-notes" class="underline underline-offset-4 hover:text-foreground" target="_blank" rel="noopener noreferrer">mysql-notes</a> <!-- -->team</p></div></footer><script src="/mysql-notes/_next/static/chunks/15xrurgzs99gv.js" id="_R_" async=""></script><script>(self.__next_f=self.__next_f||[]).push([0])</script><script>self.__next_f.push([1,"1:\"$Sreact.fragment\"\n2:I[96923,[\"/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js\",\"/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js\",\"/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js\",\"/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js\"],\"Providers\"]\n3:I[22016,[\"/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js\",\"/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js\",\"/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js\",\"/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js\",\"/mysql-notes/_next/static/chunks/0p8~.s.k9oh65.js\",\"/mysql-notes/_next/static/chunks/08k3ot07zd2t5.js\"],\"\"]\n4:I[57477,[\"/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js\",\"/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js\",\"/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js\",\"/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js\"],\"Search\"]\n5:I[93539,[\"/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js\",\"/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js\",\"/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js\",\"/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js\"],\"ThemeToggle\"]\n6:I[39756,[\"/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js\",\"/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js\",\"/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js\",\"/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js\"],\"default\"]\n7:I[37457,[\"/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js\",\"/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js\",\"/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js\",\"/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js\"],\"default\"]\ne:I[68027,[\"/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js\",\"/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js\",\"/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js\",\"/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js\"],\"default\",1]\n:HL[\"/mysql-notes/_next/static/chunks/046n7_4_wz89b.css\",\"style\"]\n"])</script><script>self.__next_f.push([1,"0:{\"P\":null,\"c\":[\"\",\"posts\",\"mysql-9x-ecosystem-development-report\"],\"q\":\"\",\"i\":false,\"f\":[[[\"\",{\"children\":[\"posts\",{\"children\":[[\"slug\",\"mysql-9x-ecosystem-development-report\",\"d\",null],{\"children\":[\"__PAGE__\",{}]}]}]},\"$undefined\",\"$undefined\",16],[[\"$\",\"$1\",\"c\",{\"children\":[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/mysql-notes/_next/static/chunks/046n7_4_wz89b.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}],[\"$\",\"script\",\"script-0\",{\"src\":\"/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js\",\"async\":true,\"nonce\":\"$undefined\"}],[\"$\",\"script\",\"script-1\",{\"src\":\"/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js\",\"async\":true,\"nonce\":\"$undefined\"}],[\"$\",\"script\",\"script-2\",{\"src\":\"/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js\",\"async\":true,\"nonce\":\"$undefined\"}],[\"$\",\"script\",\"script-3\",{\"src\":\"/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js\",\"async\":true,\"nonce\":\"$undefined\"}]],[\"$\",\"html\",null,{\"lang\":\"zh-CN\",\"className\":\"h-full antialiased\",\"suppressHydrationWarning\":true,\"children\":[[\"$\",\"head\",null,{\"children\":[\"$\",\"script\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"\\n              (function() {\\n                try {\\n                  var theme = localStorage.getItem('theme');\\n                  if (theme === 'dark' || (!theme \u0026\u0026 window.matchMedia('(prefers-color-scheme: dark)').matches)) {\\n                    document.documentElement.classList.add('dark');\\n                  }\\n                } catch(e) {}\\n              })();\\n            \"}}]}],[\"$\",\"body\",null,{\"className\":\"min-h-full flex flex-col bg-background text-foreground\",\"children\":[\"$\",\"$L2\",null,{\"children\":[[\"$\",\"header\",null,{\"className\":\"sticky top-0 z-40 border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60\",\"children\":[\"$\",\"div\",null,{\"className\":\"mx-auto max-w-7xl px-4 sm:px-6 lg:px-8\",\"children\":[\"$\",\"div\",null,{\"className\":\"flex h-16 items-center justify-between gap-4\",\"children\":[[\"$\",\"div\",null,{\"className\":\"flex items-center gap-6 shrink-0\",\"children\":[[\"$\",\"$L3\",null,{\"href\":\"/\",\"className\":\"font-bold text-lg tracking-tight hover:text-primary transition-colors\",\"children\":\"mysql-notes\"}],[\"$\",\"nav\",null,{\"className\":\"hidden sm:flex items-center gap-4 text-sm\",\"children\":[[\"$\",\"$L3\",null,{\"href\":\"/tags\",\"className\":\"text-muted-foreground hover:text-foreground transition-colors\",\"children\":\"Tags\"}],[\"$\",\"a\",null,{\"href\":\"https://github.com/Aqiu16717/mysql-notes\",\"className\":\"text-muted-foreground hover:text-foreground transition-colors\",\"target\":\"_blank\",\"rel\":\"noopener noreferrer\",\"children\":\"GitHub\"}]]}]]}],[\"$\",\"div\",null,{\"className\":\"flex items-center gap-3 flex-1 max-w-md justify-end\",\"children\":[[\"$\",\"$L4\",null,{}],[\"$\",\"$L5\",null,{}]]}]]}]}]}],[\"$\",\"main\",null,{\"className\":\"flex-1\",\"children\":[\"$\",\"$L6\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L7\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":404}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],[]],\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]}],[\"$\",\"footer\",null,{\"className\":\"border-t border-border py-8\",\"children\":[\"$\",\"div\",null,{\"className\":\"mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center text-sm text-muted-foreground\",\"children\":[\"$\",\"p\",null,{\"children\":[\"Built with Next.js · Content by\",\" \",\"$L8\",\" \",\"team\"]}]}]}]]}]}]]}]]}],{\"children\":[\"$L9\",{\"children\":[\"$La\",{\"children\":[\"$Lb\",{},null,false,null]},null,false,\"$@c\"]},null,false,\"$@c\"]},null,false,null],\"$Ld\",false]],\"m\":\"$undefined\",\"G\":[\"$e\",[\"$Lf\"]],\"S\":true,\"h\":null,\"s\":\"$undefined\",\"l\":\"$undefined\",\"p\":\"$undefined\",\"d\":\"$undefined\",\"b\":\"qXkI9snRhaw2qMl5vra9Y\"}\n"])</script><script>self.__next_f.push([1,"11:I[97367,[\"/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js\",\"/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js\",\"/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js\",\"/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js\"],\"OutletBoundary\"]\n12:\"$Sreact.suspense\"\n15:I[97367,[\"/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js\",\"/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js\",\"/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js\",\"/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js\"],\"ViewportBoundary\"]\n17:I[97367,[\"/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js\",\"/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js\",\"/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js\",\"/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js\"],\"MetadataBoundary\"]\n8:[\"$\",\"a\",null,{\"href\":\"https://github.com/Aqiu16717/mysql-notes\",\"className\":\"underline underline-offset-4 hover:text-foreground\",\"target\":\"_blank\",\"rel\":\"noopener noreferrer\",\"children\":\"mysql-notes\"}]\n9:[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L6\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L7\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}]\na:[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L6\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L7\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}]\nb:[\"$\",\"$1\",\"c\",{\"children\":[\"$L10\",[[\"$\",\"script\",\"script-0\",{\"src\":\"/mysql-notes/_next/static/chunks/0p8~.s.k9oh65.js\",\"async\":true,\"nonce\":\"$undefined\"}],[\"$\",\"script\",\"script-1\",{\"src\":\"/mysql-notes/_next/static/chunks/08k3ot07zd2t5.js\",\"async\":true,\"nonce\":\"$undefined\"}]],[\"$\",\"$L11\",null,{\"children\":[\"$\",\"$12\",null,{\"name\":\"Next.MetadataOutlet\",\"children\":\"$@13\"}]}]]}]\n14:[]\nc:\"$W14\"\nd:[\"$\",\"$1\",\"h\",{\"children\":[null,[\"$\",\"$L15\",null,{\"children\":\"$L16\"}],[\"$\",\"div\",null,{\"hidden\":true,\"children\":[\"$\",\"$L17\",null,{\"children\":[\"$\",\"$12\",null,{\"name\":\"Next.Metadata\",\"children\":\"$L18\"}]}]}],null]}]\nf:[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/mysql-notes/_next/static/chunks/046n7_4_wz89b.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}]\n"])</script><script>self.__next_f.push([1,"16:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"meta\",\"1\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}]]\n"])</script><script>self.__next_f.push([1,"19:I[27201,[\"/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js\",\"/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js\",\"/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js\",\"/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js\"],\"IconMark\"]\n13:null\n18:[[\"$\",\"title\",\"0\",{\"children\":\"MySQL 9.x 开发生态报告：闭源开发、9.7 LTS 与社区分裂 | mysql-notes\"}],[\"$\",\"meta\",\"1\",{\"name\":\"description\",\"content\":\"MySQL 9.x 开发生态报告：闭源开发、9.7 LTS 与社区分裂 一句话摘要： MySQL 在关闭公开开发 5 个月后发布了首个 9.x LTS 版本（9.7.0），向社区版释放了 Hypergraph Optimizer 等 8 项企业功能——但社区信任危机、工程团队缩减、Innovation Release 采纳率仅 ~1% 等问题使生态面临前所未有的分裂风险。 读者定位： 熟悉…\"}],[\"$\",\"link\",\"2\",{\"rel\":\"icon\",\"href\":\"/mysql-notes/favicon.ico?favicon.0x3dzn~oxb6tn.ico\",\"sizes\":\"256x256\",\"type\":\"image/x-icon\"}],[\"$\",\"$L19\",\"3\",{}]]\n"])</script><script>self.__next_f.push([1,"10:[\"$\",\"div\",null,{\"className\":\"mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8\",\"children\":[\"$\",\"div\",null,{\"className\":\"flex gap-8\",\"children\":[[\"$\",\"article\",null,{\"className\":\"flex-1 min-w-0 max-w-3xl\",\"children\":[[\"$\",\"header\",null,{\"className\":\"mb-8\",\"children\":[[\"$\",\"h1\",null,{\"className\":\"text-2xl sm:text-3xl font-bold tracking-tight mb-4\",\"children\":\"MySQL 9.x 开发生态报告：闭源开发、9.7 LTS 与社区分裂\"}],[\"$\",\"div\",null,{\"className\":\"flex flex-wrap items-center gap-2 text-sm text-muted-foreground mb-4\",\"children\":[[\"$\",\"time\",null,{\"dateTime\":\"Sat May 16 2026 00:00:00 GMT+0000 (Coordinated Universal Time)\",\"children\":\"Sat May 16 2026 00:00:00 GMT+0000 (Coordinated Universal Time)\"}],[\"$\",\"span\",null,{\"children\":\"·\"}],[\"$\",\"span\",null,{\"children\":[21,\" min read\"]}],[\"$\",\"span\",null,{\"children\":\"·\"}],[\"$\",\"span\",null,{\"children\":\"@mns-scribe\"}]]}],[\"$\",\"div\",null,{\"className\":\"flex flex-wrap gap-1.5\",\"children\":[[\"$\",\"$L3\",\"#mysql\",{\"href\":\"/tags/mysql\",\"children\":[\"$\",\"span\",null,{\"data-slot\":\"badge\",\"data-variant\":\"default\",\"className\":\"group/badge inline-flex h-5 w-fit shrink-0 items-center justify-center gap-1 overflow-hidden rounded-4xl border border-transparent px-2 py-0.5 font-medium whitespace-nowrap focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [\u0026\u003esvg]:pointer-events-none [\u0026\u003esvg]:size-3! bg-primary text-primary-foreground [a]:hover:bg-primary/80 cursor-pointer hover:opacity-80 transition-opacity text-xs\",\"children\":\"mysql\"}]}],[\"$\",\"$L3\",\"#server\",{\"href\":\"/tags/server\",\"children\":[\"$\",\"span\",null,{\"data-slot\":\"badge\",\"data-variant\":\"default\",\"className\":\"group/badge inline-flex h-5 w-fit shrink-0 items-center justify-center gap-1 overflow-hidden rounded-4xl border border-transparent px-2 py-0.5 font-medium whitespace-nowrap focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [\u0026\u003esvg]:pointer-events-none [\u0026\u003esvg]:size-3! bg-primary text-primary-foreground [a]:hover:bg-primary/80 cursor-pointer hover:opacity-80 transition-opacity text-xs\",\"children\":\"server\"}]}],[\"$\",\"$L3\",\"#tutorial\",{\"href\":\"/tags/tutorial\",\"children\":[\"$\",\"span\",null,{\"data-slot\":\"badge\",\"data-variant\":\"secondary\",\"className\":\"group/badge inline-flex h-5 w-fit shrink-0 items-center justify-center gap-1 overflow-hidden rounded-4xl border border-transparent px-2 py-0.5 font-medium whitespace-nowrap focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [\u0026\u003esvg]:pointer-events-none [\u0026\u003esvg]:size-3! bg-secondary text-secondary-foreground [a]:hover:bg-secondary/80 cursor-pointer hover:opacity-80 transition-opacity text-xs\",\"children\":\"tutorial\"}]}],[\"$\",\"$L3\",\"#intermediate\",{\"href\":\"/tags/intermediate\",\"children\":[\"$\",\"span\",null,{\"data-slot\":\"badge\",\"data-variant\":\"outline\",\"className\":\"group/badge inline-flex h-5 w-fit shrink-0 items-center justify-center gap-1 overflow-hidden rounded-4xl border px-2 py-0.5 font-medium whitespace-nowrap focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [\u0026\u003esvg]:pointer-events-none [\u0026\u003esvg]:size-3! border-border text-foreground [a]:hover:bg-muted [a]:hover:text-muted-foreground cursor-pointer hover:opacity-80 transition-opacity text-xs\",\"children\":\"intermediate\"}]}]]}],\"$L1a\"]}],\"$L1b\",\"$L1c\",\"$L1d\",\"$L1e\",\"$L1f\"]}],\"$L20\"]}]}]\n"])</script><script>self.__next_f.push([1,"21:I[69035,[\"/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js\",\"/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js\",\"/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js\",\"/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js\",\"/mysql-notes/_next/static/chunks/0p8~.s.k9oh65.js\",\"/mysql-notes/_next/static/chunks/08k3ot07zd2t5.js\"],\"Separator\"]\n22:I[45462,[\"/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js\",\"/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js\",\"/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js\",\"/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js\",\"/mysql-notes/_next/static/chunks/0p8~.s.k9oh65.js\",\"/mysql-notes/_next/static/chunks/08k3ot07zd2t5.js\"],\"MermaidContent\"]\n24:I[42080,[\"/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js\",\"/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js\",\"/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js\",\"/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js\",\"/mysql-notes/_next/static/chunks/0p8~.s.k9oh65.js\",\"/mysql-notes/_next/static/chunks/08k3ot07zd2t5.js\"],\"TocSidebar\"]\n1a:[\"$\",\"p\",null,{\"className\":\"text-xs text-muted-foreground mt-3\",\"children\":[\"Version: \",\"MySQL 9.7.0 (LTS)\"]}]\n1b:[\"$\",\"$L21\",null,{\"className\":\"mb-8\"}]\n23:T4f3a,"])</script><script>self.__next_f.push([1,"\u003ch1 id=\"mysql-9x-开发生态报告闭源开发97-lts-与社区分裂\"\u003eMySQL 9.x 开发生态报告：闭源开发、9.7 LTS 与社区分裂\u003c/h1\u003e\n\u003cblockquote\u003e\n\u003cp\u003e\u003cstrong\u003e一句话摘要：\u003c/strong\u003e MySQL 在关闭公开开发 5 个月后发布了首个 9.x LTS 版本（9.7.0），向社区版释放了 Hypergraph Optimizer 等 8 项企业功能——但社区信任危机、工程团队缩减、Innovation Release 采纳率仅 ~1% 等问题使生态面临前所未有的分裂风险。\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003cp\u003e\u003cstrong\u003e读者定位：\u003c/strong\u003e 熟悉 MySQL 但未追踪最新动态的开发者/DBA。核心问题：\"MySQL 现在到底在往哪走？我该升级到 9.7 还是考虑替代方案？\"\u003c/p\u003e\n\u003chr\u003e\n\u003ch2 id=\"目录\"\u003e目录\u003c/h2\u003e\n\u003col\u003e\n\u003cli\u003e\u003ca href=\"#1-%E6%97%B6%E9%97%B4%E7%BA%BF%E4%BB%8E-innovation-release-%E5%88%B0-97-lts\"\u003e时间线：从 Innovation Release 到 9.7 LTS\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"#2-97-lts%E7%A4%BE%E5%8C%BA%E8%B5%A2%E4%BA%86%E4%BB%80%E4%B9%88\"\u003e9.7 LTS：社区赢了什么\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"#3-%E7%A4%BE%E5%8C%BA%E9%A3%8E%E6%9A%B4%E5%85%AC%E5%BC%80%E4%BF%A1%E8%A3%81%E5%91%98%E4%B8%8E%E4%BF%A1%E4%BB%BB%E5%8D%B1%E6%9C%BA\"\u003e社区风暴：公开信、裁员与信任危机\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"#4-%E4%BB%A3%E7%A0%81%E5%B1%82%E9%9D%A2trunk-%E6%9C%80%E5%90%8E%E6%B4%BB%E8%B7%83%E6%9C%9F%E7%9A%84%E6%8A%80%E6%9C%AF%E8%B6%8B%E5%8A%BF\"\u003e代码层面：trunk 最后活跃期的技术趋势\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"#5-%E8%B6%8B%E5%8A%BF%E5%88%A4%E6%96%AD%E5%88%86%E8%A3%82%E6%A0%BC%E5%B1%80%E4%B8%AD%E7%9A%84%E5%85%B3%E9%94%AE%E4%BF%A1%E5%8F%B7\"\u003e趋势判断：分裂格局中的关键信号\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"#6-%E5%AF%B9-mysql-notes-%E9%A1%B9%E7%9B%AE%E7%9A%84%E5%BD%B1%E5%93%8D\"\u003e对 mysql-notes 项目的影响\u003c/a\u003e\u003c/li\u003e\n\u003c/ol\u003e\n\u003chr\u003e\n\u003ch2 id=\"1-时间线从-innovation-release-到-97-lts\"\u003e1. 时间线：从 Innovation Release 到 9.7 LTS\u003c/h2\u003e\n\u003cpre\u003e\u003ccode class=\"language-mermaid\"\u003etimeline\n    title MySQL 9.x 版本演进\n    2024-07 : 9.0.0 (撤回) → 9.0.1\n    2024-10 : 9.1.0 Innovation\n    2025-01 : 9.2.0 Innovation\n    2025-04 : 9.3.0 Innovation\n    2025-07 : 9.4.0 Innovation\n    2025-09 : Oracle 裁员 ~60-70% MySQL 团队\n    2025-10 : 9.5.0 Innovation\n    2025-12 : trunk 最后一笔 commit\n    2026-01 : 9.6.0 Innovation\n    2026-02 : 248 名工程师公开信\n    2026-04-21 : 🎯 9.7.0 LTS (首个 9.x LTS) + 8.0.46 (8.0 EOL)\n    2026-05 : trunk 仍为零 commit（~5个月停摆）\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003e关键事实：\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003eInnovation Release 采纳率仅 ~1%\u003c/strong\u003e（Percona PMM 遥测数据），7 个 Innovation 版本（9.0~9.6）被市场集体忽略\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003ePercona 跳过了所有 Innovation Release\u003c/strong\u003e，直接从 8.0 跳到 9.7 LTS\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e8.0 系列于 2026-04-21 正式 EOL\u003c/strong\u003e，8.0.46 为最终版，不再有安全补丁\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e这不是正常的版本迭代——这是一次断裂之后的重新出发。\u003c/p\u003e\n\u003chr\u003e\n\u003ch2 id=\"2-97-lts社区赢了什么\"\u003e2. 9.7 LTS：社区赢了什么\u003c/h2\u003e\n\u003cp\u003e2026 年 4 月 21 日，MySQL 9.7.0 作为首个 9.x LTS 正式 GA（支持至 ~2032 年）。同日发布的 8.0.46 标志着 8.0 时代的终结。\u003c/p\u003e\n\u003ch3 id=\"-8-项企业功能下放社区版\"\u003e🏆 8 项企业功能下放社区版\u003c/h3\u003e\n\u003ctable\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth\u003e功能领域\u003c/th\u003e\n\u003cth\u003e下放内容\u003c/th\u003e\n\u003cth\u003e此前锁定范围\u003c/th\u003e\n\u003cth\u003e影响力\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\n\u003ctr\u003e\n\u003ctd\u003e\u003cstrong\u003e查询优化\u003c/strong\u003e\u003c/td\u003e\n\u003ctd\u003eHypergraph Optimizer（超图优化器）\u003c/td\u003e\n\u003ctd\u003eEnterprise/HeatWave 独占\u003c/td\u003e\n\u003ctd\u003e🔴 极高\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e应用开发\u003c/td\u003e\n\u003ctd\u003eJSON Duality Views 完整 DML（INSERT/UPDATE/DELETE）\u003c/td\u003e\n\u003ctd\u003e此前仅 DDL\u003c/td\u003e\n\u003ctd\u003e🟡 中\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e\u003cstrong\u003e可观测性\u003c/strong\u003e\u003c/td\u003e\n\u003ctd\u003eOpenTelemetry 遥测（logs/metrics/traces via OTLP）\u003c/td\u003e\n\u003ctd\u003eEnterprise\u003c/td\u003e\n\u003ctd\u003e🔴 极高\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e复制监控\u003c/td\u003e\n\u003ctd\u003e复制应用器指标、GR 流控统计、多线程吞吐量\u003c/td\u003e\n\u003ctd\u003eEnterprise\u003c/td\u003e\n\u003ctd\u003e🟡 中\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e高可用\u003c/td\u003e\n\u003ctd\u003e自动驱逐与重加入（auto-eviction \u0026#x26; rejoin）\u003c/td\u003e\n\u003ctd\u003eEnterprise\u003c/td\u003e\n\u003ctd\u003e🟡 中\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e高可用\u003c/td\u003e\n\u003ctd\u003eUp-to-date Aware 主节点选举\u003c/td\u003e\n\u003ctd\u003eEnterprise\u003c/td\u003e\n\u003ctd\u003e🟡 中\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e安全\u003c/td\u003e\n\u003ctd\u003ePBKDF2 + SHA-512 密码存储\u003c/td\u003e\n\u003ctd\u003eEnterprise\u003c/td\u003e\n\u003ctd\u003e🟢 低\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e安全\u003c/td\u003e\n\u003ctd\u003e动态数据遮蔽（Dynamic Data Masking）\u003c/td\u003e\n\u003ctd\u003eEnterprise\u003c/td\u003e\n\u003ctd\u003e🟡 中\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\n\u003c/table\u003e\n\u003cp\u003e来源：\u003ca href=\"https://blogs.oracle.com/mysql/mysql-9-7-is-out-and-the-community-wins\"\u003eOracle Blog: MySQL 9.7 Is Out and the Community Wins\u003c/a\u003e\u003c/p\u003e\n\u003ch3 id=\"-焦点hypergraph-optimizer\"\u003e⚡ 焦点：Hypergraph Optimizer\u003c/h3\u003e\n\u003cp\u003e这是 9.7 LTS 最具技术含量的变革：\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e传统优化器                         Hypergraph 优化器\n─────────────                      ──────────────────\n左深树枚举 (left-deep tree)  →     超图枚举 (bushy tree, DPhyp 算法)\n多表 JOIN 空间受限            →     更大的 JOIN 排序搜索空间\n固定策略选择                  →     基于成本在 nested-loop 与 hash join 间抉择\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003e使用方式：\u003c/strong\u003e\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-sql\"\u003eSET optimizer_switch='hypergraph_optimizer=on';\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003cstrong\u003e⚠️ 注意：\u003c/strong\u003e 默认关闭，hint 支持不完整。建议先在灰度环境测试后再上生产。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e本地代码关联：\u003c/strong\u003e 在 trunk 最后活跃期中，WL#16719（Hypergraph cost model for hash-join spill-to-disk）和 WL#16658（skip scan access methods）都是为 Hypergraph 铺路的代码——这些已经在 GitHub 仓库中可见，但优化器的最终版本在内部开发。\u003c/p\u003e\n\u003ch3 id=\"️-安全默认值收紧\"\u003e🛡️ 安全默认值收紧\u003c/h3\u003e\n\u003ctable\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth\u003e变更\u003c/th\u003e\n\u003cth\u003e影响\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\n\u003ctr\u003e\n\u003ctd\u003e\u003ccode\u003emysql_native_password\u003c/code\u003e 彻底移除\u003c/td\u003e\n\u003ctd\u003e所有用户须迁移到 \u003ccode\u003ecaching_sha2_password\u003c/code\u003e\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e\u003ccode\u003ecaching_sha2_password_digest_rounds\u003c/code\u003e → 10,000\u003c/td\u003e\n\u003ctd\u003e暴力破解抗性大幅增强，但连接延迟增加\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003ePBKDF2 密码存储\u003c/td\u003e\n\u003ctd\u003e替代旧 SHA-256 方案\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eSSL/TLS 默认开启（replication）\u003c/td\u003e\n\u003ctd\u003e明文复制流量不再允许\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\n\u003c/table\u003e\n\u003ch3 id=\"-仍被锁定的关键功能\"\u003e🚫 仍被锁定的关键功能\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003e\u003ccode\u003eDISTANCE()\u003c/code\u003e / 向量相似度搜索\u003c/strong\u003e → HeatWave on OCI 独占\n\u003cul\u003e\n\u003cli\u003eCommunity Edition 可以\u003cstrong\u003e存储\u003c/strong\u003e \u003ccode\u003eVECTOR\u003c/code\u003e 数据，但\u003cstrong\u003e不能搜索\u003c/strong\u003e\u003c/li\u003e\n\u003cli\u003e这是当前社区最大痛点之一——\"给你数据容器，但不给你查询能力\"\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003chr\u003e\n\u003ch2 id=\"3-社区风暴公开信裁员与信任危机\"\u003e3. 社区风暴：公开信、裁员与信任危机\u003c/h2\u003e\n\u003cp\u003e这是代码之外最重要的上下文。以下事件不会出现在 git log 中，但深刻影响着 MySQL 的未来：\u003c/p\u003e\n\u003ch3 id=\"-事件链\"\u003e📉 事件链\u003c/h3\u003e\n\u003cpre\u003e\u003ccode class=\"language-mermaid\"\u003egraph TD\n    A[2025-09: Oracle 裁员\u0026#x3C;br/\u003eMySQL 团队缩减 60–70%] --\u003e B[2025-12: GitHub trunk\u0026#x3C;br/\u003e完全停止 commit]\n    B --\u003e C[2026-02: 248 名工程师公开信\u0026#x3C;br/\u003e称 MySQL 为\"遗产技术\"]\n    C --\u003e D[500+ 开发者联名\u0026#x3C;br/\u003e要求建立厂商中立基金会]\n    D --\u003e E[Oracle 拒绝基金会提议]\n    E --\u003e F[2026-04: Oracle 发布 9.7 LTS\u0026#x3C;br/\u003e承诺\"新时代\"]\n    F --\u003e G[社区反应分化\u0026#x3C;br/\u003e乐观 vs 怀疑]\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch3 id=\"-关键数据点\"\u003e🔑 关键数据点\u003c/h3\u003e\n\u003col\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e工程团队缩减 60-70%\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003ePercona 创始人 Peter Zaitsev 估计\u003c/li\u003e\n\u003cli\u003e影响 optimizer、InnoDB、replication 等核心模块\u003c/li\u003e\n\u003cli\u003e这是 trunk 停摆 5 个月最可能的根因\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003e248 名数据库工程师公开信（2026-02）\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e签署者来自 Percona、MariaDB、PlanetScale、DigitalOcean、Pinterest 等\u003c/li\u003e\n\u003cli\u003e核心指控：MySQL 是\"遗产技术\"，\"有滑向无关紧要的风险\"\u003c/li\u003e\n\u003cli\u003e要求：路线图透明、公开开发恢复、社区治理\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cstrong\u003eOracle 的回应（2026-04）\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e宣布 MySQL 进入\"新时代\"，以 9.7 LTS 为中心\u003c/li\u003e\n\u003cli\u003e承诺更多功能开放给社区、改善路线图透明度\u003c/li\u003e\n\u003cli\u003e重新考虑基金会模式（约 100 人签署支持——注意，是 100 人支持 vs 500+ 人联名要求）\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ol\u003e\n\u003ch3 id=\"-开源开发-vs-闭门造车\"\u003e📊 开源开发 vs 闭门造车\u003c/h3\u003e\n\u003ctable\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth\u003e维度\u003c/th\u003e\n\u003cth\u003e2015~2024 时代\u003c/th\u003e\n\u003cth\u003e2025~现在\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\n\u003ctr\u003e\n\u003ctd\u003e开发模式\u003c/td\u003e\n\u003ctd\u003eGitHub 公开 trunk，commit 可见\u003c/td\u003e\n\u003ctd\u003e内部开发，GitHub 仓库 5 个月零 commit\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e版本策略\u003c/td\u003e\n\u003ctd\u003e8.0 单一 LTS\u003c/td\u003e\n\u003ctd\u003eInnovation + LTS 双轨，但 Innovation 被市场忽略\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e社区关系\u003c/td\u003e\n\u003ctd\u003e低频摩擦\u003c/td\u003e\n\u003ctd\u003e公开信 + 基金会争议\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e功能方向\u003c/td\u003e\n\u003ctd\u003eInnoDB/optimizer/replication 均衡\u003c/td\u003e\n\u003ctd\u003eHeatWave/Lakehouse/AI 优先\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\n\u003c/table\u003e\n\u003chr\u003e\n\u003ch2 id=\"4-代码层面trunk-最后活跃期的技术趋势\"\u003e4. 代码层面：trunk 最后活跃期的技术趋势\u003c/h2\u003e\n\u003cp\u003e以下分析基于 MySQL trunk 在 2025 年 11~12 月（最后一次活跃窗口）的 148 个非 merge commit。\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-mermaid\"\u003epie title Commits by Theme (Nov-Dec 2025)\n    \"GTID 库重构 (WL#16076)\" : 39\n    \"Lakehouse/HeatWave\" : 15\n    \"Audit/OTEL\" : 12\n    \"Bug Fixes\" : 25\n    \"NDB Cluster\" : 8\n    \"Group Replication\" : 7\n    \"其他\" : 42\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch3 id=\"-wl16076--gtid-基础设施重写39-commits占比-29\"\u003e🔧 WL#16076 — GTID 基础设施重写（39 commits，占比 29%）\u003c/h3\u003e\n\u003cp\u003e这是 MySQL 9.x 最深层的一次架构变更。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e做了什么：\u003c/strong\u003e 在 \u003ccode\u003elibs/mysql/\u003c/code\u003e 下从零构建了 11 个 C++ 底层库：\u003c/p\u003e\n\u003ctable\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth\u003e库名\u003c/th\u003e\n\u003cth\u003e功能\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\n\u003ctr\u003e\n\u003ctd\u003e\u003ccode\u003egtids\u003c/code\u003e\u003c/td\u003e\n\u003ctd\u003e新 GTID 数据结构，替代旧的 \u003ccode\u003eGtid_set\u003c/code\u003e\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e\u003ccode\u003euuids\u003c/code\u003e\u003c/td\u003e\n\u003ctd\u003eUUID 解析与比较\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e\u003ccode\u003esets\u003c/code\u003e\u003c/td\u003e\n\u003ctd\u003e泛型集合操作\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e\u003ccode\u003estrconv\u003c/code\u003e\u003c/td\u003e\n\u003ctd\u003e安全字符串↔数字转换\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e\u003ccode\u003emath\u003c/code\u003e\u003c/td\u003e\n\u003ctd\u003e\u003ccode\u003eint_log\u003c/code\u003e、\u003ccode\u003eint_pow\u003c/code\u003e 等数学函数\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e\u003ccode\u003econtainers\u003c/code\u003e\u003c/td\u003e\n\u003ctd\u003e\u003ccode\u003eBasic_container_wrapper\u003c/code\u003e、\u003ccode\u003emap_or_set_assign\u003c/code\u003e\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e\u003ccode\u003eranges\u003c/code\u003e / \u003ccode\u003eiterators\u003c/code\u003e\u003c/td\u003e\n\u003ctd\u003e范围与迭代器抽象\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e\u003ccode\u003emeta\u003c/code\u003e\u003c/td\u003e\n\u003ctd\u003eC++20 concept 模式回移植到 C++14（模板元编程）\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e\u003ccode\u003edebugging\u003c/code\u003e\u003c/td\u003e\n\u003ctd\u003e\u003ccode\u003eMY_SCOPED_TRACE\u003c/code\u003e、\u003ccode\u003eObject_lifetime_tracker\u003c/code\u003e\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\n\u003c/table\u003e\n\u003cp\u003e\u003cstrong\u003e为什么重要：\u003c/strong\u003e 这是一笔\u003cstrong\u003e基础设施投资\u003c/strong\u003e——用户看不到，但为未来 GTID 性能和数据正确性提供了干净的基础。这暗示复制团队在准备一个大的功能 push。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e关键人：\u003c/strong\u003e Sven Sandberg（44 commits，占总量的 30%）——单人扛起了库现代化工程。\u003c/p\u003e\n\u003ch3 id=\"️-lakehouse--parquet--9x-的战略新方向\"\u003e🏞️ Lakehouse / Parquet — 9.x 的战略新方向\u003c/h3\u003e\n\u003cp\u003e4 个 WL 围绕数据湖能力：\u003c/p\u003e\n\u003ctable\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth\u003eWL\u003c/th\u003e\n\u003cth\u003e内容\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\n\u003ctr\u003e\n\u003ctd\u003eWL#17186\u003c/td\u003e\n\u003ctd\u003e文件级数据放置\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eWL#17152\u003c/td\u003e\n\u003ctd\u003eParquet nested types（STRUCT/ARRAY/MAP）\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eWL#17124\u003c/td\u003e\n\u003ctd\u003eALTER TABLE load validation\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eWL#17165\u003c/td\u003e\n\u003ctd\u003eUnion of all schemas\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\n\u003c/table\u003e\n\u003cp\u003e\u003cstrong\u003e信号：\u003c/strong\u003e MySQL 在向数据湖靠拢——Parquet 支持、嵌套类型、外部表。这是在和 Snowflake/Databricks 抢\"查询你的数据湖\"的市场。但路线图不透明，这些功能的 GA 时间表和定价模型都不明确。\u003c/p\u003e\n\u003ch3 id=\"-audit-log-组件化--opentelemetry\"\u003e📡 Audit Log 组件化 + OpenTelemetry\u003c/h3\u003e\n\u003ctable\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth\u003eWL\u003c/th\u003e\n\u003cth\u003e内容\u003c/th\u003e\n\u003cth\u003e重要性\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\n\u003ctr\u003e\n\u003ctd\u003eWL#12716\u003c/td\u003e\n\u003ctd\u003eAudit Log 从旧 plugin 迁移到 8.0 组件框架\u003c/td\u003e\n\u003ctd\u003e架构升级——动态加载/卸载、版本化 API\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eWL#17167\u003c/td\u003e\n\u003ctd\u003eP_S → OpenTelemetry logs 打通\u003c/td\u003e\n\u003ctd\u003e云原生可观测性栈的入口\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eWL#17178\u003c/td\u003e\n\u003ctd\u003eAudit log offload to LogAnalytics\u003c/td\u003e\n\u003ctd\u003e云集成\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\n\u003c/table\u003e\n\u003cp\u003e这组 WL 标志着 MySQL 向云原生可观测性靠拢——OTEL traces/logs/metrics 是 modern stack 的标准配置。\u003c/p\u003e\n\u003ch3 id=\"-关键-bug-修复\"\u003e🐛 关键 Bug 修复\u003c/h3\u003e\n\u003ctable\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth\u003eBug\u003c/th\u003e\n\u003cth\u003e严重度\u003c/th\u003e\n\u003cth\u003eCommits\u003c/th\u003e\n\u003cth\u003e描述\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\n\u003ctr\u003e\n\u003ctd\u003eBug#38573285\u003c/td\u003e\n\u003ctd\u003e🔴 严重\u003c/td\u003e\n\u003ctd\u003e3\u003c/td\u003e\n\u003ctd\u003eCPU-eating DoS 查询——精心构造的 SQL 可无限消耗 CPU\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eBug#38448700\u003c/td\u003e\n\u003ctd\u003e🔴 严重\u003c/td\u003e\n\u003ctd\u003e3\u003c/td\u003e\n\u003ctd\u003eEXPLAIN + LEFT JOIN + derived table + stored function → crash\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eBug#38208188\u003c/td\u003e\n\u003ctd\u003e🟡 中\u003c/td\u003e\n\u003ctd\u003e2\u003c/td\u003e\n\u003ctd\u003eBulk insert + GIS index → crash\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eBug#38680162\u003c/td\u003e\n\u003ctd\u003e🟡 中\u003c/td\u003e\n\u003ctd\u003e1\u003c/td\u003e\n\u003ctd\u003eSET PERSIST 升级后产生重复项\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\n\u003c/table\u003e\n\u003ch3 id=\"-innodb零架构变更\"\u003e🔒 InnoDB：零架构变更\u003c/h3\u003e\n\u003cp\u003e在最后活跃期中，InnoDB 的 6 个 commit 全部是 bug 修复，\u003cstrong\u003e无新特性\u003c/strong\u003e。InnoDB 在 9.x 此阶段已进入稳定/成熟状态——这可能是资源重新分配的信号（团队被调去做 HeatWave/Lakehouse）。\u003c/p\u003e\n\u003chr\u003e\n\u003ch2 id=\"5-趋势判断分裂格局中的关键信号\"\u003e5. 趋势判断：分裂格局中的关键信号\u003c/h2\u003e\n\u003ch3 id=\"-五个关键判断\"\u003e🧭 五个关键判断\u003c/h3\u003e\n\u003cp\u003e\u003cstrong\u003e1. MySQL 进入了\"闭源开发 → 定期发布\"模式。\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003eGitHub trunk 5 个月零 commit 不是疏忽——是 Oracle 的\u003cstrong\u003e刻意选择\u003c/strong\u003e。9.7 LTS 的 Hypergraph Optimizer 和其他企业功能是在内部开发、打包、测试后一次性发布的。这对社区意味着：你不再能在 GitHub 上追踪 MySQL 的日常演进。信任模型从\"看代码判断方向\"变成\"看发布猜方向\"。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e2. Innovation Release 模型已经失败。\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e~1% 的采纳率说明市场根本不接受每季度一次的\"非 LTS\"版本。DBA 不愿意在生产环境跑 Innovation Release，Percona 等关键下游完全跳过。Oracle 需要重新考虑这个模型——要么让 Innovation Release 有足够吸引力（比如放更多新功能），要么放弃它。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e3. 社区分裂正在加速。\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e248 名工程师公开信 + 500+ 人联名是 MySQL 历史上最严重的社区信任危机。这不是\"要不要升级\"的问题——是有没有\u003cstrong\u003e可信的未来路线图\u003c/strong\u003e的问题。对于新项目，\"选 Percona/MariaDB 还是 MySQL 官方\"正在从一个技术问题变成一个政治/信任问题。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e4. 9.7 LTS 是一个有用的版本，但不解决根本问题。\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003eHypergraph Optimizer 进社区版是实质利好。OTEL 可观测性、动态数据遮蔽也是。但这些是\u003cstrong\u003e当前的礼物\u003c/strong\u003e，不是\u003cstrong\u003e未来的保证\u003c/strong\u003e。核心问题——开发透明度和社区治理——未被触及。\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e5. HeatWave/Lakehouse 路线图不透明是最大风险。\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003eMySQL 在向数据湖和 AI 方向投入大量资源，但这些功能的交付模式、定价、GA 时间表完全在 Oracle 的黑箱中。如果你基于\"MySQL 将来支持 Lakehouse\"做架构决策，你赌的是 Oracle 的善意，而不是公开的路线图。\u003c/p\u003e\n\u003ch3 id=\"-技术选型速查表\"\u003e📊 技术选型速查表\u003c/h3\u003e\n\u003ctable\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth\u003e场景\u003c/th\u003e\n\u003cth\u003e建议\u003c/th\u003e\n\u003cth\u003e理由\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\n\u003ctr\u003e\n\u003ctd\u003e现有 8.0 用户，需要 LTS\u003c/td\u003e\n\u003ctd\u003e✅ 升级到 9.7 LTS\u003c/td\u003e\n\u003ctd\u003e8.0 已 EOL，9.7 是唯一 LTS 路径\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e新项目，需要多源复制/Galera\u003c/td\u003e\n\u003ctd\u003e考虑 Percona XtraDB Cluster 或 MariaDB\u003c/td\u003e\n\u003ctd\u003e功能更成熟，社区治理更透明\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e新项目，需要 hypergraph optimizer\u003c/td\u003e\n\u003ctd\u003e✅ MySQL 9.7\u003c/td\u003e\n\u003ctd\u003e这是 MySQL 当前的独家优势\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e需要向量搜索\u003c/td\u003e\n\u003ctd\u003e❌ MySQL Community Edition 不行\u003c/td\u003e\n\u003ctd\u003e\u003ccode\u003eDISTANCE()\u003c/code\u003e 仍锁定在 HeatWave on OCI\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e需要 Lakehouse/Parquet 查询\u003c/td\u003e\n\u003ctd\u003e⚠️ 观望\u003c/td\u003e\n\u003ctd\u003e功能在 trunk 中可见但路线图不透明\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e需要 GTID 高级功能\u003c/td\u003e\n\u003ctd\u003e✅ MySQL 9.7\u003c/td\u003e\n\u003ctd\u003eWL#16076 的库重构为未来 GTID 功能铺了路\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\n\u003c/table\u003e\n\u003chr\u003e\n\u003ch2 id=\"6-对-mysql-notes-项目的影响\"\u003e6. 对 mysql-notes 项目的影响\u003c/h2\u003e\n\u003ch3 id=\"版本基线调整\"\u003e版本基线调整\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003e代码分析基线：\u003c/strong\u003e 当前 trunk HEAD (\u003ccode\u003e447eb26e094\u003c/code\u003e) 是最后一个公开 commit——之后的分析只能基于\"推断\"而非\"观察\"\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e文章版本标注：\u003c/strong\u003e 使用 \u003ccode\u003eMySQL 9.7.0\u003c/code\u003e 而非 \u003ccode\u003eMySQL 9.6.0\u003c/code\u003e，因为 9.7 是实际可用的 LTS 版本\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003e多产品对比：\u003c/strong\u003e Percona 和 MariaDB 的版本需要同步追踪——社区分裂意味着\"MySQL vs 替代品\"的对比变得更重要\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3 id=\"研究优先级调整\"\u003e研究优先级调整\u003c/h3\u003e\n\u003cp\u003e\u003cstrong\u003e高优先级：\u003c/strong\u003e\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003e\u003cstrong\u003eHypergraph Optimizer 深度解读\u003c/strong\u003e — 这是 9.7 最大的技术亮点，社区版用户可以实际使用\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eMySQL vs Percona vs MariaDB 选型指南\u003c/strong\u003e — 社区分裂背景下决策需求急剧增加\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eGTID 新库体系源码解读\u003c/strong\u003e — WL#16076 的 11 个新库是理解未来复制功能的关键\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp\u003e\u003cstrong\u003e中优先级：\u003c/strong\u003e\n4. \u003cstrong\u003eAudit Log 组件化分析\u003c/strong\u003e — 架构迁移模式案例研究\n5. \u003cstrong\u003eOTEL 可观测性堆栈\u003c/strong\u003e — MySQL 云原生化的重要一步\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e低优先级（观望）：\u003c/strong\u003e\n6. Lakehouse/Parquet — 路线图不透明，等 GA 后再深入\u003c/p\u003e\n\u003ch3 id=\"️-待办事项\"\u003e🗓️ 待办事项\u003c/h3\u003e\n\u003cul class=\"contains-task-list\"\u003e\n\u003cli class=\"task-list-item\"\u003e\u003cinput type=\"checkbox\" disabled\u003e 等待 9.7 LTS 源码在 GitHub 上公开，验证 Hypergraph Optimizer 的实际代码\u003c/li\u003e\n\u003cli class=\"task-list-item\"\u003e\u003cinput type=\"checkbox\" disabled\u003e 协调 @mns-scout 建立 9.7 LTS 用户反馈监控（bug reports、性能 regressions）\u003c/li\u003e\n\u003cli class=\"task-list-item\"\u003e\u003cinput type=\"checkbox\" disabled\u003e 协调 @mns-comparator 产出 MySQL 9.7 vs Percona vs MariaDB 最新对比\u003c/li\u003e\n\u003c/ul\u003e\n\u003chr\u003e\n\u003ch2 id=\"附录关键来源\"\u003e附录：关键来源\u003c/h2\u003e\n\u003ctable\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth\u003e来源\u003c/th\u003e\n\u003cth\u003e类型\u003c/th\u003e\n\u003cth\u003e链接\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\n\u003ctr\u003e\n\u003ctd\u003eMySQL 9.7 Release Notes\u003c/td\u003e\n\u003ctd\u003e官方\u003c/td\u003e\n\u003ctd\u003e\u003ca href=\"https://dev.mysql.com/doc/relcontent/mysql/9.7/en/news-9-7-0.html\"\u003ehttps://dev.mysql.com/doc/relcontent/mysql/9.7/en/news-9-7-0.html\u003c/a\u003e\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eOracle Blog: \"MySQL 9.7 Is Out and the Community Wins\"\u003c/td\u003e\n\u003ctd\u003e官方\u003c/td\u003e\n\u003ctd\u003e\u003ca href=\"https://blogs.oracle.com/mysql/mysql-9-7-is-out-and-the-community-wins\"\u003ehttps://blogs.oracle.com/mysql/mysql-9-7-is-out-and-the-community-wins\u003c/a\u003e\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003ePlanet MySQL: Hypergraph Optimizer in Community\u003c/td\u003e\n\u003ctd\u003e社区\u003c/td\u003e\n\u003ctd\u003e\u003ca href=\"https://planet.mysql.com/?tag_search=25057\"\u003ehttps://planet.mysql.com/?tag_search=25057\u003c/a\u003e\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e@mns-reader 源码分析\u003c/td\u003e\n\u003ctd\u003e内部\u003c/td\u003e\n\u003ctd\u003e\u003ccode\u003econtent/2026-05-16-mysql-trunk-dev-activity-analysis.md\u003c/code\u003e\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e@mns-scout 社区简报\u003c/td\u003e\n\u003ctd\u003e内部\u003c/td\u003e\n\u003ctd\u003e#mysql-notes thread\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e@mns-comparator 代码变更全景\u003c/td\u003e\n\u003ctd\u003e内部\u003c/td\u003e\n\u003ctd\u003e#mysql-notes thread\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\n\u003c/table\u003e\n\u003chr\u003e\n\u003cp\u003e\u003cem\u003e本报告基于 2026-05-16 可用信息。MySQL 生态变化迅速——所有趋势判断均为\"当前可见信号\"的解读，非预测。\u003c/em\u003e\u003c/p\u003e"])</script><script>self.__next_f.push([1,"1c:[\"$\",\"div\",null,{\"className\":\"article-content max-w-none\",\"children\":[\"$\",\"$L22\",null,{\"html\":\"$23\"}]}]\n1d:[\"$\",\"$L21\",null,{\"className\":\"my-8\"}]\n1e:[\"$\",\"div\",null,{\"className\":\"mb-8\",\"children\":[[\"$\",\"h3\",null,{\"className\":\"text-sm font-semibold mb-2\",\"children\":\"Sources\"}],[\"$\",\"ul\",null,{\"className\":\"space-y-1\",\"children\":[[\"$\",\"li\",\"0\",{\"className\":\"text-sm\",\"children\":[\"$\",\"a\",null,{\"href\":\"https://github.com/Aqiu16717/mysql-notes/@mns-reader: MySQL 9.6.0 trunk dev activity analysis (2026-05-16)\",\"className\":\"text-primary underline underline-offset-4 hover:no-underline break-all\",\"target\":\"_blank\",\"rel\":\"noopener noreferrer\",\"children\":\"@mns-reader: MySQL 9.6.0 trunk dev activity analysis (2026-05-16)\"}]}],[\"$\",\"li\",\"1\",{\"className\":\"text-sm\",\"children\":[\"$\",\"a\",null,{\"href\":\"https://github.com/Aqiu16717/mysql-notes/@mns-scout: MySQL community dynamics scan (2026-05-16)\",\"className\":\"text-primary underline underline-offset-4 hover:no-underline break-all\",\"target\":\"_blank\",\"rel\":\"noopener noreferrer\",\"children\":\"@mns-scout: MySQL community dynamics scan (2026-05-16)\"}]}],[\"$\",\"li\",\"2\",{\"className\":\"text-sm\",\"children\":[\"$\",\"a\",null,{\"href\":\"https://github.com/Aqiu16717/mysql-notes/@mns-comparator: Module commit distribution analysis (2026-05-16)\",\"className\":\"text-primary underline underline-offset-4 hover:no-underline break-all\",\"target\":\"_blank\",\"rel\":\"noopener noreferrer\",\"children\":\"@mns-comparator: Module commit distribution analysis (2026-05-16)\"}]}]]}]]}]\n"])</script><script>self.__next_f.push([1,"1f:[\"$\",\"footer\",null,{\"className\":\"space-y-6\",\"children\":[[\"$\",\"nav\",null,{\"className\":\"grid grid-cols-2 gap-4\",\"children\":[[\"$\",\"$L3\",null,{\"href\":\"/posts/mysql-bwtree-learning-card\",\"className\":\"group block p-4 border border-border rounded-lg hover:border-primary/50 transition-colors\",\"children\":[[\"$\",\"span\",null,{\"className\":\"text-xs text-muted-foreground\",\"children\":\"← Previous\"}],[\"$\",\"p\",null,{\"className\":\"text-sm font-medium mt-1 group-hover:text-primary transition-colors line-clamp-1\",\"children\":\"一张图看懂：BwTree — 为什么 AHI 是 MySQL 的无锁 B-tree 起点\"}]]}],[\"$\",\"$L3\",null,{\"href\":\"/posts/ecosystem-scan-mysql-9.7-lts-community-turbulence\",\"className\":\"group block p-4 border border-border rounded-lg hover:border-primary/50 transition-colors text-right\",\"children\":[[\"$\",\"span\",null,{\"className\":\"text-xs text-muted-foreground\",\"children\":\"Next →\"}],[\"$\",\"p\",null,{\"className\":\"text-sm font-medium mt-1 group-hover:text-primary transition-colors line-clamp-1\",\"children\":\"生态简报：MySQL 9.7.0 LTS 发布与社区动荡\"}]]}]]}],[\"$\",\"div\",null,{\"children\":[[\"$\",\"h3\",null,{\"className\":\"text-sm font-semibold mb-3\",\"children\":\"Related Posts\"}],[\"$\",\"div\",null,{\"className\":\"grid gap-3 sm:grid-cols-2 lg:grid-cols-3\",\"children\":[[\"$\",\"$L3\",\"mysql-mdl-tutorial\",{\"href\":\"/posts/mysql-mdl-tutorial\",\"className\":\"block p-3 border border-border rounded-lg hover:border-primary/50 transition-colors\",\"children\":[[\"$\",\"p\",null,{\"className\":\"text-sm font-medium line-clamp-2\",\"children\":\"MySQL MDL 入门到精通：Metadata Lock 的获取、等待与死锁\"}],[\"$\",\"p\",null,{\"className\":\"text-xs text-muted-foreground mt-1\",\"children\":\"Sun May 17 2026 00:00:00 GMT+0000 (Coordinated Universal Time)\"}]]}],[\"$\",\"$L3\",\"cross-product-enterprise-features-competitive-landscape\",{\"href\":\"/posts/cross-product-enterprise-features-competitive-landscape\",\"className\":\"block p-3 border border-border rounded-lg hover:border-primary/50 transition-colors\",\"children\":[[\"$\",\"p\",null,{\"className\":\"text-sm font-medium line-clamp-2\",\"children\":\"MySQL 9.7 企业功能下放后竞争格局分析：社区版 vs Percona/MariaDB/TiDB/OceanBase\"}],[\"$\",\"p\",null,{\"className\":\"text-xs text-muted-foreground mt-1\",\"children\":\"Sat May 16 2026 00:00:00 GMT+0000 (Coordinated Universal Time)\"}]]}],[\"$\",\"$L3\",\"mysql-trunk-dev-activity-analysis\",{\"href\":\"/posts/mysql-trunk-dev-activity-analysis\",\"className\":\"block p-3 border border-border rounded-lg hover:border-primary/50 transition-colors\",\"children\":[[\"$\",\"p\",null,{\"className\":\"text-sm font-medium line-clamp-2\",\"children\":\"MySQL 9.6.0 (trunk) 近期开发活动分析\"}],[\"$\",\"p\",null,{\"className\":\"text-xs text-muted-foreground mt-1\",\"children\":\"Sat May 16 2026 00:00:00 GMT+0000 (Coordinated Universal Time)\"}]]}]]}]]}],[\"$\",\"div\",null,{\"className\":\"text-sm\",\"children\":[\"$\",\"a\",null,{\"href\":\"https://github.com/Aqiu16717/mysql-notes/blob/main/content/2026-05-16-mysql-9x-ecosystem-development-report.md\",\"className\":\"text-muted-foreground hover:text-foreground transition-colors underline underline-offset-4\",\"target\":\"_blank\",\"rel\":\"noopener noreferrer\",\"children\":\"Edit this page on GitHub\"}]}]]}]\n"])</script><script>self.__next_f.push([1,"20:[\"$\",\"$L24\",null,{\"entries\":[{\"id\":\"目录\",\"text\":\"目录\",\"level\":2},{\"id\":\"1-时间线从-innovation-release-到-97-lts\",\"text\":\"1. 时间线：从 Innovation Release 到 9.7 LTS\",\"level\":2},{\"id\":\"2-97-lts社区赢了什么\",\"text\":\"2. 9.7 LTS：社区赢了什么\",\"level\":2},{\"id\":\"-8-项企业功能下放社区版\",\"text\":\"🏆 8 项企业功能下放社区版\",\"level\":3},{\"id\":\"-焦点hypergraph-optimizer\",\"text\":\"⚡ 焦点：Hypergraph Optimizer\",\"level\":3},{\"id\":\"️-安全默认值收紧\",\"text\":\"🛡️ 安全默认值收紧\",\"level\":3},{\"id\":\"-仍被锁定的关键功能\",\"text\":\"🚫 仍被锁定的关键功能\",\"level\":3},{\"id\":\"3-社区风暴公开信裁员与信任危机\",\"text\":\"3. 社区风暴：公开信、裁员与信任危机\",\"level\":2},{\"id\":\"-事件链\",\"text\":\"📉 事件链\",\"level\":3},{\"id\":\"-关键数据点\",\"text\":\"🔑 关键数据点\",\"level\":3},{\"id\":\"-开源开发-vs-闭门造车\",\"text\":\"📊 开源开发 vs 闭门造车\",\"level\":3},{\"id\":\"4-代码层面trunk-最后活跃期的技术趋势\",\"text\":\"4. 代码层面：trunk 最后活跃期的技术趋势\",\"level\":2},{\"id\":\"-wl16076--gtid-基础设施重写39-commits占比-29\",\"text\":\"🔧 WL#16076 — GTID 基础设施重写（39 commits，占比 29%）\",\"level\":3},{\"id\":\"️-lakehouse--parquet--9x-的战略新方向\",\"text\":\"🏞️ Lakehouse / Parquet — 9.x 的战略新方向\",\"level\":3},{\"id\":\"-audit-log-组件化--opentelemetry\",\"text\":\"📡 Audit Log 组件化 + OpenTelemetry\",\"level\":3},{\"id\":\"-关键-bug-修复\",\"text\":\"🐛 关键 Bug 修复\",\"level\":3},{\"id\":\"-innodb零架构变更\",\"text\":\"🔒 InnoDB：零架构变更\",\"level\":3},{\"id\":\"5-趋势判断分裂格局中的关键信号\",\"text\":\"5. 趋势判断：分裂格局中的关键信号\",\"level\":2},{\"id\":\"-五个关键判断\",\"text\":\"🧭 五个关键判断\",\"level\":3},{\"id\":\"-技术选型速查表\",\"text\":\"📊 技术选型速查表\",\"level\":3},{\"id\":\"6-对-mysql-notes-项目的影响\",\"text\":\"6. 对 mysql-notes 项目的影响\",\"level\":2},{\"id\":\"版本基线调整\",\"text\":\"版本基线调整\",\"level\":3},{\"id\":\"研究优先级调整\",\"text\":\"研究优先级调整\",\"level\":3},{\"id\":\"️-待办事项\",\"text\":\"🗓️ 待办事项\",\"level\":3},{\"id\":\"附录关键来源\",\"text\":\"附录：关键来源\",\"level\":2}]}]\n"])</script></body></html>

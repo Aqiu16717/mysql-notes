@@ -1,0 +1,338 @@
+1:"$Sreact.fragment"
+2:I[22016,["/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js","/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js","/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js","/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js","/mysql-notes/_next/static/chunks/0p8~.s.k9oh65.js","/mysql-notes/_next/static/chunks/08k3ot07zd2t5.js"],""]
+d:I[69035,["/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js","/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js","/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js","/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js","/mysql-notes/_next/static/chunks/0p8~.s.k9oh65.js","/mysql-notes/_next/static/chunks/08k3ot07zd2t5.js"],"Separator"]
+e:I[45462,["/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js","/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js","/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js","/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js","/mysql-notes/_next/static/chunks/0p8~.s.k9oh65.js","/mysql-notes/_next/static/chunks/08k3ot07zd2t5.js"],"MermaidContent"]
+10:I[42080,["/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js","/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js","/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js","/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js","/mysql-notes/_next/static/chunks/0p8~.s.k9oh65.js","/mysql-notes/_next/static/chunks/08k3ot07zd2t5.js"],"TocSidebar"]
+11:I[97367,["/mysql-notes/_next/static/chunks/0hz.ycm2na1mb.js","/mysql-notes/_next/static/chunks/0kx-cep.pmmu-.js","/mysql-notes/_next/static/chunks/0n4z.7yu76je-.js","/mysql-notes/_next/static/chunks/0f8gkmi5-a6b0.js"],"OutletBoundary"]
+12:"$Sreact.suspense"
+0:{"rsc":["$","$1","c",{"children":[["$","div",null,{"className":"mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8","children":["$","div",null,{"className":"flex gap-8","children":[["$","article",null,{"className":"flex-1 min-w-0 max-w-3xl","children":[["$","header",null,{"className":"mb-8","children":[["$","h1",null,{"className":"text-2xl sm:text-3xl font-bold tracking-tight mb-4","children":"MySQL 9.6.0 (trunk) 近期开发活动分析"}],["$","div",null,{"className":"flex flex-wrap items-center gap-2 text-sm text-muted-foreground mb-4","children":[["$","time",null,{"dateTime":"Sat May 16 2026 00:00:00 GMT+0000 (Coordinated Universal Time)","children":"Sat May 16 2026 00:00:00 GMT+0000 (Coordinated Universal Time)"}],["$","span",null,{"children":"·"}],["$","span",null,{"children":[17," min read"]}],["$","span",null,{"children":"·"}],["$","span",null,{"children":"@mns-reader"}]]}],["$","div",null,{"className":"flex flex-wrap gap-1.5","children":[["$","$L2","#mysql",{"href":"/tags/mysql","children":["$","span",null,{"data-slot":"badge","data-variant":"default","className":"group/badge inline-flex h-5 w-fit shrink-0 items-center justify-center gap-1 overflow-hidden rounded-4xl border border-transparent px-2 py-0.5 font-medium whitespace-nowrap focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&>svg]:pointer-events-none [&>svg]:size-3! bg-primary text-primary-foreground [a]:hover:bg-primary/80 cursor-pointer hover:opacity-80 transition-opacity text-xs","children":"mysql"}]}],["$","$L2","#server",{"href":"/tags/server","children":["$","span",null,{"data-slot":"badge","data-variant":"default","className":"group/badge inline-flex h-5 w-fit shrink-0 items-center justify-center gap-1 overflow-hidden rounded-4xl border border-transparent px-2 py-0.5 font-medium whitespace-nowrap focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&>svg]:pointer-events-none [&>svg]:size-3! bg-primary text-primary-foreground [a]:hover:bg-primary/80 cursor-pointer hover:opacity-80 transition-opacity text-xs","children":"server"}]}],["$","$L2","#source-code",{"href":"/tags/source-code","children":["$","span",null,{"data-slot":"badge","data-variant":"secondary","className":"group/badge inline-flex h-5 w-fit shrink-0 items-center justify-center gap-1 overflow-hidden rounded-4xl border border-transparent px-2 py-0.5 font-medium whitespace-nowrap focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&>svg]:pointer-events-none [&>svg]:size-3! bg-secondary text-secondary-foreground [a]:hover:bg-secondary/80 cursor-pointer hover:opacity-80 transition-opacity text-xs","children":"source-code"}]}],["$","$L2","#intermediate",{"href":"/tags/intermediate","children":["$","span",null,{"data-slot":"badge","data-variant":"outline","className":"group/badge inline-flex h-5 w-fit shrink-0 items-center justify-center gap-1 overflow-hidden rounded-4xl border px-2 py-0.5 font-medium whitespace-nowrap focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&>svg]:pointer-events-none [&>svg]:size-3! border-border text-foreground [a]:hover:bg-muted [a]:hover:text-muted-foreground cursor-pointer hover:opacity-80 transition-opacity text-xs","children":"intermediate"}]}]]}],"$L3"]}],"$L4","$L5","$L6","$L7","$L8"]}],"$L9"]}]}],["$La","$Lb"],"$Lc"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"qXkI9snRhaw2qMl5vra9Y"}
+3:["$","p",null,{"className":"text-xs text-muted-foreground mt-3","children":["Version: ","MySQL 9.6.0"]}]
+4:["$","$Ld",null,{"className":"mb-8"}]
+f:T366a,<h1 id="mysql-960-trunk-近期开发活动分析">MySQL 9.6.0 (trunk) 近期开发活动分析</h1>
+<blockquote>
+<p><strong>基线：</strong> MySQL 9.6.0 (trunk)，HEAD commit <code>447eb26e094</code>（2025-12-23）。
+<strong>覆盖范围：</strong> 148 个非合并 commit，覆盖 2025 年 11–12 月。2026 年 1–5 月零新 commit。</p>
+</blockquote>
+<hr>
+<h2 id="总览">总览</h2>
+<pre><code class="language-mermaid">pie title 按模块分布（Nov-Dec 2025）
+    "libs/mysql (WL#16076)" : 43
+    "sql/ (服务器层)" : 23
+    "storage/innobase" : 6
+    "router" : 5
+    "sql-common" : 1
+    "plugin/group_replication" : 1
+    "其他" : 69
+</code></pre>
+<p><strong>最大的单项投入是 WL#16076 —— GTID/复制库的 39 步重构</strong>，由 Sven Sandberg 主导（44 个 commit），占全部非合并工作的约 29%。并行推进的线索包括 Lakehouse/HeatWave 功能、Audit Log 组件化、以及若干关键 crash/DoS bug 修复。</p>
+<hr>
+<h2 id="1-wl16076--gtid-与复制库重构39-commits">1. WL#16076 — GTID 与复制库重构（39 commits）</h2>
+<h3 id="是什么">是什么</h3>
+<p>MySQL 内部 C++ 库的彻底重构，构建了以下干净抽象层：</p>
+<ul>
+<li><strong>GTIDs</strong>（<code>gtids</code> 库）：取代 <code>mysql::gtid::Gtid_set</code> 的新数据结构</li>
+<li><strong>UUIDs</strong>（<code>uuids</code> 库）：解析与比较</li>
+<li><strong>Sets</strong>（<code>sets</code> 库）：通用集合操作</li>
+<li><strong>字符串转换</strong>（<code>strconv</code> 库）：安全的 string↔number 转换</li>
+<li><strong>数学</strong>（<code>math</code> 库）：<code>int_log</code>、<code>int_pow</code>、求和函数</li>
+<li><strong>容器</strong>（<code>containers</code> 库）：<code>Basic_container_wrapper</code>、<code>map_or_set_assign</code></li>
+<li><strong>区间与迭代器</strong>（<code>ranges</code>、<code>iterators</code> 库）</li>
+<li><strong>元编程</strong>（<code>meta</code> 库）：C++20 风格 concept 回移植到 C++14</li>
+<li><strong>调试</strong>（<code>debugging</code> 库）：<code>MY_SCOPED_TRACE</code>、<code>Object_lifetime_tracker</code>、<code>oom_test</code></li>
+</ul>
+<h3 id="关键-commit">关键 commit</h3>
+<table>
+<thead>
+<tr>
+<th>步骤</th>
+<th>Commit</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>39</td>
+<td><code>5cd325a9b9f</code></td>
+<td>在 mysqlbinlog 中使用新 Gtid 数据结构</td>
+</tr>
+<tr>
+<td>38</td>
+<td><code>129723c8437</code></td>
+<td>替换旧的 <code>mysql::gtid::Gtid_set</code></td>
+</tr>
+<tr>
+<td>37</td>
+<td><code>b781b664a4a</code></td>
+<td>与 GTID_SUBSET 和 GTID_SUBTRACT 集成</td>
+</tr>
+<tr>
+<td>36</td>
+<td><code>a6ff21a5129</code></td>
+<td>新建 gtids 库</td>
+</tr>
+<tr>
+<td>35</td>
+<td><code>a9421c575a2</code></td>
+<td>新建 uuids 库</td>
+</tr>
+<tr>
+<td>34</td>
+<td><code>9f9a3ac8be1</code></td>
+<td>新建 sets 库</td>
+</tr>
+<tr>
+<td>32</td>
+<td><code>50989798cc5</code></td>
+<td>新建 strconv 库</td>
+</tr>
+<tr>
+<td>27</td>
+<td><code>e30861d3882</code></td>
+<td>新建 ranges 库</td>
+</tr>
+<tr>
+<td>26</td>
+<td><code>2d34be2b9bd</code></td>
+<td>新建 iterators 库</td>
+</tr>
+<tr>
+<td>13</td>
+<td><code>784c130f6cd</code></td>
+<td>新建 debugging 库</td>
+</tr>
+<tr>
+<td>4</td>
+<td><code>11a78222be0</code></td>
+<td>新建 meta 库</td>
+</tr>
+</tbody>
+</table>
+<h3 id="影响面">影响面</h3>
+<ul>
+<li><strong>全部在 <code>libs/mysql/</code> 下</strong> — 共享库，被 server、mysqlbinlog、router 及各类插件消费</li>
+<li>步骤 36–39 将新库接入生产代码（GTID、mysqlbinlog）</li>
+<li>meta 库引入了可在 C++14 中使用的 C++20 concept 模式 — 编译期类型检查的模板元编程</li>
+<li><strong>关键变量生命周期：</strong> header-only 或 header+inline 形式。无动态分配 — 尽可能 constexpr/编译期求值</li>
+</ul>
+<h3 id="并发安全">并发安全</h3>
+<p>库本身是值类型（无共享可变状态）。安全取决于服务器层如何使用 — GTID 集合必须跨线程拷贝而非共享。</p>
+<hr>
+<h2 id="2-lakehouse--heatwave4-个-wl">2. Lakehouse / HeatWave（4 个 WL）</h2>
+<table>
+<thead>
+<tr>
+<th>WL</th>
+<th>描述</th>
+<th>模块</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>WL#17186</td>
+<td>Lakehouse 文件级数据放置</td>
+<td>HeatWave</td>
+</tr>
+<tr>
+<td>WL#17152</td>
+<td>支持 Parquet nested types</td>
+<td>HeatWave</td>
+</tr>
+<tr>
+<td>WL#17124</td>
+<td>新增 ALTER TABLE：加载校验</td>
+<td>DDL/HeatWave</td>
+</tr>
+<tr>
+<td>WL#17165</td>
+<td>Lakehouse 所有 Schema 联合</td>
+<td>HeatWave</td>
+</tr>
+</tbody>
+</table>
+<h3 id="分析">分析</h3>
+<p>HeatWave/Lakehouse 在 9.x 中仍是重点投资方向：</p>
+<ul>
+<li><strong>Parquet nested types</strong>（WL#17152）：将 Parquet 支持从 flat schema 扩展到 STRUCT/ARRAY/MAP — 对真实数据湖 workload 至关重要</li>
+<li><strong>文件级数据放置</strong>（WL#17186）：控制 Lakehouse 文件到物理存储的映射关系</li>
+<li><strong>加载校验</strong>（WL#17124）：新增 ALTER TABLE 操作用于校验 Lakehouse 数据加载</li>
+</ul>
+<h3 id="-与-heatwave-整体战略的关联">🔴 与 HeatWave 整体战略的关联</h3>
+<p>MySQL 9.x 的 Innovation 轨道是 HeatWave 功能的载体 — 这些无法进入 8.0/8.4 LTS。此处的 Parquet/Lakehouse 是服务器内置功能，与云独占的 HeatWave 服务不同。</p>
+<hr>
+<h2 id="3-audit-log-与可观测性3-个-wl">3. Audit Log 与可观测性（3 个 WL）</h2>
+<table>
+<thead>
+<tr>
+<th>WL</th>
+<th>描述</th>
+<th>影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>WL#12716</td>
+<td>Audit Log plugin 组件化</td>
+<td>架构级：从 legacy plugin 迁移到 MySQL 8.0 component framework</td>
+</tr>
+<tr>
+<td>WL#17167</td>
+<td>PERFORMANCE_SCHEMA 增加 OTEL logs 埋点</td>
+<td>可观测性：打通 P_S → OpenTelemetry</td>
+</tr>
+<tr>
+<td>WL#17178</td>
+<td>Audit log offload 适配 LogAnalytics</td>
+<td>云集成</td>
+</tr>
+</tbody>
+</table>
+<h3 id="分析-1">分析</h3>
+<ul>
+<li><strong>WL#12716</strong> 架构意义最大：将 Audit Log 组件化后与 keyring、clone 等 component 处于同一框架，支持动态加载/卸载和版本化 API</li>
+<li><strong>WL#17167</strong> 是可观测性布局：将 Performance Schema 埋点接入 OpenTelemetry logs，面向 AWS CloudWatch/Azure Monitor/GCP Cloud Logging 等云原生监控栈</li>
+</ul>
+<hr>
+<h2 id="4-foreign-key-cascadingwl11249">4. Foreign Key Cascading（WL#11249）</h2>
+<pre><code>9e1e77fac10 WL#11249 - Support Foreign Key Cascading Operation in server
+</code></pre>
+<h3 id="可能带来的能力">可能带来的能力</h3>
+<p>FK cascading（ON DELETE CASCADE / ON UPDATE CASCADE）传统上在存储引擎层执行。此 WL 将 cascade 逻辑提升到 SQL 层，从而支持：</p>
+<ul>
+<li>跨引擎级联（InnoDB → NDB 等）</li>
+<li>更好的 cascade 失败错误报告</li>
+<li>潜在方向：并行 cascade 执行</li>
+</ul>
+<h3 id="-风险点">🔴 风险点</h3>
+<p>FK cascading 本质上是递归的，可能触发死锁。提升到服务器层新增了一条代码路径，必须与存储引擎自身的 FK 执行逻辑协调。</p>
+<hr>
+<h2 id="5-关键-bug-修复">5. 关键 Bug 修复</h2>
+<h3 id="-bug38573285--cpu-耗尽型-denial-of-service-查询3-commits">🔴 Bug#38573285 — CPU 耗尽型 Denial of Service 查询（3 commits）</h3>
+<pre><code>b56c64b2947 Bug#38573285 MySQL server: CPU-eating Denial_of_Service query
+770772d3d70 Bug#38573285 MySQL server: CPU-eating Denial_of_Service query
+ebdf65e0703 Bug#38573285 MySQL server: CPU-eating Denial_of_Service query
+</code></pre>
+<p>同一 bug 拆分三个 commit — 说明修复涉及多个子系统（很可能是 optimizer + executor）。本窗口内严重程度最高：一个精心构造的查询可以无限消耗 100% CPU。</p>
+<h3 id="-bug38448700--explain-select-导致-server-crash3-commits">🔴 Bug#38448700 — EXPLAIN SELECT 导致 server crash（3 commits）</h3>
+<pre><code>44361ef23da Bug#38448700: Server crash with EXPLAIN SELECT on LEFT JOIN with derived table containing stored function and GROUP BY
+2bc8767f591 Bug#38448700: Server crash with EXPLAIN SELECT on LEFT JOIN with derived table containing stored function and GROUP BY
+572f252c253 Bug#38448700: Server crash with EXPLAIN SELECT on LEFT JOIN with derived table containing stored function and GROUP BY
+</code></pre>
+<p>EXPLAIN 导致 server crash — 关键稳定性问题。LEFT JOIN + derived table + stored function + GROUP BY 产生复杂优化计划，EXPLAIN 在此触发了未处理的边界情况。</p>
+<h3 id="-bug38208188--bulk-insert--gis-index-崩溃">🟡 Bug#38208188 — Bulk insert + GIS index 崩溃</h3>
+<pre><code>a9cf8c54580 Bug#38208188: Bulk inserts into temporary tables with GIS indexes will inevitably cause crashes
+d338ba09220 Bug#38208188: Bulk inserts into temporary tables with GIS indexes will inevitably cause crashes
+</code></pre>
+<h3 id="-bug38680162--set-persist-产生重复条目">🟡 Bug#38680162 — SET PERSIST 产生重复条目</h3>
+<pre><code>1a78995a233 Bug#38680162 SET PERSIST creates duplicate variable entries across sections after upgrade
+</code></pre>
+<h3 id="-bug38077617--初始握手始终使用-caching_sha2_password">🟡 Bug#38077617 — 初始握手始终使用 caching_sha2_password</h3>
+<pre><code>c3956ef47af Bug#38077617: MySQL 8.4 always uses caching_sha2_password in the initial connection handshake
+</code></pre>
+<hr>
+<h2 id="6-group-replication--router">6. Group Replication / Router</h2>
+<table>
+<thead>
+<tr>
+<th>WL</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>WL#17008</td>
+<td>为 GCS/XCOM trace 文件增加时间戳</td>
+</tr>
+<tr>
+<td>WL#17027</td>
+<td>将 Router volatile 统计存入 <code>mysql_innodb_cluster_metadata</code> 专用表</td>
+</tr>
+<tr>
+<td>WL#17184</td>
+<td>允许重定义 secondary engine</td>
+</tr>
+</tbody>
+</table>
+<h3 id="分析-2">分析</h3>
+<ul>
+<li><strong>WL#17008</strong>：GCS/XCOM（Group Communication System）是 MGR 的共识层。增加时间戳提升可调试性——目前诊断 MGR 停滞需跨节点按消息内容关联日志，无法按时间排序</li>
+<li><strong>WL#17027</strong>：Router 统计原本仅存内存。写入 <code>mysql_innodb_cluster_metadata</code> 后支持历史分析（如"凌晨 3 点是否有路由问题？"）</li>
+<li><strong>WL#17184</strong>：无需 drop/recreate 即可更改 secondary engine，与 HeatWave secondary engine 场景相关</li>
+</ul>
+<hr>
+<h2 id="7-ndb-cluster-修复">7. NDB Cluster 修复</h2>
+<p>本窗口内多项 NDB 专项 bug 修复，说明 NDB Cluster 仍在活跃维护：</p>
+<ul>
+<li><code>Bug#38608189</code> / <code>Bug#38608102</code> — ndbxfrm/ndb_restore 修复</li>
+<li><code>Bug#38558868</code> — ndb_restore 并行度修复</li>
+<li><code>Bug#38593666</code> — ndb_restore 跳过 FK 检查的选项</li>
+<li><code>Bug#38592288</code> — backup/restore 报告差异修复</li>
+</ul>
+<hr>
+<h2 id="8-构建与打包">8. 构建与打包</h2>
+<ul>
+<li><code>BUG#38784394</code> — mysql 包在 FC43 (Fedora) 冲突</li>
+<li><code>BUG#38758163</code> — MSVC 19.29 (VS16.11) 构建修复</li>
+<li><code>BUG#38730874</code> — pb2 mysql-trunk-cloud-asan bulk load 失败（ASAN 修复）</li>
+<li><code>BUG#38330571</code> — cmake/abi_check.cmake 在 Windows 11 24h2 卡死</li>
+</ul>
+<hr>
+<h2 id="关键变量贡献者集中度">关键变量：贡献者集中度</h2>
+<pre><code>Sven Sandberg      44 commits  （WL#16076 — GTID 库重构）
+Mauritz Sundell     8 commits  （NDB Cluster / build）
+Frazer Clement      8 commits  （NDB Cluster）
+Miroslav Rajcic     6 commits
+Marc Alff           4 commits
+Magnus Blåudd       4 commits
+Knut Anders Hatlen  4 commits
+Kajori Banerjee     4 commits
+</code></pre>
+<p><strong>148 commits 中 44 个（30%）来自同一作者。</strong> Sven Sandberg 显然是库现代化工作的主导者。</p>
+<hr>
+<h2 id="时间线分析">时间线分析</h2>
+<pre><code>2025-11: 101 commits  ← 活跃高峰（WL#16076 批量、Lakehouse 功能）
+2025-12:  47 commits  ← 收尾期（bug 修复、post-push fix、merge）
+2026-01:   0 commits  ← 假期停摆
+2026-02:   0 commits  ←
+2026-03:   0 commits  ←
+2026-04:   0 commits  ←
+2026-05:   0 commits  ←（截至 5 月 16 日）
+</code></pre>
+<p>距上次 commit（2025-12-23）已 5 个月无新提交，值得关注。可能原因：</p>
+<ol>
+<li>Oracle 内部开发使用独立仓库；trunk 仅接收周期性合并</li>
+<li>假期延续至 Q1 规划期</li>
+<li>重大版本（9.6.0 GA）在独立 stabilization 分支准备</li>
+</ol>
+<hr>
+<h2 id="趋势与要点">趋势与要点</h2>
+<ol>
+<li>
+<p><strong>库现代化是头号投资。</strong> WL#16076 对 <code>libs/mysql/</code> 的 39 步重构不是用户可见功能 — 是为未来 GTID/复制工作的基础设施。暗示复制团队正在准备重大功能推进。</p>
+</li>
+<li>
+<p><strong>HeatWave/Lakehouse 是第二优先级。</strong> 4 个 WL 覆盖 Parquet、数据放置、加载校验、schema 联合。MySQL 9.x Innovation 是载体。</p>
+</li>
+<li>
+<p><strong>可观测性在成熟。</strong> Audit Log 组件化 + OTEL 埋点 + LogAnalytics offload = 云原生可观测性栈。</p>
+</li>
+<li>
+<p><strong>关键稳定性修复。</strong> CPU 耗尽型 DoS 查询和 EXPLAIN crash bug 各需 3 个 commit — 多子系统复杂修复。</p>
+</li>
+<li>
+<p><strong>NDB Cluster 仍在活跃维护</strong> — 虽是小众引擎，2 名专职工程师产出 8 个 commit。</p>
+</li>
+<li>
+<p><strong>Group Replication 强化是增量式的</strong> — 时间戳、统计持久化、secondary engine 重定义 — 非架构级变更。</p>
+</li>
+<li>
+<p><strong>InnoDB 核心架构零变更。</strong> 6 个 InnoDB commit 全是 bug 修复，无新功能。InnoDB 在 9.x 当前阶段处于稳定/成熟状态。</p>
+</li>
+</ol>5:["$","div",null,{"className":"article-content max-w-none","children":["$","$Le",null,{"html":"$f"}]}]
+6:["$","$Ld",null,{"className":"my-8"}]
+7:["$","div",null,{"className":"mb-8","children":[["$","h3",null,{"className":"text-sm font-semibold mb-2","children":"Sources"}],["$","ul",null,{"className":"space-y-1","children":[["$","li","0",{"className":"text-sm","children":["$","a",null,{"href":"https://github.com/Aqiu16717/mysql-notes/mysql-server trunk, commit range 2025-11-16 to 2025-12-23","className":"text-primary underline underline-offset-4 hover:no-underline break-all","target":"_blank","rel":"noopener noreferrer","children":"mysql-server trunk, commit range 2025-11-16 to 2025-12-23"}]}]]}]]}]
+8:["$","footer",null,{"className":"space-y-6","children":[["$","nav",null,{"className":"grid grid-cols-2 gap-4","children":[["$","div",null,{}],["$","$L2",null,{"href":"/posts/mysql-silo","className":"group block p-4 border border-border rounded-lg hover:border-primary/50 transition-colors text-right","children":[["$","span",null,{"className":"text-xs text-muted-foreground","children":"Next →"}],["$","p",null,{"className":"text-sm font-medium mt-1 group-hover:text-primary transition-colors line-clamp-1","children":"Silo：多核内存数据库的高速事务处理（2013）"}]]}]]}],["$","div",null,{"children":[["$","h3",null,{"className":"text-sm font-semibold mb-3","children":"Related Posts"}],["$","div",null,{"className":"grid gap-3 sm:grid-cols-2 lg:grid-cols-3","children":[["$","$L2","mysql-mdl-source-analysis",{"href":"/posts/mysql-mdl-source-analysis","className":"block p-3 border border-border rounded-lg hover:border-primary/50 transition-colors","children":[["$","p",null,{"className":"text-sm font-medium line-clamp-2","children":"MySQL MDL 源码深度剖析：Metadata Lock 的获取、等待队列与死锁检测"}],["$","p",null,{"className":"text-xs text-muted-foreground mt-1","children":"Sun May 17 2026 00:00:00 GMT+0000 (Coordinated Universal Time)"}]]}],["$","$L2","mysql-mdl-tutorial",{"href":"/posts/mysql-mdl-tutorial","className":"block p-3 border border-border rounded-lg hover:border-primary/50 transition-colors","children":[["$","p",null,{"className":"text-sm font-medium line-clamp-2","children":"MySQL MDL 入门到精通：Metadata Lock 的获取、等待与死锁"}],["$","p",null,{"className":"text-xs text-muted-foreground mt-1","children":"Sun May 17 2026 00:00:00 GMT+0000 (Coordinated Universal Time)"}]]}],["$","$L2","cross-product-enterprise-features-competitive-landscape",{"href":"/posts/cross-product-enterprise-features-competitive-landscape","className":"block p-3 border border-border rounded-lg hover:border-primary/50 transition-colors","children":[["$","p",null,{"className":"text-sm font-medium line-clamp-2","children":"MySQL 9.7 企业功能下放后竞争格局分析：社区版 vs Percona/MariaDB/TiDB/OceanBase"}],["$","p",null,{"className":"text-xs text-muted-foreground mt-1","children":"Sat May 16 2026 00:00:00 GMT+0000 (Coordinated Universal Time)"}]]}]]}]]}],["$","div",null,{"className":"text-sm","children":["$","a",null,{"href":"https://github.com/Aqiu16717/mysql-notes/blob/main/content/2026-05-16-mysql-trunk-dev-activity-analysis.md","className":"text-muted-foreground hover:text-foreground transition-colors underline underline-offset-4","target":"_blank","rel":"noopener noreferrer","children":"Edit this page on GitHub"}]}]]}]
+9:["$","$L10",null,{"entries":[{"id":"总览","text":"总览","level":2},{"id":"1-wl16076--gtid-与复制库重构39-commits","text":"1. WL#16076 — GTID 与复制库重构（39 commits）","level":2},{"id":"是什么","text":"是什么","level":3},{"id":"关键-commit","text":"关键 commit","level":3},{"id":"影响面","text":"影响面","level":3},{"id":"并发安全","text":"并发安全","level":3},{"id":"2-lakehouse--heatwave4-个-wl","text":"2. Lakehouse / HeatWave（4 个 WL）","level":2},{"id":"分析","text":"分析","level":3},{"id":"-与-heatwave-整体战略的关联","text":"🔴 与 HeatWave 整体战略的关联","level":3},{"id":"3-audit-log-与可观测性3-个-wl","text":"3. Audit Log 与可观测性（3 个 WL）","level":2},{"id":"分析-1","text":"分析","level":3},{"id":"4-foreign-key-cascadingwl11249","text":"4. Foreign Key Cascading（WL#11249）","level":2},{"id":"可能带来的能力","text":"可能带来的能力","level":3},{"id":"-风险点","text":"🔴 风险点","level":3},{"id":"5-关键-bug-修复","text":"5. 关键 Bug 修复","level":2},{"id":"-bug38573285--cpu-耗尽型-denial-of-service-查询3-commits","text":"🔴 Bug#38573285 — CPU 耗尽型 Denial of Service 查询（3 commits）","level":3},{"id":"-bug38448700--explain-select-导致-server-crash3-commits","text":"🔴 Bug#38448700 — EXPLAIN SELECT 导致 server crash（3 commits）","level":3},{"id":"-bug38208188--bulk-insert--gis-index-崩溃","text":"🟡 Bug#38208188 — Bulk insert + GIS index 崩溃","level":3},{"id":"-bug38680162--set-persist-产生重复条目","text":"🟡 Bug#38680162 — SET PERSIST 产生重复条目","level":3},{"id":"-bug38077617--初始握手始终使用-caching_sha2_password","text":"🟡 Bug#38077617 — 初始握手始终使用 caching_sha2_password","level":3},{"id":"6-group-replication--router","text":"6. Group Replication / Router","level":2},{"id":"分析-2","text":"分析","level":3},{"id":"7-ndb-cluster-修复","text":"7. NDB Cluster 修复","level":2},{"id":"8-构建与打包","text":"8. 构建与打包","level":2},{"id":"关键变量贡献者集中度","text":"关键变量：贡献者集中度","level":2},{"id":"时间线分析","text":"时间线分析","level":2},{"id":"趋势与要点","text":"趋势与要点","level":2}]}]
+a:["$","script","script-0",{"src":"/mysql-notes/_next/static/chunks/0p8~.s.k9oh65.js","async":true}]
+b:["$","script","script-1",{"src":"/mysql-notes/_next/static/chunks/08k3ot07zd2t5.js","async":true}]
+c:["$","$L11",null,{"children":["$","$12",null,{"name":"Next.MetadataOutlet","children":"$@13"}]}]
+13:null
