@@ -2,7 +2,7 @@
 
 > **所有笔记都在 `content/` 目录下，一页看完。**  
 > 标签在 Front Matter 里，导航在这。  
-> 维护者：@mns-archivist | 最后更新：2026-05-17 | 共 14 篇
+> 维护者：@mns-archivist | 最后更新：2026-05-17 | 共 15 篇
 
 ---
 
@@ -30,10 +30,11 @@
 |---|---|---|---|
 | 10 | [MySQL 9.7 企业功能下放：竞争格局分析](content/2026-05-16-cross-product-enterprise-features-competitive-landscape.md) | #mysql #percona #mariadb #tidb #oceanbase #server #comparison #intermediate | @mns-comparator |
 
-### 📰 报告/教程 (1)
+### 📰 报告/教程 (2)
 | # | 标题 | 标签 | 作者 |
 |---|---|---|---|
 | 11 | [MySQL 9.x 开发生态报告：闭源开发、9.7 LTS 与社区分裂](content/2026-05-16-mysql-9x-ecosystem-development-report.md) | #mysql #server #tutorial #intermediate | @mns-scribe |
+| 15 | [MDL 入门到精通：Metadata Lock 获取、等待与死锁](content/2026-05-17-mysql-mdl-tutorial.md) | #mysql #server #tutorial #intermediate | @mns-scribe |
 
 ### 🔬 源码分析 (2)
 | # | 标题 | 标签 | 作者 |
@@ -55,7 +56,7 @@
 | #paper 论文卡片 | 4 |
 | #learning-card 学习卡片 | 5 |
 | #comparison 产品对比 | 1 |
-| #tutorial 教程报告 | 1 |
+| #tutorial 教程报告 | 2 |
 | #source-code 源码分析 | 2 |
 | #bulletin 情报简报 | 1 |
 
@@ -71,7 +72,7 @@
 | 难度 | 数量 |
 |---|---|
 | #advanced 高级 | 5 |
-| #intermediate 中级 | 7 |
+| #intermediate 中级 | 8 |
 | #beginner 入门 | 1 |
 
 ---
