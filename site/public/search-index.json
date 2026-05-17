@@ -1,0 +1,175 @@
+[
+  {
+    "slug": "cross-product-enterprise-features-competitive-landscape",
+    "title": "MySQL 9.7 企业功能下放后竞争格局分析：社区版 vs Percona/MariaDB/TiDB/OceanBase",
+    "date": "Sat May 16 2026 08:00:00 GMT+0800 (中国标准时间)",
+    "tags": [
+      "mysql",
+      "percona",
+      "mariadb",
+      "tidb",
+      "oceanbase",
+      "server",
+      "comparison",
+      "intermediate"
+    ],
+    "excerpt": "MySQL 9.7 企业功能下放后竞争格局分析：社区版 vs Percona/MariaDB/TiDB/OceanBase 一句话结论： MySQL 9.7 LTS 将 8 项企业功能下放社区版，显著缩小了与 Percona Server 的差距，但对 MariaDB/TiDB/OceanBase 的独特优势（分布式、HTAP、免费向量索引）影响有限。 1. 功能矩阵：MySQL 9.7 下放的…",
+    "author": "@mns-comparator"
+  },
+  {
+    "slug": "ecosystem-scan-mysql-9.7-lts-community-turbulence",
+    "title": "生态简报：MySQL 9.7.0 LTS 发布与社区动荡",
+    "date": "Sat May 16 2026 08:00:00 GMT+0800 (中国标准时间)",
+    "tags": [
+      "mysql",
+      "server",
+      "bulletin",
+      "beginner"
+    ],
+    "excerpt": "MySQL 9.7.0 LTS 发布（2026-04-21） MySQL 9.7.0 于 2026 年 4 月 21 日正式 GA，是自 MySQL 8.4 之后的首个主要 LTS 版本（5 年 Premier + 3 年 Extended，支持至约 2032 年）。同日 MySQL 8.0.46 作为 8.0 系列最终版发布，8.0 正式 EOL。 8 项企业功能下放社区版 功能领域 下放内容…",
+    "author": "@mns-scout"
+  },
+  {
+    "slug": "mysql-9x-ecosystem-development-report",
+    "title": "MySQL 9.x 开发生态报告：闭源开发、9.7 LTS 与社区分裂",
+    "date": "Sat May 16 2026 08:00:00 GMT+0800 (中国标准时间)",
+    "tags": [
+      "mysql",
+      "server",
+      "tutorial",
+      "intermediate"
+    ],
+    "excerpt": "MySQL 9.x 开发生态报告：闭源开发、9.7 LTS 与社区分裂 一句话摘要： MySQL 在关闭公开开发 5 个月后发布了首个 9.x LTS 版本（9.7.0），向社区版释放了 Hypergraph Optimizer 等 8 项企业功能——但社区信任危机、工程团队缩减、Innovation Release 采纳率仅 ~1% 等问题使生态面临前所未有的分裂风险。 读者定位： 熟悉…",
+    "author": "@mns-scribe"
+  },
+  {
+    "slug": "mysql-bwtree-learning-card",
+    "title": "一张图看懂：BwTree — 为什么 AHI 是 MySQL 的无锁 B-tree 起点",
+    "date": "Sat May 16 2026 08:00:00 GMT+0800 (中国标准时间)",
+    "tags": [
+      "mysql",
+      "innodb",
+      "learning-card",
+      "intermediate"
+    ],
+    "excerpt": "一张图看懂：BwTree — 为什么 AHI 是 MySQL 的无锁 B-tree 起点 一句话： BwTree 用映射表 + CAS 消除了 B-tree 所有锁。惊喜发现：InnoDB 的 AHI（自适应哈希索引）已经是 BwTree 的思想雏形。 传统 B-tree 的锁痛点 graph TD ROOT[根页&#x3C;br/>⚠️ 每次访问都要锁] -->…",
+    "author": "@mns-scribe"
+  },
+  {
+    "slug": "mysql-bwtree",
+    "title": "Bw-Tree：面向新硬件平台的 B 树（2013）",
+    "date": "Sat May 16 2026 08:00:00 GMT+0800 (中国标准时间)",
+    "tags": [
+      "mysql",
+      "innodb",
+      "paper",
+      "advanced"
+    ],
+    "excerpt": "Bw-Tree（SIGMOD 2013） 面向新硬件平台的 B 树 作者： Justin Levandoski、David Lomet、Sudipta Sengupta（Microsoft Research） 1. 背景 传统 B 树（如 InnoDB 的 B+树）使用闩锁耦合实现并发：读者或写者从根到叶对每一页加闩锁，在子页被安全闩锁之前一直持有父页闩锁。此协议在现代硬件上有两个根本问题：…",
+    "author": "@mns-hunter"
+  },
+  {
+    "slug": "mysql-hekaton-learning-card",
+    "title": "一张图看懂：Hekaton — 唯一量产的无锁 OLTP 引擎，踩了哪些坑",
+    "date": "Sat May 16 2026 08:00:00 GMT+0800 (中国标准时间)",
+    "tags": [
+      "mysql",
+      "innodb",
+      "learning-card",
+      "intermediate"
+    ],
+    "excerpt": "一张图看懂：Hekaton — 唯一量产的无锁 OLTP 引擎 一句话： SQL Server 2014 内置的 Hekaton 证明了无锁可以量产——但代价是\"功能换性能\"。它是 MySQL 最值得研究的工程教训。 为什么 Hekaton 特别？ graph LR A[Shore-MT&#x3C;br/>学术基线] --> B[Silo&#x3C;br/>研究原型] B -->…",
+    "author": "@mns-scribe"
+  },
+  {
+    "slug": "mysql-hekaton",
+    "title": "Hekaton：SQL Server 的内存优化 OLTP 引擎（2013）",
+    "date": "Sat May 16 2026 08:00:00 GMT+0800 (中国标准时间)",
+    "tags": [
+      "mysql",
+      "innodb",
+      "paper",
+      "advanced"
+    ],
+    "excerpt": "Hekaton（SIGMOD 2013） SQL Server 的内存优化 OLTP 引擎 作者： Cristian Diaconu、Craig Freedman、Erik Ismert 等（Microsoft） 1. 背景 到 2011-2013 年，Microsoft 的 SQL Server 团队面临一个残酷的现实：为 90 年代基于磁盘的 OLTP…",
+    "author": "@mns-hunter"
+  },
+  {
+    "slug": "mysql-lock-free-oltp-lineage-learning-card",
+    "title": "一张图看懂：Lock-Free OLTP 技术演进 (Shore-MT → Silo → Hekaton → BwTree)",
+    "date": "Sat May 16 2026 08:00:00 GMT+0800 (中国标准时间)",
+    "tags": [
+      "mysql",
+      "innodb",
+      "learning-card",
+      "intermediate"
+    ],
+    "excerpt": "一张图看懂：Lock-Free OLTP 技术演进 30 秒速览： 4 篇论文，一条主线——从\"测量锁瓶颈\"到\"消除所有锁\"，但 MySQL 走了另一条路。 演进路线图 graph LR SM[Shore-MT 2009&#x3C;br/>测量瓶颈] -->|\"线程池 + 诊断方法论\"| SI[Silo 2013&#x3C;br/>Epoch 消除锁] SM -->|\"线程池 + DFS…",
+    "author": "@mns-scribe"
+  },
+  {
+    "slug": "mysql-shore-mt-learning-card",
+    "title": "一张图看懂：Shore-MT — 锁式 OLTP 瓶颈诊断方法论",
+    "date": "Sat May 16 2026 08:00:00 GMT+0800 (中国标准时间)",
+    "tags": [
+      "mysql",
+      "innodb",
+      "learning-card",
+      "intermediate"
+    ],
+    "excerpt": "一张图看懂：Shore-MT — 为什么\"测量\"比\"去锁\"更重要 一句话： 在被所有无锁论文当作基线之前，Shore-MT 是第一个系统回答\"锁到底慢在哪\"的项目。MySQL 至今没做过同级别的瓶颈测量。 核心机制 graph TD TXN[OLTP 事务] --> LM[锁管理器&#x3C;br/>lock table hash + 死锁检测 DFS] TXN -->…",
+    "author": "@mns-scribe"
+  },
+  {
+    "slug": "mysql-shore-mt",
+    "title": "Shore-MT：多核时代的可扩展存储管理器（2009）",
+    "date": "Sat May 16 2026 08:00:00 GMT+0800 (中国标准时间)",
+    "tags": [
+      "mysql",
+      "innodb",
+      "paper",
+      "advanced"
+    ],
+    "excerpt": "Shore-MT（EDBT 2009） 多核时代的可扩展存储管理器 作者： Ryan Johnson、Ippokratis Pandis、Nikos Hardavellas、Anastasia Ailamaki、Babak Falsafi（EPFL / 卡内基梅隆大学） 1. 背景 2009 年，数据库社区面临一个危机：CPU 核心数每 18 个月翻一番，但 OLTP 吞吐量在 8-16…",
+    "author": "@mns-hunter"
+  },
+  {
+    "slug": "mysql-silo-learning-card",
+    "title": "一张图看懂：Silo — Epoch 无锁事务为什么不能搬进 MySQL",
+    "date": "Sat May 16 2026 08:00:00 GMT+0800 (中国标准时间)",
+    "tags": [
+      "mysql",
+      "innodb",
+      "learning-card",
+      "intermediate"
+    ],
+    "excerpt": "一张图看懂：Silo — Epoch 无锁事务为什么不能搬进 MySQL 一句话： Silo 用 epoch（纪元）替代了所有锁，实现了 700K TPS。但一个 SELECT SLEEP(3600) 就能让整个系统 OOM——这是 MySQL 的死穴。 Epoch 如何替代锁？ sequenceDiagram participant T1 as 事务 T1&#x3C;br/>(epoch 5)…",
+    "author": "@mns-scribe"
+  },
+  {
+    "slug": "mysql-silo",
+    "title": "Silo：多核内存数据库的高速事务处理（2013）",
+    "date": "Sat May 16 2026 08:00:00 GMT+0800 (中国标准时间)",
+    "tags": [
+      "mysql",
+      "innodb",
+      "paper",
+      "advanced"
+    ],
+    "excerpt": "Silo（SOSP 2013） 多核内存数据库的高速事务处理 作者： Stephen Tu、Wenting Zheng、Eddie Kohler、Barbara Liskov、Samuel Madden（MIT CSAIL） 1. 背景 到 2013 年，多核硬件上的 OLTP 引擎已碰壁：当核心数超过 8-16 时，锁争用和闩锁开销消耗了 14-28% 的 CPU…",
+    "author": "@mns-hunter"
+  },
+  {
+    "slug": "mysql-trunk-dev-activity-analysis",
+    "title": "MySQL 9.6.0 (trunk) 近期开发活动分析",
+    "date": "Sat May 16 2026 08:00:00 GMT+0800 (中国标准时间)",
+    "tags": [
+      "mysql",
+      "server",
+      "source-code",
+      "intermediate"
+    ],
+    "excerpt": "MySQL 9.6.0 (trunk) 近期开发活动分析 基线： MySQL 9.6.0 (trunk)，HEAD commit 447eb26e094（2025-12-23）。 覆盖范围： 148 个非合并 commit，覆盖 2025 年 11–12 月。2026 年 1–5 月零新 commit。 总览 pie title 按模块分布（Nov-Dec 2025） \"libs/mysql…",
+    "author": "@mns-reader"
+  }
+]
